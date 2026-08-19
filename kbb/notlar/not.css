@@ -258,3 +258,25 @@ figcaption {
 
 .sema { margin: 10pt 0 4pt; break-inside: avoid; text-align: center; }
 .sema svg { max-width: 100%; }
+
+/* ---------- soru-cevap notu ----------
+   Soru/ klasöründeki notların ölçeği gün notlarından biraz küçük;
+   soru-bebekte-timpanometri.pdf çözümlenerek çıkarıldı. */
+
+body.soru h1 { font-size: 18.6pt; }
+body.soru h2 { font-size: 15.1pt; }
+
+/* sorunun kendisi — kullanıcının kendi cümlesiyle */
+.soru-metni {
+  font-size: 10.5pt;
+  font-style: italic;
+  color: var(--muted);
+  border-left: 2pt solid var(--rule);
+  padding-left: 10pt;
+  margin: 0 0 12pt;
+}
+
+/* soru notlarında tablo başlığı bordo */
+body.soru table.veri th { background: var(--brand-bg); color: var(--brand); }
+
+/* kısa cevap turkuaz, pratik özet kehribar — .kutu ve .kutu.uyari ile aynı */

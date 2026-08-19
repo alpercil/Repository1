@@ -149,7 +149,44 @@ punto merdiveninin (20,4 / 19,2 / 15,8 / 12,6 / 12,2 / 10,5) ve beş rengin
 (#1c2430 #4b5563 #8a2846 #1f6f6e #a33327) yerinde olduğunu kontrol et.
 Bir sayfayı PNG'ye çevirip gözle de bak.
 
+
+## Soru notu — `Soru/` klasörü
+
+Kullanıcı bir KBB sorusu sorup **"bunu soru klasörüne ekle"** dediğinde, gün
+notu değil **soru notu** üretilir. Bunlar 10-15 dakikalık okumalık, tek bir
+klinik sorunun cevabı. Drive'da `KBB_not_claude/Soru/` klasöründe,
+`soru-<konu-slug>.pdf` adıyla dururlar.
+
+Biçim (`soru-bebekte-timpanometri.pdf` çözümlenerek çıkarıldı):
+
+1. **Şerit:** `KBB · <SİSTEM> · SORU-CEVAP` — sistem adı konuya göre değişir
+   (ODYOLOJİ, RİNOLOJİ, OTOLOJİ, BAŞ-BOYUN…)
+2. **Başlık:** soruyu soru cümlesi olarak yaz — "Bebekte Timpanometri
+   Güvenilir mi?"
+3. **Sorunun kendisi:** kullanıcının kendi cümlesiyle, italik gri
+   (`.soru-metni`)
+4. **Kısa cevap:** turkuaz kutu, hemen başta. Cevabı önce ver, gerekçeyi
+   sonra. İki-dört cümle.
+5. **Gerekçe bölümleri:** numarasız Georgia başlıklar — "Neden ...?",
+   "Çözüm: ...", eşik/karşılaştırma tablosu
+6. **Pratik özet:** kehribar kutu, tek paragraf, doğrudan uygulanabilir
+7. **Kaynaklar**
+8. **Alt bilgi:** `Kişisel çalışma notu · eğitim amaçlı.` + konunun hangi
+   müfredat günleriyle ilişkili olduğu — `kbb/ilerleme.md`'ye bakıp doğru gün
+   numaralarını ver
+
+HTML'de `<body class="soru">` kullan; `not.css` ölçeği ve tablo rengini buna
+göre ayarlar. Dosya `kbb/notlar/soru-<slug>.html` olarak yazılır.
+
+Uzunluk: 2-4 sayfa. Gün notundaki gibi içindekiler, videolar veya "yarın"
+satırı yoktur.
+
 ## 6. Bitirince
 
-`kbb/ilerleme.md` dosyasına yeni günü ekle, commit'le ve push'la. Bu dosya
-güncellenmezse bir sonraki oturum kaldığın yeri bilemez.
+Gün notuysa `kbb/ilerleme.md` dosyasına yeni günü ekle, commit'le ve
+push'la. Bu dosya güncellenmezse bir sonraki oturum kaldığın yeri bilemez.
+Soru notu için ilerleme dosyasına dokunma; sadece HTML'i commit'le.
+
+**Simge kullanma.** `⚠` gibi karakterler Colab'ın fontlarında yok ve PDF'te
+boş kutu olarak çıkıyor. Uyarı işareti gerekiyorsa satır içi SVG ile çiz —
+`kbb/notlar/gun-69-...html` içinde örneği var.
