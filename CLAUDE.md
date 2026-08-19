@@ -33,6 +33,24 @@ is the state of the work, not the container.**
    repository work only when something needs their attention or their
    decision.
 
+## One session per project
+
+Work is split across cloud sessions, one per project, each bound to its own
+repository alongside this one - Yemekapp with `bugun-ne-pisirsem`,
+Borsa-Asistan with `borsa-asistan`, the KBB reading programme with this
+repository. A session lives on the server, so any of them resumes from any
+device.
+
+New projects start the same way: a cloud session of their own, never a local
+one. The author says when to open one. Creating it is possible from inside a
+session (`create_session`), so offer rather than send them to the UI.
+
+The account also holds older sessions from the Mac's Remote Control bridge,
+including the 07:00 daily KBB routine. They carry
+`worker_auth_expired` - that machine needs to sign in again - and cannot be
+moved to the cloud: their history is readable but they cannot be continued
+here. Anything worth keeping from them has to be rebuilt on this side.
+
 ## Local sessions
 
 Running Claude Code locally is fine as long as the same discipline holds: pull
