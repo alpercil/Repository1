@@ -253,3 +253,8 @@ figcaption {
   font-weight: bold;
   color: var(--brand);
 }
+
+/* ---------- not için çizilen şemalar ---------- */
+
+.sema { margin: 10pt 0 4pt; break-inside: avoid; text-align: center; }
+.sema svg { max-width: 100%; }
