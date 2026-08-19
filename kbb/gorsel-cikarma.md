@@ -25,7 +25,52 @@ Yalnızca şunlar kitaptan çıkarılmak zorunda:
 - Radyoloji görüntüleri
 - Histopatoloji kesitleri
 
-## Çıkarma yöntemi — Colab
+## İnternetten görsel — Drive'ın kendisi indiriyor
+
+Ölçüldü: nota `<img src="https://...">` koyup HTML olarak yüklediğinde
+**Drive görseli kendisi indirip belgeye kalıcı olarak gömüyor** (data URI
+olarak saklıyor, bağlantı sonradan ölse bile görsel kalıyor).
+
+Konteynerin dışa ağ erişimi kısıtlı olduğu için URL'yi önceden
+doğrulayamazsın — ama yükledikten sonra doğrulayabilirsin, ve doğrulamalısın.
+**Bozuk URL sessizce boş `<img>` olarak kalıyor**, hata dönmüyor.
+
+### Doğrulama döngüsü — atlanmaz
+
+Notu yükledikten sonra:
+
+1. `download_file_content` ile `exportMimeType: text/html` iste.
+2. Dönen base64'ü çöz.
+3. Her `<img` etiketinin `src="data:image/...` taşıdığını doğrula.
+4. `src`'siz bir `<img>` varsa o görsel inmemiştir — başka bir aday URL ile
+   HTML'i düzeltip yeniden yükle.
+
+### Kaynak seçimi
+
+Öncelik sırası:
+
+1. **Wikimedia Commons** — `https://commons.wikimedia.org/wiki/Special:FilePath/<Dosya adı.jpg>`
+   Bu kalıcı bir yönlendirme; dosya adını bilmek yeterli, hash gerekmez.
+   Dosya adını `WebSearch` sonuçlarından çıkar.
+2. **Açık erişimli makale şekilleri** — PMC, açık erişim dergiler. Lisansı
+   CC BY / CC BY-NC olanları seç.
+
+Telifi belirsiz kaynaklardan görsel alma. Altyazıya kaynağı ve lisansı yaz:
+`(Kaynak: Wikimedia Commons, <dosya adı>, CC BY-SA 4.0)`
+
+Bunlar kişisel çalışma notu; yine de kaynak göstermek hem doğru hem de
+görselin nereden geldiğini sonradan bulmayı sağlıyor.
+
+### Sıralama
+
+Bir şekle ihtiyaç duyduğunda sırayla dene:
+
+1. Şemayı **kendin çiz** (akış, algoritma, karşılaştırma) — en iyisi bu.
+2. Gerçek görüntü gerekiyorsa **internetten açık lisanslı** bul ve göm.
+3. İkisi de olmuyorsa **kitaptan çıkar** — aşağıdaki Colab yöntemi, tek
+   kullanıcı müdahalesi gereken yol.
+
+## Kitaptan çıkarma — Colab
 
 Not üretilirken oturum sana "şu kitabın şu PDF sayfalarındaki şekil gerekli"
 der. O sayfaları PNG olarak Drive'a çıkarmak için Colab'da:
