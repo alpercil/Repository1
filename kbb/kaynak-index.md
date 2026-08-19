@@ -40,6 +40,8 @@ kolesteatom bölümleri bu aralıkta ve okunamıyor. Okunabilen bölgeler: en
 azından `0201-0240`, `0241-0280` (Böl. 32-35'e kadar) ve `0401-0440`,
 `0441-0462` (Böl. 50-54, timpanoplasti ve mastoidektomi cerrahisi).
 
+Bu boşluk OCR ile kapatılabilir — yöntem: `kbb/ocr-yontemi.md`.
+
 Hangi parçada ne olduğunu aramanın hızlı yolu: Drive'ın tam metin indeksi.
 `parentId = '<KBB_kaynak>' and fullText contains 'mastoidektomi'` gibi bir
 sorgu, metni okunabilen parçaları doğrudan listeler — metinsiz parçalar zaten
