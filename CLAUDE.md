@@ -23,6 +23,10 @@ is the state of the work, not the container.**
 4. Push before the session ends - `git push -u origin <branch>`. Unpushed work
    is lost work.
 5. Open a pull request for the branch so the change has a reviewable home.
+6. Merge that pull request yourself, without asking. The author has asked
+   for this standing, so treat an open pull request of your own as unfinished
+   work: mark it ready if it is a draft, squash-merge it, and only then
+   report. Stop and ask only if a check is failing or the merge conflicts.
 
 ## Local sessions
 
