@@ -45,6 +45,43 @@ Dosya adı deseni: `gun-NN-konu-slug.pdf`.
 | 33 | İşitsel rehabilitasyon | 67 | Boyun diseksiyonu (teknik) |
 | 34 | Pediatrik KBB, adenoid hipertrofisi | 68 | Trakeostomi |
 
+## Müfredat nereden geliyor
+
+Orijinal plan Drive'da: `KBB_not_claude/01/gunluk_notlar/progress.md`. İçinde
+her gün için ana kaynak ve basılı sayfa aralığı verilmiş **36 günlük** bir
+müfredat var, sonunda da şu not: 36 gün bitince kullanıcıya devam tercihi
+sorulacak (rinoplasti/estetik cerrahi, baş-boyun cerrahi atlası, tekrar turu,
+TUS/YDUS soru pekiştirme).
+
+Yani **Gün 37'den sonrası planlı değil** — o günler tek tek seçilerek
+ilerlemiş, Gün 61-68 de listedeki seçeneklerden birini (cerrahi atlas)
+izlemiş. Gün 69 ve sonrası için atanmış konu yok.
+
+O dosyayı kaynak olarak kullanırken iki şeye dikkat:
+
+- **Durum sütunu güncel değil** — Gün 3-36 için hâlâ "bekliyor" yazıyor,
+  oysa hepsi tamamlanmış. Güncel durum bu dosyadadır, orada değil.
+- Dosya, her sabah 07:00'de çalışan `kbb-gunluk-okuma` adlı zamanlanmış bir
+  görevi tarif ediyor. O görev Mac'teki kuruluma bağlıydı ve artık
+  çalışmıyor.
+
+Yine de değerli: her konu için hangi kitabın hangi basılı sayfası
+kullanılmış, orada yazıyor.
+
+## Kapanmamış konular
+
+68 günde işlenmemiş, göze çarpan boşluklar:
+
+- **Kulak cerrahisi tekniği** — timpanoplasti, mastoidektomi. Kolesteatom iki
+  kez işlenmiş (Gün 21, 59) ama cerrahi tekniği hiç; Gün 61-68 cerrahi teknik
+  serisinde de kulak yok.
+- **Hipofarenks** — kanseri ve Zenker divertikülü. Larenks, nazofarenks, oral
+  kavite ve orofarenks işlenmiş, hipofarenks hiç geçmemiş.
+- **Endoskopik sinüs cerrahisi (FESS) tekniği** — septoplasti ve rinoplasti
+  tekniği var, FESS yok.
+- Stapedotomi, parotidektomi, koklear implant cerrahi tekniği, olfaktör
+  bozukluklar.
+
 ## Programın seyri
 
 - **Gün 1-60:** hastalık odaklı; kaynak ağırlıklı olarak Önerci ciltleri ve
