@@ -87,8 +87,8 @@ Altyazı: `(Görsel bu not için çizildi.)`
 
 **2. İnternetten bul ve göm.** Gerçek klinik görüntü gerekiyorsa (otoskopi,
 radyoloji, histopatoloji) `WebSearch` ile açık lisanslı bir görsel bul ve
-HTML'e `<img src="https://...">` olarak koy. Drive yükleme sırasında görseli
-kendisi indirip belgeye kalıcı olarak gömüyor — bu doğrulandı.
+HTML'e `<img src="https://...">` olarak koy. Görseli PDF'e gömme yolu
+5. adımda anlatılıyor.
 
 En güvenilir kalıp:
 `https://commons.wikimedia.org/wiki/Special:FilePath/<Dosya adı.jpg>`
@@ -104,31 +104,50 @@ son verirken kullanıcıya hangi sayfaları çıkarması gerektiğini söyle.
 Yöntem: `kbb/gorsel-cikarma.md`. Bu, kullanıcı müdahalesi gerektiren tek yol —
 o yüzden en son çare.
 
-## 5. Drive'a yaz
+## 5. Notu yaz ve PDF üret
 
-Notu **HTML olarak** yaz, `create_file` ile yükle:
+Notlar **PDF** olarak teslim edilir — Google Doc veya Word değil. Önceki 68
+notun hepsi PDF ve düzenleri ortak; o düzen `kbb/notlar/not.css` dosyasında
+kodlanmıştır (Gün 4'ün PDF'i çözümlenerek çıkarıldı: A4, Georgia başlık,
+Helvetica Neue gövde, beş renkli aksan paleti, 34/41/38 pt kenar boşlukları).
 
-- `contentMimeType`: `text/html`
-- `base64Content`: HTML'in base64'ü (Türkçe karakterler için UTF-8)
-- `parentId`: `1xj_fifWwpPrZN_Oryb4a7u1Le1e9UdeD` (`KBB_not_claude`)
-- `title`: `gun-NN-konu-slug`
+**Sayfa düzeni — sırayla:**
 
-Drive bunu formatlı Google Doc'a çevirir — başlıklar, tablolar, listeler,
-vurgular korunur. Kullanıcı Dosya → İndir → PDF ile PDF alır. Bu doğrulandı.
+1. `.serit` — bordo program şeridi, altında ince çizgi
+2. `.gun` — "Gün NN", 19,2 pt kalın
+3. `<h1>` — konu başlığı, Georgia 20,4 pt
+4. `table.meta` — Konu / Sistem / Süre / Kaynak künyesi
+5. `.icindekiler` — bordo sol kenarlı kutu, iki sütunlu numaralı liste
+6. `.lead` — 12,2 pt gri giriş paragrafı
+7. `.cipler` — konunun çekirdek kavramları, turkuaz çipler
+8. Numaralı `<h2>` bölümler; tablolar `table.veri`, altlarına `.altyazi`
+   ile kaynak künyesi; kutular `.kutu` / `.kutu.uyari` / `.kutu.tehlike`
+9. `.altbilgi` ve `.yarin` ile kapanış
 
-Drive'a hazır PDF **yükleyemezsin**; sebebi `kbb/kararlar.md` içinde.
+Dosyayı `kbb/notlar/gun-NN-konu-slug.html` olarak yaz, `not.css`'e bağla.
 
-### Yükledikten sonra doğrula
+**PDF üretimi.** Konteynerde `weasyprint` ile üret ve kullanıcıya gönder:
 
-Nota görsel koyduysan bu adım atlanmaz:
+```
+pip install weasyprint
+python -c "from weasyprint import HTML; HTML('kbb/notlar/gun-NN-....html').write_pdf('/tmp/gun-NN-....pdf')"
+```
 
-1. `download_file_content`, `exportMimeType: text/html`
-2. Dönen base64'ü çöz
-3. Her `<img` etiketinin `src="data:image/...` taşıdığını doğrula
-4. `src`'siz bir `<img>` varsa görsel inmemiştir — başka aday URL ile
-   HTML'i düzeltip yeniden yükle
+Sonra `SendUserFile` ile ilet. Drive'a doğrudan yükleyemezsin (sebep:
+`kbb/kararlar.md`); kullanıcı dosyayı `KBB_not_claude` klasörüne sürükler,
+ya da `kbb/kbb_pdf_colab.ipynb` defterini çalıştırır — o defter depoyu
+klonlayıp bütün yeni notları PDF olarak Drive'a yazar.
 
-Kullanıcıya "not hazır" demeden önce bu kontrolü yap.
+**Görseller.** Uzak `<img src="https://...">` bağlantıları konteynerin ağ
+kısıtı yüzünden yerel üretimde inmez. Görseli gömmek için: HTML'i önce
+`create_file` ile Drive'a yükle (Drive görselleri indirip data URI olarak
+gömer), belgeyi `download_file_content` ile HTML olarak geri çek, data
+URI'leri çıkarıp HTML'e yerleştir, sonra PDF'i üret. Gün 69 böyle üretildi.
+
+**Üretilen PDF'i doğrula.** `pymupdf` ile sayfa boyutunun A4 (595×842 pt),
+punto merdiveninin (20,4 / 19,2 / 15,8 / 12,6 / 12,2 / 10,5) ve beş rengin
+(#1c2430 #4b5563 #8a2846 #1f6f6e #a33327) yerinde olduğunu kontrol et.
+Bir sayfayı PNG'ye çevirip gözle de bak.
 
 ## 6. Bitirince
 
