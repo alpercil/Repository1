@@ -65,7 +65,7 @@ tercih edilir.
 
 | Ne | Konum |
 | --- | --- |
-| Kaynak kitap parçaları (133 dosya) | My Drive → `KBB_kaynak` |
+| Kaynak kitap parçaları (139 dosya, 7 kitap) | My Drive → `KBB_kaynak` |
 | Gün notları 1-9 | `KBB_not_claude/01/` |
 | Gün notları 10-68 | `KBB_not_claude/` |
 | Soru bankası | `KBB_not_claude/Soru/` |

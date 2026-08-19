@@ -76,6 +76,22 @@ ağırlıklı, orada 28 sayfaya inildi)
 Dosya adındaki tire **en dash** (`–`), normal tire değil. Arama yaparken
 `title contains 'CUMMINGS'` gibi kısa bir parça kullan.
 
+### Baş ve Boyun Cerrahisi Atlası.pdf — Loré & Medina, 4. baskı (çev. Önerci, Korkmaz)
+1546 sayfa · 6 parça · 272 sayfalık aralıklar
+`0001-0272` `0273-0544` `0545-0816` `0817-1088` `1089-1360` `1361-1546`
+
+Gün 61-68 notlarının kaynağı. İki uyarı:
+
+- **Sayfa ofseti büyük.** Ölçüldü: PDF s.817 = basılı s.764, yani
+  **PDF = basılı + 53**. Gün 68'in kaynak gösterdiği basılı s.1015-1068
+  (Bölüm 19, Trakea ve Mediastinum) PDF'te ~1068-1121'e denk gelir; basılı
+  s.65-86 (Bölüm 2, Acil İşlemler) ise PDF'te ~118-139. Ofset tek noktada
+  ölçüldü, kitabın her yerinde aynı olmayabilir — bölümü açtığında ilk
+  sayfadaki basılı numarayı doğrula.
+- **Metin OCR'lı.** Kitap taranmış ve karakter hataları var
+  ("Karsinamunun", "KAViTE", "yayılıını"). Anlam bozulmuyor ama birebir
+  alıntı yaparken düzeltmek gerekir.
+
 ### Scott_Browns_Otorhinolaryngology.pdf
 1701 sayfa · 16 parça
 `0001-0135` `0136-0270` `0271-0303` `0304-0337` `0338-0405` `0406-0540`
@@ -96,15 +112,14 @@ okunuyor**, bölmeye gerek yok:
 
 ## Henüz bölünmemiş
 
-Gün 68 notunun kaynağı olan **Loré & Medina, Baş ve Boyun Cerrahisi Atlası**
-(`Baş ve Boyun Cerrahisi Atlası.pdf`, 179 MB) henüz bölünmedi — cerrahi
-teknik konularında gerekecek. Bölme yöntemi için `kbb/bolme-yontemi.md`.
+Şu an yok — programın kullandığı yedi kaynağın hepsi parçalanmış durumda.
+Yeni bir kitap eklenirse yöntem: `kbb/bolme-yontemi.md`.
 
 ## Klasörler
 
 | Ne | Drive konumu |
 | --- | --- |
-| Kaynak kitap parçaları | My Drive → `KBB_kaynak` |
+| Kaynak kitap parçaları (139 dosya, 7 kitap) | My Drive → `KBB_kaynak` |
 | Gün notları 1-9 | `KBB_not_claude/01/` |
 | Gün notları 10-68 | `KBB_not_claude/` |
 | Soru bankası | `KBB_not_claude/Soru/` |
