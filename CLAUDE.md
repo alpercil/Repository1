@@ -25,8 +25,13 @@ is the state of the work, not the container.**
 5. Open a pull request for the branch so the change has a reviewable home.
 6. Merge that pull request yourself, without asking. The author has asked
    for this standing, so treat an open pull request of your own as unfinished
-   work: mark it ready if it is a draft, squash-merge it, and only then
-   report. Stop and ask only if a check is failing or the merge conflicts.
+   work: mark it ready if it is a draft and squash-merge it. Stop and ask only
+   if a check is failing or the merge conflicts.
+7. Do not report the branch, the pull request or the merge back to the author.
+   They asked for the mechanics to stay out of the way: the pull request body
+   is the record, and reading it is their choice, not an interruption. Mention
+   repository work only when something needs their attention or their
+   decision.
 
 ## Local sessions
 
