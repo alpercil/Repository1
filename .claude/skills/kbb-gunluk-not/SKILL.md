@@ -78,15 +78,31 @@ o notu tekrarlama, üstüne koy.
 
 ## 4. Şekiller
 
-Mevcut notlardaki şemaların çoğu kitaptan alınmamış, not için çizilmiş.
-**Bunları sen üret** — akış şemaları, karar algoritmaları, evre
-diyagramları, karşılaştırma tabloları HTML tablosu veya satır içi SVG
-olarak. Altyazıya `(Görsel bu not için çizildi.)` yaz.
+Üç basamak, sırayla dene:
 
-Gerçek klinik fotoğraf, atlas çizimi, radyoloji görüntüsü gerekiyorsa
-çıkaramazsın: yerine `[ŞEKİL: <kitap> s.<PDF sayfası> — <ne olduğu>]`
-yer tutucusu bırak ve nota son verirken kullanıcıya hangi sayfaları
-çıkarması gerektiğini söyle. Yöntem: `kbb/gorsel-cikarma.md`.
+**1. Kendin çiz.** Mevcut notlardaki şemaların çoğu kitaptan alınmamış, not
+için çizilmiş — akış şemaları, karar algoritmaları, evre diyagramları,
+karşılaştırma tabloları. Bunları HTML tablosu veya satır içi SVG olarak üret.
+Altyazı: `(Görsel bu not için çizildi.)`
+
+**2. İnternetten bul ve göm.** Gerçek klinik görüntü gerekiyorsa (otoskopi,
+radyoloji, histopatoloji) `WebSearch` ile açık lisanslı bir görsel bul ve
+HTML'e `<img src="https://...">` olarak koy. Drive yükleme sırasında görseli
+kendisi indirip belgeye kalıcı olarak gömüyor — bu doğrulandı.
+
+En güvenilir kalıp:
+`https://commons.wikimedia.org/wiki/Special:FilePath/<Dosya adı.jpg>`
+
+Altyazıya kaynağı ve lisansı yaz.
+
+**Bozuk URL sessizce boş `<img>` bırakır** — bu yüzden yükledikten sonra
+doğrulama zorunlu (bkz. 5. adım).
+
+**3. Kitaptan çıkar.** Atlas çizimi gibi yalnızca kitapta olan görseller için
+`[ŞEKİL: <kitap> s.<PDF sayfası> — <ne olduğu>]` yer tutucusu bırak ve nota
+son verirken kullanıcıya hangi sayfaları çıkarması gerektiğini söyle.
+Yöntem: `kbb/gorsel-cikarma.md`. Bu, kullanıcı müdahalesi gerektiren tek yol —
+o yüzden en son çare.
 
 ## 5. Drive'a yaz
 
@@ -101,6 +117,18 @@ Drive bunu formatlı Google Doc'a çevirir — başlıklar, tablolar, listeler,
 vurgular korunur. Kullanıcı Dosya → İndir → PDF ile PDF alır. Bu doğrulandı.
 
 Drive'a hazır PDF **yükleyemezsin**; sebebi `kbb/kararlar.md` içinde.
+
+### Yükledikten sonra doğrula
+
+Nota görsel koyduysan bu adım atlanmaz:
+
+1. `download_file_content`, `exportMimeType: text/html`
+2. Dönen base64'ü çöz
+3. Her `<img` etiketinin `src="data:image/...` taşıdığını doğrula
+4. `src`'siz bir `<img>` varsa görsel inmemiştir — başka aday URL ile
+   HTML'i düzeltip yeniden yükle
+
+Kullanıcıya "not hazır" demeden önce bu kontrolü yap.
 
 ## 6. Bitirince
 
