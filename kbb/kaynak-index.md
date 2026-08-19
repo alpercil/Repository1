@@ -33,6 +33,20 @@ PDF s.219-226 → `1KBB Otoloji-0201-0240.pdf` içinde.
 
 ### 1KBB Otoloji.pdf — Önerci Cilt 1, Otoloji
 462 sayfa · 12 parça · 40 sayfalık aralıklar
+
+**Bu kitabın metin katmanı kısmi — ölçüldü.** Parça `0281-0320`, `0321-0360`
+ve `0361-0400` hiç metin döndürmüyor (sadece sayfa işaretleri geliyor);
+kolesteatom bölümleri bu aralıkta ve okunamıyor. Okunabilen bölgeler: en
+azından `0201-0240`, `0241-0280` (Böl. 32-35'e kadar) ve `0401-0440`,
+`0441-0462` (Böl. 50-54, timpanoplasti ve mastoidektomi cerrahisi).
+
+Hangi parçada ne olduğunu aramanın hızlı yolu: Drive'ın tam metin indeksi.
+`parentId = '<KBB_kaynak>' and fullText contains 'mastoidektomi'` gibi bir
+sorgu, metni okunabilen parçaları doğrudan listeler — metinsiz parçalar zaten
+sonuçta çıkmaz.
+
+**Ofset bu kitapta bölgeye göre değişiyor:** Böl. 30 civarında PDF = basılı
++ 4; Böl. 50 civarında PDF = basılı + 14 (PDF s.401 = basılı s.387).
 `0001-0040` `0041-0080` `0081-0120` `0121-0160` `0161-0200` `0201-0240`
 `0241-0280` `0281-0320` `0321-0360` `0361-0400` `0401-0440` `0441-0462`
 

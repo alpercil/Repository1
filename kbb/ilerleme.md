@@ -1,7 +1,7 @@
 # KBB günlük okuma programı — ilerleme
 
-**Son tamamlanan: Gün 68 — Trakeostomi** (16.08.2026)
-**Sıradaki: Gün 69**
+**Son tamamlanan: Gün 69 — Timpanoplasti ve Mastoidektomi** (19.08.2026)
+**Sıradaki: Gün 70 — Hipofarenks Kanseri ve Zenker Divertikülü**
 
 Notlar Drive'da: Gün 1-9 → `KBB_not_claude/01/`, Gün 10-68 → `KBB_not_claude/`.
 Dosya adı deseni: `gun-NN-konu-slug.pdf`.
@@ -44,6 +44,7 @@ Dosya adı deseni: `gun-NN-konu-slug.pdf`.
 | 32 | Disfaji, LFR | 66 | Larinks cerrahisi |
 | 33 | İşitsel rehabilitasyon | 67 | Boyun diseksiyonu (teknik) |
 | 34 | Pediatrik KBB, adenoid hipertrofisi | 68 | Trakeostomi |
+| &nbsp; | &nbsp; | **69** | **Timpanoplasti ve mastoidektomi** |
 
 ## Müfredat nereden geliyor
 
@@ -72,9 +73,6 @@ kullanılmış, orada yazıyor.
 
 68 günde işlenmemiş, göze çarpan boşluklar:
 
-- **Kulak cerrahisi tekniği** — timpanoplasti, mastoidektomi. Kolesteatom iki
-  kez işlenmiş (Gün 21, 59) ama cerrahi tekniği hiç; Gün 61-68 cerrahi teknik
-  serisinde de kulak yok.
 - **Hipofarenks** — kanseri ve Zenker divertikülü. Larenks, nazofarenks, oral
   kavite ve orofarenks işlenmiş, hipofarenks hiç geçmemiş.
 - **Endoskopik sinüs cerrahisi (FESS) tekniği** — septoplasti ve rinoplasti
@@ -86,8 +84,8 @@ kullanılmış, orada yazıyor.
 
 - **Gün 1-60:** hastalık odaklı; kaynak ağırlıklı olarak Önerci ciltleri ve
   Koç C.
-- **Gün 61-68:** cerrahi teknik odaklı; kaynak Loré & Medina Baş ve Boyun
-  Cerrahisi Atlası. Bu kitap henüz parçalanmadı.
+- **Gün 61-69:** cerrahi teknik odaklı. Gün 61-68'in kaynağı Loré & Medina
+  Baş ve Boyun Cerrahisi Atlası, Gün 69'unki Önerci Cilt 1 Böl. 50-54.
 
 ## Tekrar eden konular
 
