@@ -41,9 +41,15 @@ fark edilmesi zor.
 
 **Drive'a hazır dosya yükleyemem.** Yükleme aracı içeriği base64 metin olarak
 istiyor; 30 MB'lık bir parça ~40 MB metin eder, bu tek mesajda
-üretebileceğimin çok üstünde. 500 KB'lık bir PDF bile sınırda. Bu yüzden
-kitap bölme işi Colab'da yapılıyor (Drive'ı doğrudan bağladığı için indirme
-ve yükleme adımı hiç yok).
+üretebileceğimin çok üstünde. Küçük dosyalarda sorun boyut değil **sadakat**:
+64 KB'lık bir PDF ~87.000 karakterlik base64 eder ve bu yüksek entropili
+diziyi karakteri karakterine yeniden üretmem gerekir — tek yanlış karakter
+bozuk dosya demektir, doğruluğunu garanti edemem. Metin içerik (HTML, düz
+metin) sorunsuz yüklenir; Drive onu Google Doc'a çevirir. Bu yüzden PDF
+üretimi ve kitap bölme işi Colab'da yapılıyor (Drive'ı doğrudan bağladığı
+için indirme ve yükleme adımı hiç yok).
+
+Bu tarayıcıyla ilgili değil — Chrome, masaüstü ya da mobil, hepsinde aynı.
 
 **Kitaptan görsel çıkaramam.** Bağlayıcı PDF'i metin olarak veriyor.
 Çözüm ve bunun neden büyük bir kayıp olmadığı: `kbb/gorsel-cikarma.md`.
