@@ -78,7 +78,31 @@ o notu tekrarlama, üstüne koy.
 
 ## 4. Şekiller
 
-Üç basamak, sırayla dene:
+### Görsel bütçesi — pazarlık konusu değil
+
+KBB görsel bir daldır; anatomiyi ve cerrahi adımı tarifle anlatmak
+yetmiyor. Her gün notunda **en az 8 görsel** olacak; cerrahi ya da anatomi
+ağırlıklı konularda **12-14**. Soru notlarında en az 2.
+
+Yerleşim kuralı: **bir anatomik yapıyı, bir sınıflamayı ya da bir cerrahi
+adımı tarif ediyorsan görseli aynı bölümde, tarifin hemen altında olacak.**
+Bütün görselleri notun sonuna yığma.
+
+Notu bitirmeden önce şu denetimi yap — her biri için görsel var mı:
+
+| Metinde geçen | Görsel gerekir mi |
+| --- | --- |
+| Üç boyutlu anatomik ilişki (valv açısı, üçgen, komşuluk) | **Evet, şart** |
+| Sınıflama (Cottle, Wullstein, evreleme) | **Evet** — tiplerin şeması yan yana |
+| Cerrahi teknik, insizyon, greft yerleşimi | **Evet** |
+| Tanıması görsel olan acil (hematom, apse, nekroz) | **Evet, fotoğraf** |
+| Karar akışı, tedavi basamağı, zaman penceresi | **Evet** — akış şeması |
+| Test eğrisi (odyogram, timpanogram, rinometri) | **Evet** |
+| Sadece sayı/oran karşılaştırması | Tablo yeterli |
+
+Sayı tutmuyorsa notu teslim etme; eksik kalan yerlere şema çiz.
+
+### Kaynak üç basamak, sırayla dene:
 
 **1. Kendin çiz.** Mevcut notlardaki şemaların çoğu kitaptan alınmamış, not
 için çizilmiş — akış şemaları, karar algoritmaları, evre diyagramları,
@@ -95,14 +119,27 @@ En güvenilir kalıp:
 
 Altyazıya kaynağı ve lisansı yaz.
 
-**Bozuk URL sessizce boş `<img>` bırakır** — bu yüzden yükledikten sonra
-doğrulama zorunlu (bkz. 5. adım).
+**Konteynerden görsel indiremezsin** — ağ çıkışı kapalı, Wikimedia ve PMC
+dahil (`curl` `000` döner). Yani koyduğun URL'nin doğru olup olmadığını
+kendin göremezsin. **Bu yüzden uydurma dosya adı yazma**; yalnızca
+`WebSearch` sonucunda birebir gördüğün dosya adını kullan.
+
+**Bozuk URL sessizce boş `<img>` bırakır.** Uzak görseller yerel render'da
+inmez ama Colab'da iner — bu yüzden Colab çıktısı doğrulamanın asıl yeri
+(bkz. 5. adım).
 
 **3. Kitaptan çıkar.** Atlas çizimi gibi yalnızca kitapta olan görseller için
 `[ŞEKİL: <kitap> s.<PDF sayfası> — <ne olduğu>]` yer tutucusu bırak ve nota
 son verirken kullanıcıya hangi sayfaları çıkarması gerektiğini söyle.
 Yöntem: `kbb/gorsel-cikarma.md`. Bu, kullanıcı müdahalesi gerektiren tek yol —
 o yüzden en son çare.
+
+**4. Eski notun görsellerini geri kazan.** Var olan bir gün notunu yeniden
+üretiyorsan eski PDF'in içindeki fotoğraflar kaybolmasın: `kbb_pdf_colab`
+defterindeki görsel çıkarma hücresi eski PDF'ten resimleri
+`KBB_not_claude/gorsel/<not-adı>/` altına yazar; HTML'de bunlara
+`<img src="gorsel/<not-adı>/rNN.png">` ile başvur. Yerel render'da boş
+çıkarlar, Colab render'ında yerine otururlar.
 
 ## 5. Notu yaz ve PDF üret
 

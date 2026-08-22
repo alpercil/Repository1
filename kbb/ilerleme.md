@@ -102,3 +102,17 @@ Aynı konuya iki kez dönülmüş; yeni not planlarken bunları kontrol et:
 | Boyun diseksiyonu | 48, 67 (teknik) |
 | Tiroid | 30 (nodül/kanser), 65 (tiroid-paratiroid) |
 | Otitis eksterna | 06, 55 (nekrotizan) |
+
+## Görsel bakımından yenilenen notlar
+
+Notların bir kısmı görsel bütçesi kuralı (`SKILL.md` §4) konmadan önce
+üretildi ve az görsel içeriyor. Yeniden üretilenler:
+
+| Gün | Konu | Önce | Sonra | Tarih |
+| --- | --- | --- | --- | --- |
+| 15 | Nazal septum deviasyonu ve septoplasti | 4 görsel | 13 görsel (10 şema + 3 korunan fotoğraf) | 2026-08-22 |
+
+Yenileme yöntemi: eski PDF'in metni Drive'dan okunur, HTML olarak
+`kbb/notlar/` altına kurulur, eksik yerlere şema çizilir; eski PDF'teki
+fotoğraflar `kbb_pdf_colab` defterindeki görsel çıkarma hücresiyle
+`gorsel/<not-adı>/` altına alınıp `<img>` ile geri bağlanır.
