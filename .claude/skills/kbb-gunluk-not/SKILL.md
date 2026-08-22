@@ -102,6 +102,23 @@ Notu bitirmeden önce şu denetimi yap — her biri için görsel var mı:
 
 Sayı tutmuyorsa notu teslim etme; eksik kalan yerlere şema çiz.
 
+### Şema tek başına yetmez
+
+Çizdiğin şema kavramı anlatır, **gerçek görüntüyü öğretmez.** Radyolojiyi,
+endoskopik görünümü, klinik tabloyu ve gerçek anatomiyi tanımak fotoğraf
+ister. Bu yüzden görsellerin **hepsi kendi şeman olamaz** — her notta hem
+çizilmiş şema hem gerçek görüntü bulunacak. Kaba oran: yaklaşık yarı yarıya.
+
+Kimin ne işe yaradığı:
+
+| Şema (kendi çizimin) | Gerçek görüntü (internet / kitap) |
+| --- | --- |
+| Karar akışı, algoritma, zaman penceresi | Radyoloji (BT, MR, USG) |
+| Sınıflama tiplerini yan yana koymak | Endoskopik ve otoskopik görünüm |
+| Cerrahi adım sırası, insizyon hattı | Klinik tablo (deformite, şişlik, döküntü) |
+| Patofizyoloji zinciri | Gerçek anatomik preparat / atlas çizimi |
+| Test eğrisinin nasıl okunduğu | Ameliyat sahası fotoğrafı |
+
 ### Kaynak üç basamak, sırayla dene:
 
 **1. Kendin çiz.** Mevcut notlardaki şemaların çoğu kitaptan alınmamış, not
@@ -115,9 +132,16 @@ HTML'e `<img src="https://...">` olarak koy. Görseli PDF'e gömme yolu
 5. adımda anlatılıyor.
 
 En güvenilir kalıp:
-`https://commons.wikimedia.org/wiki/Special:FilePath/<Dosya adı.jpg>`
+`https://commons.wikimedia.org/wiki/Special:FilePath/<Dosya_adı.jpg>`
+(boşluk yerine alt çizgi kullan)
 
-Altyazıya kaynağı ve lisansı yaz.
+Dosya adını bulmanın yolu: `WebSearch` ile `allowed_domains:
+["commons.wikimedia.org"]` vererek ara. Sonuçtaki `File:` başlıkları birebir
+dosya adıdır — **sadece bunları kullan.** Kategori sayfaları da iyi giriş
+noktasıdır (`Category:Nasal septum` gibi).
+
+Altyazıya dosya adını, dosya sayfası bağlantısını ve lisansı yaz. Lisansı
+aramada net görmediysen "lisans bilgisi dosya sayfasında" yaz — uydurma.
 
 **Konteynerden görsel indiremezsin** — ağ çıkışı kapalı, Wikimedia ve PMC
 dahil (`curl` `000` döner). Yani koyduğun URL'nin doğru olup olmadığını

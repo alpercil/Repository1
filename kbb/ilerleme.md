@@ -110,7 +110,7 @@ Notların bir kısmı görsel bütçesi kuralı (`SKILL.md` §4) konmadan önce
 
 | Gün | Konu | Önce | Sonra | Tarih |
 | --- | --- | --- | --- | --- |
-| 15 | Nazal septum deviasyonu ve septoplasti | 4 görsel | 13 görsel (10 şema + 3 korunan fotoğraf) | 2026-08-22 |
+| 15 | Nazal septum deviasyonu ve septoplasti | 4 görsel | 22 görsel (10 şema + 9 Commons görseli + 3 korunan kitap fotoğrafı) | 2026-08-22 |
 
 Yenileme yöntemi: eski PDF'in metni Drive'dan okunur, HTML olarak
 `kbb/notlar/` altına kurulur, eksik yerlere şema çizilir; eski PDF'teki
