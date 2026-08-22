@@ -220,8 +220,16 @@ Sonra `SendUserFile` ile ilet. Drive'a doğrudan yükleyemezsin (sebep:
 ya da `kbb/kbb_pdf_colab.ipynb` defterini çalıştırır — o defter depoyu
 klonlayıp bütün yeni notları PDF olarak Drive'a yazar.
 
-**Görseller.** Konteynerin ağ çıkışı kapalı olduğu için görseller yerel
-render'da inmez; yerel PDF sadece düzen ve şema denetimi içindir. Görsellerin
+**Görseller.** Konteynerin ağ çıkışı vekil sunucu tarafından kısıtlı;
+görsel sunucuları (Wikimedia, PMC) **403 ile reddediliyor** — ölçüldü. Yani
+görselleri buradan indirmek mümkün değil, yerel PDF sadece düzen ve şema
+denetimi içindir.
+
+Kullanıcıya PDF verirken bu yüzden `<img>` yuvalarını boş bırakma: her birini
+görselin adını ve kaynak bağlantısını taşıyan kesikli çerçeveli bir kutuya
+çevirip öyle teslim et — boş kare kötü durur, adı yazan kutu okunur.
+Görsellerin gerçekten indiği sürüm `kbb/render_yerel.py` (kullanıcının kendi
+bilgisayarı) veya Colab defteri ile üretilir. Görsellerin
 gerçekten indiği ve doğru şeyi gösterdiği **Colab çıktısında** doğrulanır —
 defter hem eski PDF'lerden kurtarılan fotoğrafları hem `gorseller.json`
 listesindeki web görsellerini Drive'a dosya olarak yazar, sonra render eder.
