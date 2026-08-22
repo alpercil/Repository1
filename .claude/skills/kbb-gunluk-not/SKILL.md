@@ -126,10 +126,30 @@ için çizilmiş — akış şemaları, karar algoritmaları, evre diyagramları
 karşılaştırma tabloları. Bunları HTML tablosu veya satır içi SVG olarak üret.
 Altyazı: `(Görsel bu not için çizildi.)`
 
-**2. İnternetten bul ve göm.** Gerçek klinik görüntü gerekiyorsa (otoskopi,
-radyoloji, histopatoloji) `WebSearch` ile açık lisanslı bir görsel bul ve
-HTML'e `<img src="https://...">` olarak koy. Görseli PDF'e gömme yolu
-5. adımda anlatılıyor.
+**2. İnternetten bul ve dosyaya indir.** Gerçek klinik görüntü gerekiyorsa
+(otoskopi, radyoloji, histopatoloji) `WebSearch` ile açık lisanslı bir görsel
+bul. **HTML'e uzak URL koyma** — görsel Drive'da dosya olarak durmalı ki not
+kendi kendine yetsin ve bağlantı kopsa bile bozulmasın.
+
+İki adım:
+
+1. HTML'de yerel yol kullan:
+   `<img src="gorsel/<not-adı>/w01.jpg">` (`w` = web, sırayla numaralandır)
+2. Nereden ineceğini `kbb/notlar/gorseller.json` dosyasına yaz:
+
+```json
+{
+  "gun-15-septum-deviasyonu-septoplasti": [
+    { "ad": "w01.jpg",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/714_Bone_of_Nasal_Cavity.jpg",
+      "commons": "714_Bone_of_Nasal_Cavity.jpg" }
+  ]
+}
+```
+
+Colab defteri bu listeyi okuyup görselleri indirir ve
+`KBB_not_claude/gorsel/<not-adı>/` altına yazar; render sırasında dosyadan
+okunur. İnmiş görselleri tekrar indirmez.
 
 En güvenilir kalıp:
 `https://commons.wikimedia.org/wiki/Special:FilePath/<Dosya_adı.jpg>`
@@ -148,9 +168,10 @@ dahil (`curl` `000` döner). Yani koyduğun URL'nin doğru olup olmadığını
 kendin göremezsin. **Bu yüzden uydurma dosya adı yazma**; yalnızca
 `WebSearch` sonucunda birebir gördüğün dosya adını kullan.
 
-**Bozuk URL sessizce boş `<img>` bırakır.** Uzak görseller yerel render'da
-inmez ama Colab'da iner — bu yüzden Colab çıktısı doğrulamanın asıl yeri
-(bkz. 5. adım).
+**Bozuk URL sessizce boş `<img>` bırakır.** Görseller yerel render'da inmez
+ama Colab'da iner — bu yüzden Colab çıktısı doğrulamanın asıl yeri. Defter
+inemediği her görseli adıyla listeler; kullanıcı bunu iletirse görseli
+değiştir.
 
 **3. Kitaptan çıkar.** Atlas çizimi gibi yalnızca kitapta olan görseller için
 `[ŞEKİL: <kitap> s.<PDF sayfası> — <ne olduğu>]` yer tutucusu bırak ve nota
@@ -199,11 +220,11 @@ Sonra `SendUserFile` ile ilet. Drive'a doğrudan yükleyemezsin (sebep:
 ya da `kbb/kbb_pdf_colab.ipynb` defterini çalıştırır — o defter depoyu
 klonlayıp bütün yeni notları PDF olarak Drive'a yazar.
 
-**Görseller.** Uzak `<img src="https://...">` bağlantıları konteynerin ağ
-kısıtı yüzünden yerel üretimde inmez. Görseli gömmek için: HTML'i önce
-`create_file` ile Drive'a yükle (Drive görselleri indirip data URI olarak
-gömer), belgeyi `download_file_content` ile HTML olarak geri çek, data
-URI'leri çıkarıp HTML'e yerleştir, sonra PDF'i üret. Gün 69 böyle üretildi.
+**Görseller.** Konteynerin ağ çıkışı kapalı olduğu için görseller yerel
+render'da inmez; yerel PDF sadece düzen ve şema denetimi içindir. Görsellerin
+gerçekten indiği ve doğru şeyi gösterdiği **Colab çıktısında** doğrulanır —
+defter hem eski PDF'lerden kurtarılan fotoğrafları hem `gorseller.json`
+listesindeki web görsellerini Drive'a dosya olarak yazar, sonra render eder.
 
 **Üretilen PDF'i doğrula.** `pymupdf` ile sayfa boyutunun A4 (595×842 pt),
 punto merdiveninin (20,4 / 19,2 / 15,8 / 12,6 / 12,2 / 10,5) ve beş rengin
