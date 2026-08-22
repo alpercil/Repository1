@@ -11,26 +11,6 @@
       "commons": "Anatomy_of_the_human_nasal_cavity.png"
     },
     {
-      "ad": "w03.jpg",
-      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/2302_External_Nose.jpg",
-      "commons": "2302_External_Nose.jpg"
-    },
-    {
-      "ad": "w04.jpg",
-      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Deviated_Septum_CT_Scan.jpg",
-      "commons": "Deviated_Septum_CT_Scan.jpg"
-    },
-    {
-      "ad": "w05.jpg",
-      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Deviated_nasal_septum_MRI.jpg",
-      "commons": "Deviated_nasal_septum_MRI.jpg"
-    },
-    {
-      "ad": "w06.jpg",
-      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Septal_Perforation.jpg",
-      "commons": "Septal_Perforation.jpg"
-    },
-    {
       "ad": "w07.png",
       "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Septal_Hematoma.png",
       "commons": "Septal_Hematoma.png"
@@ -39,11 +19,6 @@
       "ad": "w08.jpg",
       "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nasal_septal_hematoma.jpg",
       "commons": "Nasal_septal_hematoma.jpg"
-    },
-    {
-      "ad": "w09.jpg",
-      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Saddle_nose_38.jpg",
-      "commons": "Saddle_nose_38.jpg"
     }
   ]
 }
