@@ -173,9 +173,23 @@ ama Colab'da iner — bu yüzden Colab çıktısı doğrulamanın asıl yeri. De
 inemediği her görseli adıyla listeler; kullanıcı bunu iletirse görseli
 değiştir.
 
-**3. Kitaptan çıkar.** Atlas çizimi gibi yalnızca kitapta olan görseller için
-`[ŞEKİL: <kitap> s.<PDF sayfası> — <ne olduğu>]` yer tutucusu bırak ve nota
-son verirken kullanıcıya hangi sayfaları çıkarması gerektiğini söyle.
+**3. Kitaptan çıkar — bunu kendin yapabilirsin.** Kaynak kitaptaki şekil ve
+klinik fotoğraflar doğrudan alınabilir:
+
+1. `download_file_content` ile kitap parçasını iste. Sonuç büyük olduğu için
+   hata döner ama **bağlayıcı base64'ü diske yazıp yolu bildirir**.
+2. Bash ile çöz ve işle — dosya bağlamına hiç girmez:
+   `jq -r .content <yol> | base64 -d > kitap.pdf`
+3. `pymupdf` ile sayfayı render edip **gözle bak** (hangi şekil nerede),
+   sonra `page.get_images()` ile çıkar.
+4. Görseli `kbb/notlar/gorsel/<not-adı>/` altına kaydet, `<img>` ile bağla,
+   altyazıya kitap-bölüm-resim numarası künyesini yaz.
+
+Metin katmanı olmayan parçalarda arama işe yaramaz; sayfaları render edip
+üstteki sayfa numarası rozetinden basılı sayfa eşlemesini çıkar.
+
+Eski bir gün notunu yenilerken aynı yol eski PDF için de işler — içindeki
+fotoğraflar kaybolmasın diye önce onları çıkar.
 Yöntem: `kbb/gorsel-cikarma.md`. Bu, kullanıcı müdahalesi gerektiren tek yol —
 o yüzden en son çare.
 
