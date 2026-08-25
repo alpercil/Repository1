@@ -110,9 +110,17 @@ Notların bir kısmı görsel bütçesi kuralı (`SKILL.md` §4) konmadan önce
 
 | Gün | Konu | Önce | Sonra | Tarih |
 | --- | --- | --- | --- | --- |
-| 15 | Nazal septum deviasyonu ve septoplasti | 4 görsel | 22 görsel (10 şema + 9 Commons görseli + 3 korunan kitap fotoğrafı) | 2026-08-22 |
+| 15 | Nazal septum deviasyonu ve septoplasti | 4 görsel | 21 görsel (10 şema + **7 kitap/atlas görseli** + 4 Commons bağlantısı) | 2026-08-22 |
 
 Yenileme yöntemi: eski PDF'in metni Drive'dan okunur, HTML olarak
-`kbb/notlar/` altına kurulur, eksik yerlere şema çizilir; eski PDF'teki
-fotoğraflar `kbb_pdf_colab` defterindeki görsel çıkarma hücresiyle
-`gorsel/<not-adı>/` altına alınıp `<img>` ile geri bağlanır.
+`kbb/notlar/` altına kurulur, eksik yerlere şema çizilir. Görseller
+`download_file_content` + Bash + `pymupdf` ile doğrudan çıkarılır (yöntem:
+`kbb/kararlar.md`) ve `gorsel/<not-adı>/` altına alınır — `r` ile başlayanlar
+eski notun kendi fotoğrafları, `k` ile başlayanlar başka notlardan/atlastan
+alınanlar, `w` ile başlayanlar internetten inecek olanlar.
+
+**10 MB sınırı:** `download_file_content` bu boyutun üstündeki dosyayı
+vermiyor. Önerci ve Koç'un görsel yoğun parçaları 30-37 MB olduğu için
+doğrudan açılamıyor; buna karşılık üretilmiş gün notu PDF'leri (0,3-2 MB)
+açılabiliyor ve zaten kitaptan seçilmiş şekilleri taşıyor. Pratikte en verimli
+kaynak bu: ilgili konuyu işleyen eski notlardan görsel devşir.

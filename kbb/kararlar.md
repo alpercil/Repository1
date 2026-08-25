@@ -51,7 +51,19 @@ için indirme ve yükleme adımı hiç yok).
 
 Bu tarayıcıyla ilgili değil — Chrome, masaüstü ya da mobil, hepsinde aynı.
 
-**Kitaptan görsel çıkaramam.** Bağlayıcı PDF'i metin olarak veriyor.
+**Kitaptan görsel çıkarabiliyorum — ölçüldü.** Önce çıkaramadığımı
+sanıyordum; doğru değilmiş. `download_file_content` dosyayı base64 olarak
+veriyor ve sonuç bağlam sınırını aştığında **bağlayıcı onu diske yazıp yolu
+bildiriyor**. O dosya bağlamıma hiç girmeden Bash ile işlenebilir:
+
+```
+jq -r .content <tool-results/....txt> | base64 -d > kitap.pdf
+python -c "import pymupdf; ..."   # sayfa render, gorsel cikarma
+```
+
+Böyle 3,4 MB'lık bir kitap parçası ve 543 KB'lık eski bir gün notu PDF'i
+indirilip içlerindeki fotoğraflar çıkarıldı. Sınır bağlam değil, tek mesajda
+**üretebileceğim** karakter sayısı — okuma tarafında böyle bir sınır yok.
 Çözüm ve bunun neden büyük bir kayıp olmadığı: `kbb/gorsel-cikarma.md`.
 
 **Konteynerdeki dosyalar kalıcı değil.** Oturum bitince gider. Kalıcı olan
