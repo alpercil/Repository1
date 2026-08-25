@@ -49,5 +49,19 @@
       "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/f679/8268866/d3e571f76b26/cancers-13-03273-g002.jpg",
       "kaynak": "Pietruszewska 2021, Cancers 13(13):3273, PMC8268866 Sekil 2, CC BY 4.0"
     }
+  ],
+  "gun-17-boyun-kitlelerine-yaklasim": [
+    {
+      "ad": "w01.png",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cervical_lymph_nodes_and_levels.png",
+      "commons": "Cervical lymph nodes and levels.png",
+      "lisans": "CC0 (Mikael Haggstrom)"
+    },
+    {
+      "ad": "w02.jpg",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ultrasonography_and_CT_of_a_thyroglossal_duct_cyst.jpg",
+      "commons": "Ultrasonography and CT of a thyroglossal duct cyst.jpg",
+      "lisans": "CC BY 4.0 (Bin Saeedan ve ark., Insights Imaging)"
+    }
   ]
 }
