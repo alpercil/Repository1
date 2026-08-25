@@ -113,6 +113,27 @@ Notların bir kısmı görsel bütçesi kuralı (`SKILL.md` §4) konmadan önce
 | 15 | Nazal septum deviasyonu ve septoplasti | 4 görsel | 21 görsel (10 şema + **7 kitap/atlas görseli** + 4 Commons bağlantısı) | 2026-08-22 |
 | 17 | Boyun kitlelerine yaklaşım | 3 görsel | 13 görsel (7 şema + 6 gerçek görüntü: 2 USG, 1 MRG, seviye şeması, tiroglossal USG/BT, skrofula) | 2026-08-25 |
 | 18 | Derin boyun enfeksiyonları | 3 görsel | 12 görsel (6 şema + 6 gerçek görüntü: Ludwig, retrofarengeal ve mediastinit BT panelleri, peritonsiller apse, lateral grafi, koronal BT) | 2026-08-25 |
+| 19 | Tükürük bezi hastalıkları | 6 görsel | 14 görsel (7 şema + 7 gerçek görüntü) | 2026-08-25 |
+| 20 | Otoskleroz | 4 görsel | 12 görsel (7 şema + 5 gerçek görüntü) | 2026-08-25 |
+| 21 | KOM ve kolesteatom | 3 görsel | 12 görsel (8 şema + 4 gerçek görüntü) | 2026-08-25 |
+| 22 | OM komplikasyonları | 1 görsel | 9 görsel (6 şema + 3 gerçek görüntü) | 2026-08-25 |
+| 23 | Fasiyal paralizi | 0 görsel | 10 görsel (6 şema + 4 gerçek görüntü) | 2026-08-25 |
+| 24 | Tinnitus | 2 görsel | 8 görsel (6 şema + 2 gerçek görüntü) | 2026-08-25 |
+| 25 | KBB acilleri | 2 görsel | 11 görsel (7 şema + 4 gerçek görüntü) | 2026-08-25 |
+| 26 | Baş-boyun kanserleri ve TNM | 7 görsel | 14 görsel (10 şema + 4 gerçek görüntü) | 2026-08-25 |
+| 27 | Larenks kanserleri | 2 görsel | 10 görsel (6 şema + 4 gerçek görüntü) | 2026-08-25 |
+| 28 | Nazofarenks tümörleri | 2 görsel | 10 görsel (7 şema + 3 gerçek görüntü) | 2026-08-25 |
+| 29 | Oral kavite ve orofarenks | 1 görsel | 9 görsel (7 şema + 2 gerçek görüntü) | 2026-08-25 |
+| 30 | Tiroid nodülü ve tiroid kanserleri | 0 görsel | 13 görsel (10 şema + 3 gerçek görüntü) | 2026-08-25 |
+
+**17-30 arası yenileme (25 Ağustos, yerel oturum):** on dört notun tamamı
+yeniden üretildi, PDF'leri Drive'da aynı adla değiştirildi (dosya kimliği
+korunduğu için sürüm olarak güncellendi, kopya oluşmadı). Gerçek görüntüler
+Commons'tan `kbb/gorsel_ara.py` ile indirildi; her aday görsel kontak sayfası
+üzerinde tek tek görülerek doğrulandı, iddia ettiği şeyi göstermeyenler
+reddedildi. Serbest lisanslı görüntü bulunamayan konularda (22, 24, 25, 28, 29)
+notun içinde **"Gerçek görüntü sınırı"** paragrafı var: ne arandı, ne bulunamadı,
+ne neden reddedildi yazılı.
 
 Yenileme yöntemi: eski PDF'in metni Drive'dan okunur, HTML olarak
 `kbb/notlar/` altına kurulur, eksik yerlere şema çizilir. Görseller

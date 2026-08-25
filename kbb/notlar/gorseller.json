@@ -1,87 +1,336 @@
 {
-  "gun-15-septum-deviasyonu-septoplasti": [
-    {
-      "ad": "w01.jpg",
-      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/714_Bone_of_Nasal_Cavity.jpg",
-      "commons": "714_Bone_of_Nasal_Cavity.jpg"
-    },
-    {
-      "ad": "w02.png",
-      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Anatomy_of_the_human_nasal_cavity.png",
-      "commons": "Anatomy_of_the_human_nasal_cavity.png"
-    },
-    {
-      "ad": "w07.png",
-      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Septal_Hematoma.png",
-      "commons": "Septal_Hematoma.png"
-    },
-    {
-      "ad": "w08.jpg",
-      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nasal_septal_hematoma.jpg",
-      "commons": "Nasal_septal_hematoma.jpg"
-    }
-  ],
-  "gun-69-timpanoplasti-mastoidektomi": [
-    {
-      "ad": "w01.png",
-      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/View-normal-tympanic-membrane.png",
-      "commons": "View-normal-tympanic-membrane.png"
-    },
-    {
-      "ad": "w02.jpg",
-      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cholesteatoma_and_large_perforation_left_ear.jpg",
-      "commons": "Cholesteatoma_and_large_perforation_left_ear.jpg"
-    },
-    {
-      "ad": "w03.png",
-      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ear_Anatomy_and_Mastoid_Bone.png",
-      "commons": "Ear_Anatomy_and_Mastoid_Bone.png"
-    }
-  ],
-  "soru-larengeal-lokoplazi-takip": [
-    {
-      "ad": "w01.jpg",
-      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/f679/8268866/aab16c95c02e/cancers-13-03273-g001.jpg",
-      "kaynak": "Pietruszewska 2021, Cancers 13(13):3273, PMC8268866 Sekil 1, CC BY 4.0"
-    },
-    {
-      "ad": "w02.jpg",
-      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/f679/8268866/d3e571f76b26/cancers-13-03273-g002.jpg",
-      "kaynak": "Pietruszewska 2021, Cancers 13(13):3273, PMC8268866 Sekil 2, CC BY 4.0"
-    }
-  ],
-  "gun-17-boyun-kitlelerine-yaklasim": [
-    {
-      "ad": "w01.png",
-      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cervical_lymph_nodes_and_levels.png",
-      "commons": "Cervical lymph nodes and levels.png",
-      "lisans": "CC0 (Mikael Haggstrom)"
-    },
-    {
-      "ad": "w02.jpg",
-      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ultrasonography_and_CT_of_a_thyroglossal_duct_cyst.jpg",
-      "commons": "Ultrasonography and CT of a thyroglossal duct cyst.jpg",
-      "lisans": "CC BY 4.0 (Bin Saeedan ve ark., Insights Imaging)"
-    }
-  ],
-  "gun-18-derin-boyun-enfeksiyonlari": [
-    {
-      "ad": "w02.jpg",
-      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/PeritonsilarAbsess.jpg",
-      "commons": "PeritonsilarAbsess.jpg",
-      "lisans": "CC BY-SA 3.0 (James Heilman MD)"
-    },
-    {
-      "ad": "w03.png",
-      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/LargeRetroAbsMark.png",
-      "commons": "LargeRetroAbsMark.png",
-      "lisans": "CC BY-SA 4.0"
-    },
-    {
-      "ad": "w04.jpg",
-      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Retroabscess10.JPG",
-      "commons": "Retroabscess10.JPG",
-      "lisans": "CC BY-SA 3.0 (James Heilman MD)"
-    }
-  ]
+ "gun-15-septum-deviasyonu-septoplasti": [
+  {
+   "ad": "w01.jpg",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/714_Bone_of_Nasal_Cavity.jpg",
+   "commons": "714_Bone_of_Nasal_Cavity.jpg"
+  },
+  {
+   "ad": "w02.png",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Anatomy_of_the_human_nasal_cavity.png",
+   "commons": "Anatomy_of_the_human_nasal_cavity.png"
+  },
+  {
+   "ad": "w07.png",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Septal_Hematoma.png",
+   "commons": "Septal_Hematoma.png"
+  },
+  {
+   "ad": "w08.jpg",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nasal_septal_hematoma.jpg",
+   "commons": "Nasal_septal_hematoma.jpg"
+  }
+ ],
+ "gun-69-timpanoplasti-mastoidektomi": [
+  {
+   "ad": "w01.png",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/View-normal-tympanic-membrane.png",
+   "commons": "View-normal-tympanic-membrane.png"
+  },
+  {
+   "ad": "w02.jpg",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cholesteatoma_and_large_perforation_left_ear.jpg",
+   "commons": "Cholesteatoma_and_large_perforation_left_ear.jpg"
+  },
+  {
+   "ad": "w03.png",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ear_Anatomy_and_Mastoid_Bone.png",
+   "commons": "Ear_Anatomy_and_Mastoid_Bone.png"
+  }
+ ],
+ "soru-larengeal-lokoplazi-takip": [
+  {
+   "ad": "w01.jpg",
+   "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/f679/8268866/aab16c95c02e/cancers-13-03273-g001.jpg",
+   "kaynak": "Pietruszewska 2021, Cancers 13(13):3273, PMC8268866 Sekil 1, CC BY 4.0"
+  },
+  {
+   "ad": "w02.jpg",
+   "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/f679/8268866/d3e571f76b26/cancers-13-03273-g002.jpg",
+   "kaynak": "Pietruszewska 2021, Cancers 13(13):3273, PMC8268866 Sekil 2, CC BY 4.0"
+  }
+ ],
+ "gun-17-boyun-kitlelerine-yaklasim": [
+  {
+   "ad": "w01.png",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cervical_lymph_nodes_and_levels.png",
+   "commons": "Cervical lymph nodes and levels.png",
+   "lisans": "CC0 (Mikael Haggstrom)"
+  },
+  {
+   "ad": "w02.jpg",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ultrasonography_and_CT_of_a_thyroglossal_duct_cyst.jpg",
+   "commons": "Ultrasonography and CT of a thyroglossal duct cyst.jpg",
+   "lisans": "CC BY 4.0 (Bin Saeedan ve ark., Insights Imaging)"
+  }
+ ],
+ "gun-18-derin-boyun-enfeksiyonlari": [
+  {
+   "ad": "w02.jpg",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/PeritonsilarAbsess.jpg",
+   "commons": "PeritonsilarAbsess.jpg",
+   "lisans": "CC BY-SA 3.0 (James Heilman MD)"
+  },
+  {
+   "ad": "w03.png",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/LargeRetroAbsMark.png",
+   "commons": "LargeRetroAbsMark.png",
+   "lisans": "CC BY-SA 4.0"
+  },
+  {
+   "ad": "w04.jpg",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Retroabscess10.JPG",
+   "commons": "Retroabscess10.JPG",
+   "lisans": "CC BY-SA 3.0 (James Heilman MD)"
+  }
+ ],
+ "gun-20-otoskleroz": [
+  {
+   "ad": "w01.jpg",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Xray_of_otosclerosis.jpg",
+   "commons": "Xray of otosclerosis.jpg",
+   "lisans": "CC BY-SA 4.0"
+  },
+  {
+   "ad": "w02.jpg",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Endoscopic_view_of_Stapedotomy.jpg",
+   "commons": "Endoscopic view of Stapedotomy.jpg",
+   "lisans": "CC BY-SA 4.0",
+   "not": "notta kucultulmus hali kullanildi"
+  },
+  {
+   "ad": "w03.jpg",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/View_of_Piston.jpg",
+   "commons": "View of Piston.jpg",
+   "lisans": "CC BY-SA 4.0",
+   "not": "notta kucultulmus hali kullanildi"
+  },
+  {
+   "ad": "w04.jpg",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Stapes_human_ear.jpg",
+   "commons": "Stapes human ear.jpg",
+   "lisans": "CC BY-SA 3.0"
+  },
+  {
+   "ad": "w05.png",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/View-normal-tympanic-membrane.png",
+   "commons": "View-normal-tympanic-membrane.png",
+   "lisans": "CC BY-SA 3.0"
+  }
+ ],
+ "gun-21-kom-kolesteatom": [
+  {
+   "ad": "w01.jpg",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Attic_Cholesteatoma.jpg",
+   "commons": "Attic Cholesteatoma.jpg",
+   "lisans": "CC BY 4.0"
+  },
+  {
+   "ad": "w02.jpg",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cholesteatoma_and_large_perforation_left_ear.jpg",
+   "commons": "Cholesteatoma and large perforation left ear.jpg",
+   "lisans": "CC BY 4.0"
+  },
+  {
+   "ad": "w04.jpg",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/PerforationTympan.jpg",
+   "commons": "PerforationTympan.jpg",
+   "lisans": "CC BY-SA 4.0",
+   "not": "notta kucultulmus hali"
+  },
+  {
+   "ad": "w05.jpg",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cholesteatom_polyp_1.jpg",
+   "commons": "Cholesteatom polyp 1.jpg",
+   "lisans": "CC BY 2.5",
+   "not": "notta kucultulmus hali"
+  }
+ ],
+ "gun-22-om-komplikasyonlari": [
+  {
+   "ad": "w01.jpg",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Acute_mastoiditis_with_external_fistula_1.jpg",
+   "commons": "Acute mastoiditis with external fistula 1.jpg",
+   "lisans": "CC BY-SA 3.0",
+   "not": "notta kucultulmus hali"
+  },
+  {
+   "ad": "w02.jpg",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Acute_mastoiditis_with_external_fistula_2.jpg",
+   "commons": "Acute mastoiditis with external fistula 2.jpg",
+   "lisans": "CC BY-SA 3.0",
+   "not": "notta kucultulmus hali"
+  },
+  {
+   "ad": "w03.jpg",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Sinusvenenthrombose_CT-MR.jpg",
+   "commons": "Sinusvenenthrombose CT-MR.jpg",
+   "lisans": "CC BY-SA 3.0"
+  }
+ ],
+ "gun-23-fasiyal-paralizi": [
+  {
+   "ad": "w01.jpg",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bell%27s_Palsy_Symptoms_Closed_Eyes.jpg",
+   "commons": "Bell's Palsy Symptoms Closed Eyes.jpg",
+   "lisans": "CC BY-SA 4.0",
+   "not": "notta kucultulmus hali"
+  },
+  {
+   "ad": "w02.jpg",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bell%27s_Palsy_Symptoms_Show_Your_Teeth.jpg",
+   "commons": "Bell's Palsy Symptoms Show Your Teeth.jpg",
+   "lisans": "CC BY-SA 4.0",
+   "not": "notta kucultulmus hali"
+  },
+  {
+   "ad": "w04.jpg",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/RamsayHunt2.jpg",
+   "commons": "RamsayHunt2.jpg",
+   "lisans": "CC BY 4.0"
+  },
+  {
+   "ad": "w05.png",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ramsey_Hunt_Syndrome.png",
+   "commons": "Ramsey Hunt Syndrome.png",
+   "lisans": "CC BY 2.0"
+  }
+ ],
+ "gun-24-tinnitus": [
+  {
+   "ad": "w01.jpg",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Acoustic_schwannoma.jpg",
+   "commons": "Acoustic schwannoma.jpg",
+   "lisans": "CC BY 2.0"
+  },
+  {
+   "ad": "w02.jpg",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Right_sided_hearing_loss.jpg",
+   "commons": "Right sided hearing loss.jpg",
+   "lisans": "CC BY 4.0"
+  }
+ ],
+ "gun-25-kbb-acilleri": [
+  {
+   "ad": "w01.png",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cricothyrotomy.png",
+   "commons": "Cricothyrotomy.png",
+   "lisans": "CC BY-SA 3.0",
+   "not": "notta jpg'ye cevrilmis hali"
+  },
+  {
+   "ad": "w02.jpg",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tracheostomy_with_tube.jpg",
+   "commons": "Tracheostomy with tube.jpg",
+   "lisans": "CC BY-SA 4.0"
+  },
+  {
+   "ad": "w03.jpg",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cauliflower_ear_by_dr_vikram_yadav.jpg",
+   "commons": "Cauliflower ear by dr vikram yadav.jpg",
+   "lisans": "CC BY-SA 3.0",
+   "not": "notta kucultulmus hali"
+  },
+  {
+   "ad": "w04.jpg",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/NeedleCryc2.jpg",
+   "commons": "NeedleCryc2.jpg",
+   "lisans": "CC BY-SA 4.0",
+   "not": "notta kucultulmus hali"
+  }
+ ],
+ "gun-26-bas-boyun-kanserleri-tnm": [
+  {
+   "ad": "w01.png",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Oropharyngeal_cancer_types_and_survival_rates.png",
+   "commons": "Oropharyngeal cancer types and survival rates.png",
+   "lisans": "CC BY 4.0"
+  }
+ ],
+ "gun-27-larenks-kanserleri": [
+  {
+   "ad": "w01.jpg",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Laryngeal_squamous_carcinoma_--_intermed_mag.jpg",
+   "commons": "Laryngeal squamous carcinoma -- intermed mag.jpg",
+   "lisans": "CC BY-SA 3.0",
+   "not": "notta kucultulmus hali"
+  },
+  {
+   "ad": "w02.jpg",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Metastatic_squamous_carcinoma_from_larynx_-_CT_scan_-_Case_304_(49030852741).jpg",
+   "commons": "Metastatic squamous carcinoma from larynx - CT scan - Case 304 (49030852741).jpg",
+   "lisans": "CC BY-SA 2.0"
+  },
+  {
+   "ad": "w03.jpg",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Voice_prosthesis.jpg",
+   "commons": "Voice prosthesis.jpg",
+   "lisans": "CC BY-SA 3.0"
+  },
+  {
+   "ad": "w04.jpg",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Laryngeal_squamous_carcinoma_-_LVI_--_high_mag.jpg",
+   "commons": "Laryngeal squamous carcinoma - LVI -- high mag.jpg",
+   "lisans": "CC BY-SA 3.0",
+   "not": "notta kucultulmus hali"
+  }
+ ],
+ "gun-28-nazofarenks-tumorleri": [
+  {
+   "ad": "w01.jpg",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nasopharyngeal_carcinoma_--_intermed_mag.jpg",
+   "commons": "Nasopharyngeal carcinoma -- intermed mag.jpg",
+   "lisans": "CC BY-SA 4.0",
+   "not": "notta kucultulmus hali"
+  },
+  {
+   "ad": "w02.jpg",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nasopharyngeal_carcinoma_-_EBER_--_high_mag.jpg",
+   "commons": "Nasopharyngeal carcinoma - EBER -- high mag.jpg",
+   "lisans": "CC BY-SA 4.0",
+   "not": "notta kucultulmus hali"
+  },
+  {
+   "ad": "w04.jpg",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nasopharyngeal_angiofibroma_-_2_-_high_mag.jpg",
+   "commons": "Nasopharyngeal angiofibroma - 2 - high mag.jpg",
+   "lisans": "CC BY-SA 3.0",
+   "not": "notta kucultulmus hali"
+  }
+ ],
+ "gun-29-oral-kavite-orofarenks": [
+  {
+   "ad": "w01.jpg",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Leukoplakia02-04-06.jpg",
+   "commons": "Leukoplakia02-04-06.jpg",
+   "lisans": "CC BY-SA 3.0"
+  },
+  {
+   "ad": "w02.jpg",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Oral_cancer_(1)_squamous_cell_carcinoma_histopathology.jpg",
+   "commons": "Oral cancer (1) squamous cell carcinoma histopathology.jpg",
+   "lisans": "CC BY-SA 3.0",
+   "not": "notta kucultulmus hali"
+  }
+ ],
+ "gun-30-tiroid-nodulu-kanserleri": [
+  {
+   "ad": "w01.jpg",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ultrasound_of_thyroid_showing_right_lower_pole_cyst_and_a_calcified_nodule.jpg",
+   "commons": "Ultrasound of thyroid showing right lower pole cyst and a calcified nodule.jpg",
+   "lisans": "CC BY-SA 4.0"
+  },
+  {
+   "ad": "w02.jpg",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Thyroid_papillary_carcinoma_histopathology_(4).jpg",
+   "commons": "Thyroid papillary carcinoma histopathology (4).jpg",
+   "lisans": "CC BY-SA 3.0"
+  },
+  {
+   "ad": "w03.jpg",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Histopathology_of_medullary_thyroid_carcinoma,_solid_variant_of_papillary_thyroid_carcinoma_and_biplastic_H%C3%BCrthle_cell.jpg",
+   "commons": "Histopathology of medullary thyroid carcinoma, solid variant of papillary thyroid carcinoma and biplastic Hurthle cell.jpg",
+   "lisans": "CC BY 4.0"
+  }
+ ]
 }
