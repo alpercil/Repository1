@@ -51,6 +51,41 @@ CC BY 4.0). **Drive'a yerelden doğrudan kopyalandı** (`Soru/` altına) — mou
 yazılabilir olduğu için `CLAUDE.md`'deki "PDF'i sohbette gönder, yazar kendisi
 koyar" adımına gerek kalmadı.
 
+**17-30 arası notlar yeniden üretildi (14 not)**
+Görsel bütçesi kuralı konmadan önce üretilmiş on dört not, `SKILL.md` §4'e göre
+yeniden yazıldı; PDF'leri Drive'da **aynı adla** değiştirildi (dosya kimliği
+korunduğu için Drive'da yeni sürüm oldu, kopya oluşmadı). Ayrıntılı tablo
+`kbb/ilerleme.md`'de. Bu iş sırasında ortaya çıkan üç teknik bulgu:
+
+- **SVG `<text>` içinde `<b>` kullanılamaz.** WeasyPrint kalan metni şema
+  kutusunun dışına atıyor ve içerik sessizce kayboluyor. Gün 17'nin **yayımlanmış**
+  sürümünde bu yüzden bir etiket (&ldquo;+ PET-BT&rdquo;) kayıptı; düzeltilip
+  yeniden yüklendi. Doğrusu `<tspan font-weight="bold">`.
+- **SVG özniteliklerinde `var(--x)` siyaha düşer.** WeasyPrint CSS değişkenini
+  SVG *özniteliğinde* çözmüyor; `:root`'a değişken köprüsü eklemek işe yaramıyor
+  (denendi, geri alındı). Şemalarda düz hex renk yazılmalı.
+- **Eski notlardaki `class="num"` tablo sınıfı değil**, satır içi sayı vurgusu.
+  Dönüştürücü bunu tablo sınıfıyla karıştırıyordu; düzeltildi.
+
+Üçü de `kbb/not_denetle.py`'ye kural olarak eklendi — **not teslim edilmeden
+önce bu denetleyici çalıştırılmalı.**
+
+**İki yeni araç**
+- `kbb/gorsel_ara.py` — Commons'ta ara, lisansı doğrula, indir. Yalnızca CC0 /
+  kamu malı / CC BY / CC BY-SA kabul ediyor, reddedilenleri gerekçesiyle yazıyor.
+  `kontak` komutu adayları tek ızgaraya diziyor. **Her aday görsel gözle
+  doğrulanmalı:** bu oturumda arama sonucuna uyup içeriği tutmayan görseller
+  çıktı (bir THY uçağı fotoğrafı, kitlesi görünmeyen tanınabilir bir yüz portresi,
+  apsesi okunmayan bir BT).
+- `kbb/not_denetle.py` — teslim öncesi denetleyici: SVG içinde HTML etiketi,
+  uzak `<img src>`, eksik görsel dosyası, sembol karakteri, görsel bütçesi,
+  SVG içinde `var()`.
+
+**Serbest lisanslı görüntü bulunamayan konular**
+22, 24, 25, 28, 29. Bu notların içinde **"Gerçek görüntü sınırı"** paragrafı var:
+ne arandı, ne bulunamadı, ne neden reddedildi açıkça yazılı. Uydurulmadı,
+sessizce atlanmadı.
+
 ## Bu oturumda (22-24 Ağustos) neler oldu
 
 **Yeni soru notları**
@@ -97,7 +132,7 @@ gerekiyorsa kaynak eski notlar ve kitaplardır.
 | İş | Durum |
 | --- | --- |
 | **Gün 70** (Hipofarenks kanseri, Zenker) | Yazarın "başla" demesi bekleniyor |
-| **68 notun görsel taraması** | Yazar "15'i yaptıktan sonra konuşalım" dedi. Gün 15 bitti — sıra bunda |
+| **68 notun görsel taraması** | 15 ve 17-30 bitti (15 not). Kalan: 1-14, 16 ve 31-68 |
 | **Gün 69 görsel bütçesi** | 11 görsel (3 foto + 8 şema). §4 cerrahi konularda 12-14 istiyor — hâlâ altında |
 | **`soru-asnik-tedavi-protokolu` görsel bütçesi** | Tek görseli var (şema). §4 soru notlarında en az 2 istiyor |
 | **Drive'da ad tutarsızlığı** | Depoda `soru-osas-tanidan-cerrahiye.html`, Drive'da `soru-osasdan-cerrahiye.pdf` |

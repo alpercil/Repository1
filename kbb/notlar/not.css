@@ -280,3 +280,10 @@ body.soru h2 { font-size: 15.1pt; }
 body.soru table.veri th { background: var(--brand-bg); color: var(--brand); }
 
 /* kısa cevap turkuaz, pratik özet kehribar — .kutu ve .kutu.uyari ile aynı */
+
+/* sayisal tablo hucreleri - eski notlardan tasinan .num sinifi
+   (eski artifact sablonunda sayilari saga yaslamak icin kullaniliyordu) */
+table.veri td.num, table.veri th.num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}

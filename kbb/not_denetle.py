@@ -44,6 +44,12 @@ def denetle(yol):
         if not os.path.exists(os.path.join(kok, m.group(1))):
             sorun.append(f"Gorsel dosyasi yok: {m.group(1)}")
 
+    # WeasyPrint, SVG OZNITELIKLERINDE var() cozmuyor: fill="var(--x)" siyaha duser.
+    # (25 Agustos: Gun 19 ve 26'nin eski semalari bu yuzden siyah kutu basmisti.)
+    for m in re.finditer(r"<svg.*?</svg>", s, re.S):
+        for d in set(re.findall(r"var\((--[a-z0-9-]+)\)", m.group(0))):
+            sorun.append(f"SVG icinde CSS degiskeni (siyah basar, duz renk yaz): var({d})")
+
     for c in SIMGELER:
         if c in s:
             sorun.append(f"Simge karakteri var (PDF'te bos kutu cikar): {c!r}")

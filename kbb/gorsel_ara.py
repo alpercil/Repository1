@@ -27,7 +27,14 @@ SERBEST = ("cc0", "public domain", "cc by", "cc-by", "pd-")
 
 
 def _iste(parametreler):
-    y = requests.get(API, params=parametreler, headers={"User-Agent": UA}, timeout=40)
+    # Commons API'si de 429 dondurebiliyor; indirme tarafiyla ayni sekilde bekle-yeniden dene.
+    for deneme in range(4):
+        y = requests.get(API, params=parametreler, headers={"User-Agent": UA}, timeout=40)
+        if y.status_code != 429:
+            break
+        bekle = 4 * (deneme + 1)
+        print(f"  API 429 - {bekle} sn bekleniyor")
+        time.sleep(bekle)
     y.raise_for_status()
     return y.json()
 
@@ -79,14 +86,25 @@ def indir(hedef_klasor, ad, commons_adi):
            + urllib.parse.quote(commons_adi.replace("File:", "").replace(" ", "_")))
     os.makedirs(hedef_klasor, exist_ok=True)
     yol = os.path.join(hedef_klasor, ad)
-    # Commons zaman zaman 429 doner; birkac kez artan bekleyisle dene.
+    # Commons 429 (hiz siniri), 5xx (gecici sunucu) donebiliyor; buyuk dosyalarda
+    # (histoloji taramalari 15+ MB) okuma zaman asimi da oluyor. Ucu de yeniden denenir.
+    y = None
     for deneme in range(4):
-        y = requests.get(url, headers={"User-Agent": UA}, timeout=90, allow_redirects=True)
-        if y.status_code != 429:
-            break
         bekle = 4 * (deneme + 1)
-        print(f"  429 - {bekle} sn bekleyip yeniden deneniyor ({commons_adi})")
+        try:
+            y = requests.get(url, headers={"User-Agent": UA}, timeout=180,
+                             allow_redirects=True)
+        except requests.exceptions.RequestException as e:
+            print(f"  baglanti hatasi ({type(e).__name__}) - {bekle} sn sonra yeniden")
+            time.sleep(bekle)
+            continue
+        if y.status_code != 429 and y.status_code < 500:
+            break
+        print(f"  {y.status_code} - {bekle} sn bekleyip yeniden deneniyor ({commons_adi})")
         time.sleep(bekle)
+    if y is None:
+        print(f"  INDIRILEMEDI: {commons_adi}")
+        return None
     y.raise_for_status()
     if not y.headers.get("Content-Type", "").startswith("image/"):
         print(f"  GORSEL DEGIL: {commons_adi}")
