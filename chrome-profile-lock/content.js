@@ -6,6 +6,9 @@
   let shadowRoot = null;
   let passwordInput = null;
   let errorEl = null;
+  let tempCountInput = null;
+  let tempMinutesInput = null;
+  let tempErrorEl = null;
 
   // Kilit tetiklendiğinde odak bir iframe içindeyse (ör. gömülü bir editör),
   // overlay görsel olarak üstte olsa da o iframe'in kendi keydown dinleyicileri
@@ -74,6 +77,25 @@
         }
         button:hover { background: #4a78e6; }
         .error { color: #ff6b6b; font-size: 13px; margin-top: 10px; min-height: 16px; }
+        .temp-toggle {
+          background: none;
+          border: none;
+          color: #8b96b8;
+          font-size: 12px;
+          margin-top: 16px;
+          padding: 0;
+          text-decoration: underline;
+          cursor: pointer;
+          width: auto;
+        }
+        .temp-toggle:hover { background: none; color: #b7c0dd; }
+        .temp-form { margin-top: 14px; text-align: left; }
+        .temp-form.hidden { display: none; }
+        .temp-row { display: flex; gap: 8px; }
+        .temp-row > div { flex: 1; }
+        .temp-row label { color: #8b96b8; font-size: 11px; display: block; margin-bottom: 4px; }
+        .temp-row input { padding: 8px 10px; font-size: 13px; }
+        .temp-form button[type="submit"] { margin-top: 10px; }
       </style>
       <div class="overlay">
         <div class="card">
@@ -84,13 +106,35 @@
             <button type="submit">Kilidi Aç</button>
             <div class="error" id="err"></div>
           </form>
+          <button type="button" class="temp-toggle" id="temp-toggle">Sadece bazı sekmeleri geçici aç</button>
+          <form id="temp-form" class="temp-form hidden" autocomplete="off">
+            <div class="temp-row">
+              <div>
+                <label for="temp-count">Kaç sekme</label>
+                <input type="number" id="temp-count" min="1" max="20" value="1" />
+              </div>
+              <div>
+                <label for="temp-minutes">Kaç dakika</label>
+                <input type="number" id="temp-minutes" min="1" max="180" value="5" />
+              </div>
+            </div>
+            <button type="submit">Geçici Aç</button>
+            <div class="error" id="temp-err"></div>
+          </form>
         </div>
       </div>
     `;
 
     passwordInput = shadowRoot.getElementById("pw");
     errorEl = shadowRoot.getElementById("err");
+    tempCountInput = shadowRoot.getElementById("temp-count");
+    tempMinutesInput = shadowRoot.getElementById("temp-minutes");
+    tempErrorEl = shadowRoot.getElementById("temp-err");
     shadowRoot.getElementById("unlock-form").addEventListener("submit", onSubmit);
+    shadowRoot.getElementById("temp-form").addEventListener("submit", onTempSubmit);
+    shadowRoot.getElementById("temp-toggle").addEventListener("click", () => {
+      shadowRoot.getElementById("temp-form").classList.toggle("hidden");
+    });
 
     document.documentElement.style.overflow = "hidden";
     exitFullscreenIfLocked();
@@ -105,6 +149,9 @@
     shadowRoot = null;
     passwordInput = null;
     errorEl = null;
+    tempCountInput = null;
+    tempMinutesInput = null;
+    tempErrorEl = null;
   }
 
   // Sayfa tam ekrandayken kilitlenirse (ör. video oynatılırken), tam ekran
@@ -172,8 +219,36 @@
     removeOverlay();
   }
 
+  // Sadece bu sekmeyi (+ istenirse birkaç sekme daha) belirli bir süreliğine
+  // açar; diğer tüm sekmeler kilitli kalır. bkz. background.js TEMP_UNLOCK_ATTEMPT.
+  async function onTempSubmit(e) {
+    e.preventDefault();
+    const password = passwordInput.value;
+    const tabCount = tempCountInput.value;
+    const minutes = tempMinutesInput.value;
+    tempErrorEl.textContent = "";
+    let res;
+    try {
+      res = await chrome.runtime.sendMessage({
+        type: "TEMP_UNLOCK_ATTEMPT",
+        password,
+        tabCount,
+        minutes
+      });
+    } catch (err) {
+      tempErrorEl.textContent = "Uzantı güncellendi, lütfen sayfayı yenile (F5) ve tekrar dene.";
+      return;
+    }
+    if (!res.ok) {
+      tempErrorEl.textContent = res.error || "Yanlış şifre.";
+      passwordInput.value = "";
+      return;
+    }
+    removeOverlay();
+  }
+
   function syncFromState(state) {
-    if (state.hasPassword && state.locked) {
+    if (state.hasPassword && state.locked && !state.tempUnlocked) {
       ensureOverlay();
     } else {
       removeOverlay();
@@ -184,7 +259,7 @@
 
   chrome.storage.onChanged.addListener((changes, areaName) => {
     if (areaName !== "local") return;
-    if ("locked" in changes || "passwordHash" in changes) {
+    if ("locked" in changes || "passwordHash" in changes || "tempUnlock" in changes) {
       chrome.runtime.sendMessage({ type: "GET_LOCK_STATE" }).then(syncFromState).catch(() => {});
     }
   });

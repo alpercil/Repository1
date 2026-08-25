@@ -35,6 +35,22 @@
   }
   #lock-screen button:hover { background: #4a78e6; }
   .error { color: #ff6b6b; font-size: 13px; margin-top: 10px; min-height: 16px; }
+  .temp-toggle {
+    background: none; border: none; color: #8b96b8; font-size: 12px;
+    margin-top: 16px; padding: 0; text-decoration: underline; cursor: pointer;
+    width: auto; display: block; margin-left: auto; margin-right: auto;
+  }
+  .temp-toggle:hover { background: none; color: #b7c0dd; }
+  #temp-form { margin: 14px auto 0; width: 280px; max-width: 80vw; text-align: left; }
+  #temp-form.hidden { display: none; }
+  .temp-row { display: flex; gap: 8px; }
+  .temp-row > div { flex: 1; }
+  .temp-row label { color: #8b96b8; font-size: 11px; display: block; margin-bottom: 4px; }
+  .temp-row input {
+    width: 100%; box-sizing: border-box; padding: 8px 10px; font-size: 13px;
+    border-radius: 8px; border: 1px solid #2c3550; background: #161c2c; color: #fff;
+  }
+  #temp-form button[type="submit"] { margin-top: 10px; width: 100%; }
 
   /* Kilit açıkken basit yeni sekme */
   #open-screen { text-align: center; width: 90vw; max-width: 560px; }
@@ -58,6 +74,21 @@
       <input type="password" id="pw" placeholder="Şifre" autofocus />
       <button type="submit">Kilidi Aç</button>
       <div class="error" id="err"></div>
+    </form>
+    <button type="button" class="temp-toggle" id="temp-toggle">Sadece bazı sekmeleri geçici aç</button>
+    <form id="temp-form" class="hidden" autocomplete="off">
+      <div class="temp-row">
+        <div>
+          <label for="temp-count">Kaç sekme</label>
+          <input type="number" id="temp-count" min="1" max="20" value="1" />
+        </div>
+        <div>
+          <label for="temp-minutes">Kaç dakika</label>
+          <input type="number" id="temp-minutes" min="1" max="180" value="5" />
+        </div>
+      </div>
+      <button type="submit">Geçici Aç</button>
+      <div class="error" id="temp-err"></div>
     </form>
   </div>
 

@@ -3,9 +3,14 @@
   const openScreen = document.getElementById("open-screen");
   const pw = document.getElementById("pw");
   const err = document.getElementById("err");
+  const tempToggle = document.getElementById("temp-toggle");
+  const tempForm = document.getElementById("temp-form");
+  const tempCount = document.getElementById("temp-count");
+  const tempMinutes = document.getElementById("temp-minutes");
+  const tempErr = document.getElementById("temp-err");
 
   function render(state) {
-    if (state.hasPassword && state.locked) {
+    if (state.hasPassword && state.locked && !state.tempUnlocked) {
       lockScreen.classList.remove("hidden");
       openScreen.classList.add("hidden");
       pw.focus();
@@ -20,7 +25,7 @@
 
   chrome.storage.onChanged.addListener((changes, areaName) => {
     if (areaName !== "local") return;
-    if ("locked" in changes || "passwordHash" in changes) {
+    if ("locked" in changes || "passwordHash" in changes || "tempUnlock" in changes) {
       chrome.runtime.sendMessage({ type: "GET_LOCK_STATE" }).then(render);
     }
   });
@@ -42,6 +47,33 @@
       return;
     }
     render({ hasPassword: true, locked: false });
+  });
+
+  tempToggle.addEventListener("click", () => {
+    tempForm.classList.toggle("hidden");
+  });
+
+  tempForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    tempErr.textContent = "";
+    let res;
+    try {
+      res = await chrome.runtime.sendMessage({
+        type: "TEMP_UNLOCK_ATTEMPT",
+        password: pw.value,
+        tabCount: tempCount.value,
+        minutes: tempMinutes.value
+      });
+    } catch (err2) {
+      tempErr.textContent = "Uzantı güncellendi, lütfen sayfayı yenile (F5) ve tekrar dene.";
+      return;
+    }
+    if (!res.ok) {
+      tempErr.textContent = res.error || "Yanlış şifre.";
+      pw.value = "";
+      return;
+    }
+    render({ hasPassword: true, locked: true, tempUnlocked: true });
   });
 
   document.getElementById("search-form").addEventListener("submit", (e) => {

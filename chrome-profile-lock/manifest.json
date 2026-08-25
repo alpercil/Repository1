@@ -3,7 +3,7 @@
   "name": "Profile Lock",
   "version": "1.0.0",
   "description": "Chrome profilini şifreyle kilitler: boşta kalmada, tarayıcı açılışında ve OS ekran kilidinde otomatik kilitlenir; tüm sekme/pencerelerde tutarlı çalışır.",
-  "permissions": ["storage", "idle"],
+  "permissions": ["storage", "idle", "alarms"],
   "background": {
     "service_worker": "background.js"
   },
