@@ -37,5 +37,17 @@
       "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ear_Anatomy_and_Mastoid_Bone.png",
       "commons": "Ear_Anatomy_and_Mastoid_Bone.png"
     }
+  ],
+  "soru-larengeal-lokoplazi-takip": [
+    {
+      "ad": "w01.jpg",
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/f679/8268866/aab16c95c02e/cancers-13-03273-g001.jpg",
+      "kaynak": "Pietruszewska 2021, Cancers 13(13):3273, PMC8268866 Sekil 1, CC BY 4.0"
+    },
+    {
+      "ad": "w02.jpg",
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/f679/8268866/d3e571f76b26/cancers-13-03273-g002.jpg",
+      "kaynak": "Pietruszewska 2021, Cancers 13(13):3273, PMC8268866 Sekil 2, CC BY 4.0"
+    }
   ]
 }
