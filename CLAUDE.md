@@ -33,6 +33,24 @@ is the state of the work, not the container.**
    repository work only when something needs their attention or their
    decision.
 
+## Notların teslimi
+
+Bu kurallar 22-24 Ağustos oturumunda yazarın kararıyla kesinleşti:
+
+1. **Sadece PDF üret.** Google Doc, Word ya da başka bir biçim değil. Doc
+   denendi ve reddedildi: Docs SVG şemaları düşürüyor, kutuların kenarlığını
+   ve zeminini yok sayıyor, sayfa düzeni tutmuyor.
+2. **PDF'i sohbette gönder, Drive'a yazar kendisi koyar.** Colab yolu
+   denendi ve yazar tarafından iptal edildi ("Colab işi iptal ben kendim
+   yüklerim sen bana pdf'i ver"). Defter depoda duruyor ama artık varsayılan
+   yol değil; kendiliğinden önerme.
+3. **Adlandırma diğer dosyalarla aynı:** gün notları
+   `gun-NN-konu-slug.pdf`, soru notları `soru-konu-slug.pdf`. Gönderdiğin
+   dosyanın adı birebir bu olsun ki yazar sürükleyip bıraksın.
+
+Görseller PDF'in içinde gömülü olmalı; bağlantı olarak bırakma. Kaynağı ve
+sınırları: `.claude/skills/kbb-gunluk-not/SKILL.md` §4 ve `kbb/kararlar.md`.
+
 ## One session per project
 
 Work is split across cloud sessions, one per project, each bound to its own
@@ -81,3 +99,5 @@ session.
   start.
 - `docs/bulut-calisma-akisi.md` - the same workflow written out in Turkish.
 - `kbb/` - state of the KBB reading programme (see above).
+- `kbb/son-durum.md` - nerede kaldığımızın kaydı. **Yeni oturum önce bunu
+  okur.** Açık işler, biten işler ve bir sonraki adım burada.
