@@ -20,5 +20,22 @@
       "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nasal_septal_hematoma.jpg",
       "commons": "Nasal_septal_hematoma.jpg"
     }
+  ],
+  "gun-69-timpanoplasti-mastoidektomi": [
+    {
+      "ad": "w01.png",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/View-normal-tympanic-membrane.png",
+      "commons": "View-normal-tympanic-membrane.png"
+    },
+    {
+      "ad": "w02.jpg",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cholesteatoma_and_large_perforation_left_ear.jpg",
+      "commons": "Cholesteatoma_and_large_perforation_left_ear.jpg"
+    },
+    {
+      "ad": "w03.png",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ear_Anatomy_and_Mastoid_Bone.png",
+      "commons": "Ear_Anatomy_and_Mastoid_Bone.png"
+    }
   ]
 }
