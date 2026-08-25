@@ -112,6 +112,7 @@ Notların bir kısmı görsel bütçesi kuralı (`SKILL.md` §4) konmadan önce
 | --- | --- | --- | --- | --- |
 | 15 | Nazal septum deviasyonu ve septoplasti | 4 görsel | 21 görsel (10 şema + **7 kitap/atlas görseli** + 4 Commons bağlantısı) | 2026-08-22 |
 | 17 | Boyun kitlelerine yaklaşım | 3 görsel | 13 görsel (7 şema + 6 gerçek görüntü: 2 USG, 1 MRG, seviye şeması, tiroglossal USG/BT, skrofula) | 2026-08-25 |
+| 18 | Derin boyun enfeksiyonları | 3 görsel | 12 görsel (6 şema + 6 gerçek görüntü: Ludwig, retrofarengeal ve mediastinit BT panelleri, peritonsiller apse, lateral grafi, koronal BT) | 2026-08-25 |
 
 Yenileme yöntemi: eski PDF'in metni Drive'dan okunur, HTML olarak
 `kbb/notlar/` altına kurulur, eksik yerlere şema çizilir. Görseller

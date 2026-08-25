@@ -63,5 +63,25 @@
       "commons": "Ultrasonography and CT of a thyroglossal duct cyst.jpg",
       "lisans": "CC BY 4.0 (Bin Saeedan ve ark., Insights Imaging)"
     }
+  ],
+  "gun-18-derin-boyun-enfeksiyonlari": [
+    {
+      "ad": "w02.jpg",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/PeritonsilarAbsess.jpg",
+      "commons": "PeritonsilarAbsess.jpg",
+      "lisans": "CC BY-SA 3.0 (James Heilman MD)"
+    },
+    {
+      "ad": "w03.png",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/LargeRetroAbsMark.png",
+      "commons": "LargeRetroAbsMark.png",
+      "lisans": "CC BY-SA 4.0"
+    },
+    {
+      "ad": "w04.jpg",
+      "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Retroabscess10.JPG",
+      "commons": "Retroabscess10.JPG",
+      "lisans": "CC BY-SA 3.0 (James Heilman MD)"
+    }
   ]
 }
