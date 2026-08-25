@@ -1,2 +1,3 @@
 # Machine-local Claude Code settings; project settings live in .claude/settings.json
 .claude/settings.local.json
+kbb/notlar/gorsel
