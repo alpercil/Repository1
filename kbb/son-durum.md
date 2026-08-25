@@ -4,7 +4,7 @@ Bu dosya oturumlar arası devir kaydıdır. **Yeni bir oturum işe buradan
 başlar:** önce burayı oku, sonra `CLAUDE.md` ve
 `.claude/skills/kbb-gunluk-not/SKILL.md`.
 
-Son güncelleme: **2026-08-24**
+Son güncelleme: **2026-08-25**
 
 ---
 
@@ -14,6 +14,42 @@ Son güncelleme: **2026-08-24**
 - **Sıradaki:** Gün 70 — Hipofarenks Kanseri ve Zenker Divertikülü. Öneri
   yapıldı, yazarın onayı bekleniyor.
 - Soru notları `KBB_not_claude/Soru/` altında.
+
+## Bu oturumda (25 Ağustos, yerel) neler oldu
+
+Bu ilk **yerel** oturum. Bulutta ölçülmüş iki kısıt burada geçerli değil:
+
+- **Ağ açık.** Commons ve PMC'den görsel iniyor (ölçüldü: HTTP 200, gerçek JPEG).
+  `SKILL.md` §4'teki "konteynerden görsel indiremezsin, 403 döner" uyarısı ve
+  yer tutucu kutuya çevirme kuralı yerelde gereksiz. URL'lerin doğruluğu da
+  artık kendim doğrulayabiliyorum.
+- **Kaynak kitapların tamamı diskte** (`~/Desktop/KBB/`, 18 PDF + Cummings'in
+  35 bölümü). Drive'ın ~50 MB metin çıkarma sınırı, `download_file_content`'in
+  10 MB sınırı ve kitap parçalama düzeni burada devrede değil.
+  **Ama:** Önerci Cilt 5 (larenks bölümleri) ve Koç C taranmış, metin katmanı yok —
+  yerelde de okunamıyor, OCR gerekiyor.
+
+**Yerel render kurulumu çalışır durumda**
+`~/Desktop/claude_code/.venv-kbb` (weasyprint 69.0, requests, pymupdf) +
+`brew install pango`. Bu Mac'te Homebrew kütüphaneleri sistem yolunda olmadığı
+için **`DYLD_FALLBACK_LIBRARY_PATH=/opt/homebrew/lib` şart** — `render_yerel.py`'nin
+docstring'indeki kullanım satırı bu makinede olduğu gibi çalışmaz:
+
+    cd <depo> && DYLD_FALLBACK_LIBRARY_PATH=/opt/homebrew/lib \
+      ~/Desktop/claude_code/.venv-kbb/bin/python kbb/render_yerel.py
+
+**Gün 69 görsel hatası düzeltildi**
+HTML üç Commons görselini doğrudan uzak URL ile çağırıyordu (§4 bunu yasaklıyor)
+ve görseller hiç inmiyordu — PDF 0,16 MB, içinde tek görsel yok. URL'ler
+`gorseller.json`'a taşındı, `src`'ler yerel yola çevrildi; PDF 1,79 MB.
+Üç Commons dosya adının gerçekten var olduğu doğrulandı.
+
+**Yeni soru notu**
+`soru-larengeal-lokoplazi-takip` — DL sonrası lökoplazide takip, aralık, ek
+girişim ve tetkik kararı. 7 sayfa, 4 görsel (2 çizim + PMC'den 2 gerçek görsel,
+CC BY 4.0). **Drive'a yerelden doğrudan kopyalandı** (`Soru/` altına) — mount
+yazılabilir olduğu için `CLAUDE.md`'deki "PDF'i sohbette gönder, yazar kendisi
+koyar" adımına gerek kalmadı.
 
 ## Bu oturumda (22-24 Ağustos) neler oldu
 
@@ -55,6 +91,10 @@ gerekiyorsa kaynak eski notlar ve kitaplardır.
 | --- | --- |
 | **Gün 70** (Hipofarenks kanseri, Zenker) | Yazarın "başla" demesi bekleniyor |
 | **68 notun görsel taraması** | Yazar "15'i yaptıktan sonra konuşalım" dedi. Gün 15 bitti — sıra bunda |
+| **Gün 69 görsel bütçesi** | 11 görsel (3 foto + 8 şema). §4 cerrahi konularda 12-14 istiyor — hâlâ altında |
+| **`soru-asnik-tedavi-protokolu` görsel bütçesi** | Tek görseli var (şema). §4 soru notlarında en az 2 istiyor |
+| **Teslim kuralı yerelde değişti mi?** | Drive mount yazılabilir; "yazar kendisi yükler" kuralı yerelde gerekli değil. Yazarın kararı bekleniyor |
+| **Drive'da ad tutarsızlığı** | Depoda `soru-osas-tanidan-cerrahiye.html`, Drive'da `soru-osasdan-cerrahiye.pdf` |
 | Önerci Cilt 1 s.281-400 (kolesteatom) OCR | `kbb/kbb_ocr_colab.ipynb` hazır, çalıştırılmadı |
 | ASNİK notunun Google Doc kopyası | Drive'da `Soru/` altında duruyor, silinmedi. Yazar karar verecek |
 | `soru-om-ostaki-perforasyon.pdf` iki kopya | Drive'da mükerrer, dokunulmadı |
