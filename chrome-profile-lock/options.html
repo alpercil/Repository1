@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<title>Profile Lock Ayarları</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    max-width: 420px;
+    margin: 40px auto;
+    color: #1a1a1a;
+  }
+  h1 { font-size: 18px; }
+  section { margin-bottom: 28px; padding-bottom: 20px; border-bottom: 1px solid #e5e5e5; }
+  label { display: block; font-size: 13px; margin: 10px 0 4px; color: #555; }
+  input, select {
+    width: 100%; box-sizing: border-box; padding: 10px 12px;
+    border-radius: 6px; border: 1px solid #ccc; font-size: 14px;
+  }
+  button {
+    margin-top: 12px; padding: 10px 16px; border: none; border-radius: 6px;
+    background: #5b8cff; color: #fff; font-size: 14px; font-weight: 600; cursor: pointer;
+  }
+  button:hover { background: #4a78e6; }
+  .msg { font-size: 13px; margin-top: 8px; min-height: 16px; }
+  .msg.ok { color: #1a8f4c; }
+  .msg.error { color: #d1372f; }
+  .hidden { display: none !important; }
+</style>
+</head>
+<body>
+  <h1>🔒 Profile Lock</h1>
+
+  <section id="setup-section">
+    <p>Henüz şifre kurulmadı. Profilini kilitlemek için bir şifre belirle.</p>
+    <label for="new-pw-1">Yeni şifre</label>
+    <input type="password" id="new-pw-1" />
+    <label for="new-pw-2">Şifre (tekrar)</label>
+    <input type="password" id="new-pw-2" />
+    <button id="setup-btn">Şifreyi Kur</button>
+    <div class="msg" id="setup-msg"></div>
+  </section>
+
+  <section id="change-section" class="hidden">
+    <p>Şifreni değiştir.</p>
+    <label for="old-pw">Mevcut şifre</label>
+    <input type="password" id="old-pw" />
+    <label for="change-pw-1">Yeni şifre</label>
+    <input type="password" id="change-pw-1" />
+    <label for="change-pw-2">Yeni şifre (tekrar)</label>
+    <input type="password" id="change-pw-2" />
+    <button id="change-btn">Şifreyi Değiştir</button>
+    <div class="msg" id="change-msg"></div>
+  </section>
+
+  <section id="idle-section" class="hidden">
+    <p>Boşta kalma süresi dolunca otomatik kilitlenir.</p>
+    <label for="idle-minutes">Dakika</label>
+    <input type="number" id="idle-minutes" min="1" max="60" />
+    <button id="idle-btn">Kaydet</button>
+    <div class="msg" id="idle-msg"></div>
+  </section>
+
+  <section id="lock-now-section" class="hidden" style="border-bottom: none;">
+    <button id="lock-now-btn">Şimdi Kilitle</button>
+  </section>
+
+  <script src="options.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8" />
+<title>Yeni Sekme</title>
+<style>
+  :root { color-scheme: dark light; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #0b0f19;
+  }
+  .hidden { display: none !important; }
+
+  /* Kilit ekranı */
+  #lock-screen { text-align: center; color: #fff; }
+  .lock-icon { font-size: 48px; margin-bottom: 8px; }
+  h1 { font-size: 20px; margin: 0 0 24px; font-weight: 600; }
+  #lock-screen input {
+    width: 280px; max-width: 80vw;
+    padding: 12px 14px; border-radius: 8px;
+    border: 1px solid #2c3550; background: #161c2c; color: #fff;
+    font-size: 15px; outline: none;
+  }
+  #lock-screen input:focus { border-color: #5b8cff; }
+  #lock-screen button {
+    display: block; width: 280px; max-width: 80vw; margin: 12px auto 0;
+    padding: 12px; border: none; border-radius: 8px;
+    background: #5b8cff; color: #fff; font-size: 15px; font-weight: 600; cursor: pointer;
+  }
+  #lock-screen button:hover { background: #4a78e6; }
+  .error { color: #ff6b6b; font-size: 13px; margin-top: 10px; min-height: 16px; }
+  .temp-toggle {
+    background: none; border: none; color: #8b96b8; font-size: 12px;
+    margin-top: 16px; padding: 0; text-decoration: underline; cursor: pointer;
+    width: auto; display: block; margin-left: auto; margin-right: auto;
+  }
+  .temp-toggle:hover { background: none; color: #b7c0dd; }
+  #temp-form { margin: 14px auto 0; width: 280px; max-width: 80vw; text-align: left; }
+  #temp-form.hidden { display: none; }
+  .temp-row { display: flex; gap: 8px; }
+  .temp-row > div { flex: 1; }
+  .temp-row label { color: #8b96b8; font-size: 11px; display: block; margin-bottom: 4px; }
+  .temp-row input {
+    width: 100%; box-sizing: border-box; padding: 8px 10px; font-size: 13px;
+    border-radius: 8px; border: 1px solid #2c3550; background: #161c2c; color: #fff;
+  }
+  #temp-form button[type="submit"] { margin-top: 10px; width: 100%; }
+
+  /* Kilit açıkken basit yeni sekme */
+  #open-screen { text-align: center; width: 90vw; max-width: 560px; }
+  #open-screen form { display: flex; gap: 8px; }
+  #open-screen input {
+    flex: 1; padding: 14px 18px; border-radius: 999px; border: 1px solid #ccc;
+    font-size: 16px; outline: none;
+  }
+  #open-screen button {
+    padding: 14px 20px; border-radius: 999px; border: none; background: #5b8cff;
+    color: #fff; font-size: 15px; cursor: pointer;
+  }
+  body.light { background: #fff; }
+</style>
+</head>
+<body>
+  <div id="lock-screen" class="hidden">
+    <div class="lock-icon">🔒</div>
+    <h1>Profil kilitli</h1>
+    <form id="unlock-form" autocomplete="off">
+      <input type="password" id="pw" placeholder="Şifre" autofocus />
+      <button type="submit">Kilidi Aç</button>
+      <div class="error" id="err"></div>
+    </form>
+    <button type="button" class="temp-toggle" id="temp-toggle">Sadece bazı sekmeleri geçici aç</button>
+    <form id="temp-form" class="hidden" autocomplete="off">
+      <div class="temp-row">
+        <div>
+          <label for="temp-count">Kaç sekme</label>
+          <input type="number" id="temp-count" min="1" max="20" value="1" />
+        </div>
+        <div>
+          <label for="temp-minutes">Kaç dakika</label>
+          <input type="number" id="temp-minutes" min="1" max="180" value="5" />
+        </div>
+      </div>
+      <button type="submit">Geçici Aç</button>
+      <div class="error" id="temp-err"></div>
+    </form>
+  </div>
+
+  <div id="open-screen" class="hidden">
+    <form id="search-form">
+      <input type="text" id="q" placeholder="Google'da ara veya bir adres yaz" autofocus />
+      <button type="submit">Ara</button>
+    </form>
+  </div>
+
+  <script src="newtab.js"></script>
+</body>
+</html>
