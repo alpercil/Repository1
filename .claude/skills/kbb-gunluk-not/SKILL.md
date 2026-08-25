@@ -163,10 +163,11 @@ noktasıdır (`Category:Nasal septum` gibi).
 Altyazıya dosya adını, dosya sayfası bağlantısını ve lisansı yaz. Lisansı
 aramada net görmediysen "lisans bilgisi dosya sayfasında" yaz — uydurma.
 
-**Konteynerden görsel indiremezsin** — ağ çıkışı kapalı, Wikimedia ve PMC
-dahil (`curl` `000` döner). Yani koyduğun URL'nin doğru olup olmadığını
-kendin göremezsin. **Bu yüzden uydurma dosya adı yazma**; yalnızca
-`WebSearch` sonucunda birebir gördüğün dosya adını kullan.
+**Bulut oturumunda görsel indiremezsin** — ağ çıkışı kapalı, Wikimedia ve PMC
+dahil (`curl` `000` döner). Orada koyduğun URL'nin doğru olup olmadığını
+kendin göremezsin. **Yerel oturumda ağ açık**, indirip doğrulayabilirsin.
+Her iki durumda da **uydurma dosya adı yazma**; yalnızca `WebSearch` sonucunda
+birebir gördüğün ya da yerelde indirip doğruladığın dosya adını kullan.
 
 **Bozuk URL sessizce boş `<img>` bırakır.** Görseller yerel render'da inmez
 ama Colab'da iner — bu yüzden Colab çıktısı doğrulamanın asıl yeri. Defter
@@ -229,24 +230,42 @@ pip install weasyprint
 python -c "from weasyprint import HTML; HTML('kbb/notlar/gun-NN-....html').write_pdf('/tmp/gun-NN-....pdf')"
 ```
 
-Sonra `SendUserFile` ile ilet. Drive'a doğrudan yükleyemezsin (sebep:
-`kbb/kararlar.md`); kullanıcı dosyayı `KBB_not_claude` klasörüne sürükler,
-ya da `kbb/kbb_pdf_colab.ipynb` defterini çalıştırır — o defter depoyu
-klonlayıp bütün yeni notları PDF olarak Drive'a yazar.
+Sonra `SendUserFile` ile ilet.
 
-**Görseller.** Konteynerin ağ çıkışı vekil sunucu tarafından kısıtlı;
-görsel sunucuları (Wikimedia, PMC) **403 ile reddediliyor** — ölçüldü. Yani
-görselleri buradan indirmek mümkün değil, yerel PDF sadece düzen ve şema
-denetimi içindir.
+**Drive'a koyma — oturumun türüne bağlı** (`CLAUDE.md`, "Notların teslimi" §2):
 
-Kullanıcıya PDF verirken bu yüzden `<img>` yuvalarını boş bırakma: her birini
-görselin adını ve kaynak bağlantısını taşıyan kesikli çerçeveli bir kutuya
-çevirip öyle teslim et — boş kare kötü durur, adı yazan kutu okunur.
-Görsellerin gerçekten indiği sürüm `kbb/render_yerel.py` (kullanıcının kendi
-bilgisayarı) veya Colab defteri ile üretilir. Görsellerin
-gerçekten indiği ve doğru şeyi gösterdiği **Colab çıktısında** doğrulanır —
-defter hem eski PDF'lerden kurtarılan fotoğrafları hem `gorseller.json`
-listesindeki web görsellerini Drive'a dosya olarak yazar, sonra render eder.
+- **Yerel oturumda doğrudan yaz.** Drive for Desktop bağlı, klasör yazılabilir:
+  ```
+  cp kbb/cikti/<ad>.pdf ~/Library/CloudStorage/GoogleDrive-<hesap>/Drive'ım/PAÜ/KBB_not_claude/[Soru/]
+  ```
+  Aynı adda dosya varsa **üzerine yazma**, önce kullanıcıya sor.
+- **Bulut oturumunda yükleyemezsin** (sebep: `kbb/kararlar.md`); kullanıcı
+  dosyayı `KBB_not_claude` klasörüne kendisi sürükler.
+
+**Görseller — burada da yerel/bulut ayrımı var.**
+
+- **Yerel oturumda ağ açık** (25 Ağustos 2026'da ölçüldü: Commons ve PMC'den
+  HTTP 200, gerçek dosya iniyor). `render_yerel.py` görselleri indirip PDF'e
+  gömer; **görselleri gömülü, tam haliyle teslim et.** URL'in doğru olup
+  olmadığını da kendin doğrulayabilirsin — `curl -sIL <url>` ile bak.
+- **Bulut oturumunda** konteynerin ağ çıkışı vekil sunucu tarafından kısıtlı;
+  görsel sunucuları (Wikimedia, PMC) **403 ile reddediliyor** — ölçüldü.
+  Orada `<img>` yuvalarını boş bırakma: her birini görselin adını ve kaynak
+  bağlantısını taşıyan kesikli çerçeveli bir kutuya çevirip öyle teslim et —
+  boş kare kötü durur, adı yazan kutu okunur. Görsellerin gerçekten indiği
+  sürüm `kbb/render_yerel.py` (kullanıcının kendi bilgisayarı) veya Colab
+  defteri ile üretilir.
+
+**Yerel render kurulumu** (ölçüldü, bu Mac'te çalışır durumda):
+`~/Desktop/claude_code/.venv-kbb` içinde weasyprint + requests + pymupdf,
+ayrıca `brew install pango`. Homebrew kütüphaneleri sistem yolunda olmadığı
+için ortam değişkeni **şart** — docstring'deki düz `python kbb/render_yerel.py`
+satırı bu makinede çalışmaz:
+
+```
+cd <depo> && DYLD_FALLBACK_LIBRARY_PATH=/opt/homebrew/lib \
+  ~/Desktop/claude_code/.venv-kbb/bin/python kbb/render_yerel.py
+```
 
 **Üretilen PDF'i doğrula.** `pymupdf` ile sayfa boyutunun A4 (595×842 pt),
 punto merdiveninin (20,4 / 19,2 / 15,8 / 12,6 / 12,2 / 10,5) ve beş rengin

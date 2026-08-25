@@ -65,7 +65,14 @@ koyar" adımına gerek kalmadı.
 4 Commons bağlantısı. HTML'i `kbb/notlar/` altında, görselleri
 `kbb/notlar/gorsel/gun-15-.../` altında.
 
-**Kural değişiklikleri (hepsi yazılı)**
+**Kural değişikliği (25 Ağustos, yazarın kararı)**
+Teslim yolu artık oturumun türüne bağlı: **yerel oturumda Drive'a doğrudan
+yaz** (`cp` ile, aynı adda dosya varsa üzerine yazma — sor), bulut oturumunda
+eskisi gibi PDF'i sohbette gönder. `CLAUDE.md` "Notların teslimi" §2 ve
+`SKILL.md` §5 birlikte güncellendi; §4'teki "görsel indiremezsin" uyarısı da
+yerel/bulut ayrımına çevrildi.
+
+**Kural değişiklikleri (22-24 Ağustos)**
 - Görsel bütçesi: gün notunda en az 8, cerrahi/anatomi konularında 12-14
   görsel — `SKILL.md` §4.
 - Şema tek başına yetmez; her notta hem çizim hem gerçek görüntü olacak.
@@ -93,7 +100,6 @@ gerekiyorsa kaynak eski notlar ve kitaplardır.
 | **68 notun görsel taraması** | Yazar "15'i yaptıktan sonra konuşalım" dedi. Gün 15 bitti — sıra bunda |
 | **Gün 69 görsel bütçesi** | 11 görsel (3 foto + 8 şema). §4 cerrahi konularda 12-14 istiyor — hâlâ altında |
 | **`soru-asnik-tedavi-protokolu` görsel bütçesi** | Tek görseli var (şema). §4 soru notlarında en az 2 istiyor |
-| **Teslim kuralı yerelde değişti mi?** | Drive mount yazılabilir; "yazar kendisi yükler" kuralı yerelde gerekli değil. Yazarın kararı bekleniyor |
 | **Drive'da ad tutarsızlığı** | Depoda `soru-osas-tanidan-cerrahiye.html`, Drive'da `soru-osasdan-cerrahiye.pdf` |
 | Önerci Cilt 1 s.281-400 (kolesteatom) OCR | `kbb/kbb_ocr_colab.ipynb` hazır, çalıştırılmadı |
 | ASNİK notunun Google Doc kopyası | Drive'da `Soru/` altında duruyor, silinmedi. Yazar karar verecek |

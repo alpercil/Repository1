@@ -40,10 +40,17 @@ Bu kurallar 22-24 Ağustos oturumunda yazarın kararıyla kesinleşti:
 1. **Sadece PDF üret.** Google Doc, Word ya da başka bir biçim değil. Doc
    denendi ve reddedildi: Docs SVG şemaları düşürüyor, kutuların kenarlığını
    ve zeminini yok sayıyor, sayfa düzeni tutmuyor.
-2. **PDF'i sohbette gönder, Drive'a yazar kendisi koyar.** Colab yolu
-   denendi ve yazar tarafından iptal edildi ("Colab işi iptal ben kendim
-   yüklerim sen bana pdf'i ver"). Defter depoda duruyor ama artık varsayılan
-   yol değil; kendiliğinden önerme.
+2. **Teslim yolu oturumun türüne bağlı** (yazarın kararı, 25 Ağustos 2026):
+   - **Yerel oturumda: Drive'a doğrudan yaz.** Google Drive for Desktop bağlı
+     ve klasör yazılabilir durumda; PDF'i `cp` ile hedef klasöre kopyala —
+     gün notları `PAÜ/KBB_not_claude/`, soru notları
+     `PAÜ/KBB_not_claude/Soru/` altına. Kopyayı ayrıca sohbette de gönder.
+     Aynı adda dosya varsa **üzerine yazma**, önce yazara sor.
+   - **Bulut oturumunda: PDF'i sohbette gönder, Drive'a yazar kendisi koyar.**
+     Konteynerin Drive'a yazma yolu yok (sebep: `kbb/kararlar.md`).
+   - Colab yolu denendi ve yazar tarafından iptal edildi ("Colab işi iptal ben
+     kendim yüklerim sen bana pdf'i ver"). Defter depoda duruyor ama artık
+     varsayılan yol değil; kendiliğinden önerme.
 3. **Adlandırma diğer dosyalarla aynı:** gün notları
    `gun-NN-konu-slug.pdf`, soru notları `soru-konu-slug.pdf`. Gönderdiğin
    dosyanın adı birebir bu olsun ki yazar sürükleyip bıraksın.
