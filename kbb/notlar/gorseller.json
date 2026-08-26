@@ -788,5 +788,37 @@
    "lisans": "CC BY-SA 4.0",
    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hyperbaric-oxygen-chamber-open.jpg"
   }
+ ],
+ "gun-13-ses-kisikligi": [
+  {
+   "ad": "r01.jpg",
+   "kaynak": "Yavuzer A, Onerci TM (ed) 2021 Cilt 5 Bol.21 s.255 Resim 1 — eski not PDF'inden kurtarildi"
+  },
+  {
+   "ad": "r02.jpg",
+   "kaynak": "Yavuzer A, Onerci TM (ed) 2021 Cilt 5 Bol.21 s.258 Resim 8 — eski not PDF'inden kurtarildi"
+  },
+  {
+   "ad": "r03.jpg",
+   "kaynak": "Yavuzer A, Onerci TM (ed) 2021 Cilt 5 Bol.21 s.262 Resim 14 — eski not PDF'inden kurtarildi"
+  },
+  {
+   "ad": "w01.jpg",
+   "commons": "Laryngeal nodule (1).jpg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Laryngeal_nodule_(1).jpg"
+  },
+  {
+   "ad": "w03.jpg",
+   "commons": "Stimmbandpolyp1.jpg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Stimmbandpolyp1.jpg"
+  },
+  {
+   "ad": "w05.JPG",
+   "commons": "Reinke's edema, HE.JPG",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Reinke%27s_edema,_HE.JPG"
+  }
  ]
 }
