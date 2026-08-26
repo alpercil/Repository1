@@ -846,5 +846,37 @@
    "lisans": "CC BY-SA 3.0",
    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Croup_steeple_sign.jpg"
   }
+ ],
+ "gun-16-horlama-osas": [
+  {
+   "ad": "r01.jpg",
+   "kaynak": "Yilmaz M, Onerci TM (ed) 2021 Cilt 3 Bol.27 s.330 Sekil 3 — eski not PDF'inden kurtarildi, sekil alti yazisi kirpildi"
+  },
+  {
+   "ad": "w01.jpg",
+   "commons": "CPAP-mirage-quatro-full-face-mask.jpg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/CPAP-mirage-quatro-full-face-mask.jpg",
+   "not": "maske bolgesine kirpildi"
+  },
+  {
+   "ad": "w02.png",
+   "commons": "Polysomnography.png",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Polysomnography.png"
+  },
+  {
+   "ad": "w03.jpg",
+   "commons": "Polysomnography connections.jpg",
+   "lisans": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Polysomnography_connections.jpg"
+  },
+  {
+   "ad": "w04.png",
+   "commons": "Mallampati.svg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mallampati.svg?width=800",
+   "not": "SVG -> PNG"
+  }
  ]
 }

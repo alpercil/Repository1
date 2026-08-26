@@ -86,6 +86,25 @@ korunduğu için Drive'da yeni sürüm oldu, kopya oluşmadı). Ayrıntılı tab
 ne arandı, ne bulunamadı, ne neden reddedildi açıkça yazılı. Uydurulmadı,
 sessizce atlanmadı.
 
+**Gün 1-18 de yenilendi ve Drive'da `01/` klasöründe toplandı**
+Yazarın isteğiyle 1-18 arası notların PDF'leri artık ana klasörde değil,
+`PAÜ/KBB_not_claude/01/` altında duruyor. Gün 17-18 oraya taşındı; Gün 15'in
+yenilenmiş sürümü ilk kez yüklendi (Drive'da eski sürüm duruyormuş). Ayrıntılı
+tablo `kbb/ilerleme.md`'de.
+
+**Bu turda düzeltilen iki içerik hatası**
+- **Gün 8'in üç görseli bozuktu** (alfa kanalı artefaktı → düz pembe alan);
+  hepsi değiştirildi.
+- **Gün 12'de odyogram altyazısı yanlıştı** — etkilenen kulak yanlış sembol
+  grubuyla tarif edilmişti; görüntüden yeniden okunup düzeltildi.
+
+**Öğrenilen iki teknik nokta**
+- **Commons API'si uzun oturumlarda 429 veriyor.** `gorsel_ara.py`'nin geri
+  çekilme süresi 4 denemeden 6'ya, 4/8/12 sn'den 8/16/24... sn'ye çıkarıldı.
+- **Büyük PNG'ler PDF'i şişiriyor.** Ham Commons PNG'leri (11-20 MB) doğrudan
+  gömüldüğünde PDF 13-15 MB'a çıktı; 1600 px'e indirilince 2-5 MB'a düştü.
+  **Görseli indirdikten sonra 1600 px üstünü küçült.**
+
 ## Bu oturumda (22-24 Ağustos) neler oldu
 
 **Yeni soru notları**
@@ -132,7 +151,7 @@ gerekiyorsa kaynak eski notlar ve kitaplardır.
 | İş | Durum |
 | --- | --- |
 | **Gün 70** (Hipofarenks kanseri, Zenker) | Yazarın "başla" demesi bekleniyor |
-| **68 notun görsel taraması** | 15 ve 17-30 bitti (15 not). Kalan: 1-14, 16 ve 31-68 |
+| **68 notun görsel taraması** | **Gün 1-30'un tamamı bitti.** Kalan: 31-68 |
 | **Gün 69 görsel bütçesi** | 11 görsel (3 foto + 8 şema). §4 cerrahi konularda 12-14 istiyor — hâlâ altında |
 | **`soru-asnik-tedavi-protokolu` görsel bütçesi** | Tek görseli var (şema). §4 soru notlarında en az 2 istiyor |
 | **Drive'da ad tutarsızlığı** | Depoda `soru-osas-tanidan-cerrahiye.html`, Drive'da `soru-osasdan-cerrahiye.pdf` |
