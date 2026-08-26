@@ -820,5 +820,31 @@
    "lisans": "CC BY-SA 3.0",
    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Reinke%27s_edema,_HE.JPG"
   }
+ ],
+ "gun-14-larenjit-epiglottit-krup": [
+  {
+   "ad": "r01.jpg",
+   "kaynak": "Papila I (ed) DK1 2024 s.78-82 Sekil 1 (IUC-Cerrahpasa KBB arsivi)",
+   "lisans": "CC BY 4.0",
+   "not": "baslik seridi kirpildi"
+  },
+  {
+   "ad": "r02.jpg",
+   "kaynak": "Papila I (ed) DK1 2024 Sekil 2",
+   "lisans": "CC BY 4.0",
+   "not": "baslik seridi kirpildi"
+  },
+  {
+   "ad": "r03.jpg",
+   "kaynak": "Papila I (ed) DK1 2024 Sekil 3",
+   "lisans": "CC BY 4.0",
+   "not": "baslik seridi kirpildi"
+  },
+  {
+   "ad": "w01.jpg",
+   "commons": "Croup steeple sign.jpg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Croup_steeple_sign.jpg"
+  }
  ]
 }
