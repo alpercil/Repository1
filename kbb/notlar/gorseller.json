@@ -642,5 +642,53 @@
    "lisans": "Public domain",
    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gray854.png"
   }
+ ],
+ "gun-09-vertigo-bppv": [
+  {
+   "ad": "w01.png",
+   "commons": "Bony labyrinth labelled.png",
+   "lisans": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bony_labyrinth_labelled.png"
+  },
+  {
+   "ad": "w02.jpg",
+   "commons": "Epley maneuver.jpg",
+   "lisans": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Epley_maneuver.jpg"
+  },
+  {
+   "ad": "w03.png",
+   "commons": "Ampulla of SemicircularCanal.svg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ampulla_of_SemicircularCanal.svg?width=900",
+   "not": "SVG -> PNG"
+  },
+  {
+   "ad": "w04.png",
+   "commons": "Lampert Maneuver hariadhi.svg",
+   "lisans": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lampert_Maneuver_hariadhi.svg?width=900",
+   "not": "SVG -> PNG"
+  },
+  {
+   "ad": "w05.png",
+   "commons": "Epley.svg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Epley.svg?width=900",
+   "not": "SVG -> PNG"
+  },
+  {
+   "ad": "w06.png",
+   "commons": "Semont maneuver hariadhi.svg",
+   "lisans": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Semont_maneuver_hariadhi.svg?width=900",
+   "not": "SVG -> PNG"
+  },
+  {
+   "ad": "w07.jpg",
+   "commons": "Canalolithiasis.jpg",
+   "lisans": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Canalolithiasis.jpg"
+  }
  ]
 }
