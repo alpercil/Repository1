@@ -332,5 +332,551 @@
    "commons": "Histopathology of medullary thyroid carcinoma, solid variant of papillary thyroid carcinoma and biplastic Hurthle cell.jpg",
    "lisans": "CC BY 4.0"
   }
+ ],
+ "gun-01-rinosinuzitler": [
+  {
+   "ad": "w01.png",
+   "commons": "CT of the ostiomeatal complex, coronal plane, with annotations.png",
+   "lisans": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/CT_of_the_ostiomeatal_complex,_coronal_plane,_with_annotations.png"
+  },
+  {
+   "ad": "w02.jpg",
+   "commons": "Odontogenic sinusitis.jpg",
+   "lisans": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Odontogenic_sinusitis.jpg"
+  },
+  {
+   "ad": "w03.jpg",
+   "commons": "CT of chronic sinusitis.jpg",
+   "lisans": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/CT_of_chronic_sinusitis.jpg"
+  },
+  {
+   "ad": "w04.jpg",
+   "commons": "Celulitis Periorbitaria (Preseptal).JPG",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Celulitis_Periorbitaria_(Preseptal).JPG",
+   "not": "periorbital banda kirpildi"
+  },
+  {
+   "ad": "w05.jpg",
+   "commons": "Potts-puffy-tumor-004.jpg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Potts-puffy-tumor-004.jpg"
+  },
+  {
+   "ad": "w06.png",
+   "commons": "Paranasal Sinuses ant-es.png",
+   "lisans": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paranasal_Sinuses_ant-es.png"
+  }
+ ],
+ "gun-02-nazal-polipozis": [
+  {
+   "ad": "r01.jpg",
+   "kaynak": "Koc C (ed) Bol.13 s.629 Resim 1 — eski not PDF'inden kurtarildi"
+  },
+  {
+   "ad": "r02.jpg",
+   "kaynak": "Koc C (ed) Bol.13 s.629 Resim 2 — eski not PDF'inden kurtarildi"
+  },
+  {
+   "ad": "r03.jpg",
+   "kaynak": "Koc C (ed) Bol.13 s.629 Resim 3 — eski not PDF'inden kurtarildi"
+  },
+  {
+   "ad": "w01.jpg",
+   "commons": "Polype nasal.jpg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Polype_nasal.jpg"
+  },
+  {
+   "ad": "w02.jpg",
+   "commons": "Polyposis nasi 1.jpg",
+   "lisans": "CC BY 3.0 de",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Polyposis_nasi_1.jpg"
+  },
+  {
+   "ad": "w03.jpg",
+   "commons": "CHOANAL POLYP PerfectlyClear.jpg",
+   "lisans": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/CHOANAL_POLYP_PerfectlyClear.jpg"
+  },
+  {
+   "ad": "w04.jpg",
+   "commons": "Nasal polyp 50x H+E.tif",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nasal_polyp_50x_H%2BE.tif",
+   "not": "TIFF -> JPEG"
+  }
+ ],
+ "gun-03-alerjik-rinit": [
+  {
+   "ad": "w01.jpg",
+   "commons": "Prick Test example.jpg",
+   "lisans": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Prick_Test_example.jpg"
+  },
+  {
+   "ad": "w02.png",
+   "commons": "Skin Prick Test.png",
+   "lisans": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Skin_Prick_Test.png"
+  },
+  {
+   "ad": "w03.jpg",
+   "commons": "House dust mite (Dermatophagoides pteronyssinus).jpg",
+   "lisans": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/House_dust_mite_(Dermatophagoides_pteronyssinus).jpg"
+  },
+  {
+   "ad": "w04.jpg",
+   "commons": "Misc pollen colorized.jpg",
+   "lisans": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Misc_pollen_colorized.jpg"
+  },
+  {
+   "ad": "w05.png",
+   "commons": "Allergic shiner in pediatric patient.png",
+   "lisans": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Allergic_shiner_in_pediatric_patient.png",
+   "not": "infraorbital banda kirpildi"
+  },
+  {
+   "ad": "w06.jpg",
+   "commons": "Eosinophil blood smear.JPG",
+   "lisans": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Eosinophil_blood_smear.JPG"
+  },
+  {
+   "ad": "w07.png",
+   "commons": "Anatomy of the human nasal cavity.png",
+   "lisans": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Anatomy_of_the_human_nasal_cavity.png"
+  }
+ ],
+ "gun-04-akut-otitis-media": [
+  {
+   "ad": "r01.jpg",
+   "kaynak": "Onerci T (ed) Cilt 1 Bol.30 s.216 Sekil 1 — eski not PDF'inden kurtarildi"
+  },
+  {
+   "ad": "r02.jpg",
+   "kaynak": "Onerci T (ed) Cilt 1 Bol.30 Sekil 2 — eski not PDF'inden kurtarildi"
+  },
+  {
+   "ad": "r03.jpg",
+   "kaynak": "Onerci T (ed) Cilt 1 Bol.30 Sekil 3 — eski not PDF'inden kurtarildi"
+  },
+  {
+   "ad": "w01.jpg",
+   "commons": "Normal Tympanic Membrane Chorda Tympani Nerve Visible.jpg",
+   "lisans": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Normal_Tympanic_Membrane_Chorda_Tympani_Nerve_Visible.jpg"
+  },
+  {
+   "ad": "w02.jpg",
+   "commons": "Mastoiditis1.jpg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mastoiditis1.jpg"
+  },
+  {
+   "ad": "w03.jpg",
+   "commons": "Acute mastoiditis with external fistula 1.jpg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Acute_mastoiditis_with_external_fistula_1.jpg"
+  },
+  {
+   "ad": "w04.jpg",
+   "commons": "Subtotal Perforation of the right tympanic membrane.tif",
+   "lisans": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Subtotal_Perforation_of_the_right_tympanic_membrane.tif",
+   "not": "TIFF -> JPEG"
+  }
+ ],
+ "gun-05-efuzyonlu-otitis-media": [
+  {
+   "ad": "r01.jpg",
+   "kaynak": "Onerci TM (ed) Cilt 1 Bol.31 s.229 Sekil 2 — eski not PDF'inden kurtarildi"
+  },
+  {
+   "ad": "r02.jpg",
+   "kaynak": "Onerci TM (ed) Cilt 1 Bol.31 s.229 Sekil 3 — eski not PDF'inden kurtarildi"
+  },
+  {
+   "ad": "r03.jpg",
+   "kaynak": "Celik O (ed) Cilt 1 Bol.13 s.209 Sekil 13.4 — eski not PDF'inden kurtarildi"
+  },
+  {
+   "ad": "w01.jpg",
+   "commons": "Adult Serous Otitis Media.jpg",
+   "lisans": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Adult_Serous_Otitis_Media.jpg"
+  },
+  {
+   "ad": "w03.jpg",
+   "commons": "Otitis media entdifferenziert2.jpg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Otitis_media_entdifferenziert2.jpg"
+  },
+  {
+   "ad": "w04.png",
+   "commons": "Tympanometry.png",
+   "lisans": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tympanometry.png"
+  }
+ ],
+ "gun-06-otitis-eksterna-otomikoz": [
+  {
+   "ad": "r01.jpg",
+   "kaynak": "Onerci TM (ed) Cilt 1 Bol.22 s.159 Sekil 1 — eski not PDF'inden kurtarildi"
+  },
+  {
+   "ad": "r02.jpg",
+   "kaynak": "Onerci TM (ed) Cilt 1 Bol.22 s.164 Sekil 3a — eski not PDF'inden kurtarildi"
+  },
+  {
+   "ad": "r03.jpg",
+   "kaynak": "Onerci TM (ed) Cilt 1 Bol.22 s.164 Sekil 3b — eski not PDF'inden kurtarildi"
+  },
+  {
+   "ad": "w01.jpg",
+   "commons": "Otitis externa.jpg",
+   "lisans": "CC BY 3.0 de",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Otitis_externa.jpg"
+  },
+  {
+   "ad": "w02.JPG",
+   "commons": "OtitisExterna10.JPG",
+   "lisans": "CC BY 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/OtitisExterna10.JPG"
+  },
+  {
+   "ad": "w03.png",
+   "commons": "Ramsey Hunt Syndrome.png",
+   "lisans": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ramsey_Hunt_Syndrome.png"
+  },
+  {
+   "ad": "w04.jpg",
+   "commons": "RamsayHunt2.jpg",
+   "lisans": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/RamsayHunt2.jpg"
+  }
+ ],
+ "gun-07-farenjit-tonsillit": [
+  {
+   "ad": "r01.jpg",
+   "kaynak": "Koc C (ed) 2019 s.807 Resim 5 — eski not PDF'inden kurtarildi"
+  },
+  {
+   "ad": "r02.jpg",
+   "kaynak": "Koc C (ed) 2019 s.807 Resim 6 — eski not PDF'inden kurtarildi"
+  },
+  {
+   "ad": "r03.jpg",
+   "kaynak": "Koc C (ed) 2019 s.802 Resim 3 — eski not PDF'inden kurtarildi"
+  },
+  {
+   "ad": "r04.jpg",
+   "commons": "Adenoid hypertrophy MRI (Hellerhoff)",
+   "lisans": "CC BY-SA 4.0",
+   "not": "eski not PDF'inden kurtarildi"
+  },
+  {
+   "ad": "r05.jpg",
+   "commons": "PeritonsilarAbsMark.png (James Heilman MD)",
+   "lisans": "CC BY-SA 4.0",
+   "not": "eski not PDF'inden kurtarildi"
+  },
+  {
+   "ad": "w01.jpg",
+   "commons": "Streptococcal pharyngitis 1.jpg",
+   "lisans": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Streptococcal_pharyngitis_1.jpg"
+  },
+  {
+   "ad": "w02.JPG",
+   "commons": "Mono tonsils.JPG",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mono_tonsils.JPG"
+  },
+  {
+   "ad": "w03.jpg",
+   "commons": "Strep throat with white strawberry tongue.jpg",
+   "lisans": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Strep_throat_with_white_strawberry_tongue.jpg"
+  }
+ ],
+ "gun-08-epistaksis": [
+  {
+   "ad": "w01.png",
+   "commons": "Locus Kiesselbachii Shematic EN.svg",
+   "lisans": "CC BY-SA 3.0 de",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Locus_Kiesselbachii_Shematic_EN.svg?width=1000",
+   "not": "SVG -> PNG (Commons render)"
+  },
+  {
+   "ad": "w02.jpg",
+   "commons": "Kiesselbach's Plexus.jpg",
+   "lisans": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kiesselbach%27s_Plexus.jpg"
+  },
+  {
+   "ad": "w03.jpg",
+   "commons": "Epistaxis packing.jpg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Epistaxis_packing.jpg",
+   "not": "burun bolgesine kirpildi"
+  },
+  {
+   "ad": "w04.jpg",
+   "commons": "Hereditary hemorrhagic telangiectasia.jpg",
+   "lisans": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hereditary_hemorrhagic_telangiectasia.jpg"
+  },
+  {
+   "ad": "w05.png",
+   "commons": "Gray854.png",
+   "lisans": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gray854.png"
+  }
+ ],
+ "gun-09-vertigo-bppv": [
+  {
+   "ad": "w01.png",
+   "commons": "Bony labyrinth labelled.png",
+   "lisans": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bony_labyrinth_labelled.png"
+  },
+  {
+   "ad": "w02.jpg",
+   "commons": "Epley maneuver.jpg",
+   "lisans": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Epley_maneuver.jpg"
+  },
+  {
+   "ad": "w03.png",
+   "commons": "Ampulla of SemicircularCanal.svg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ampulla_of_SemicircularCanal.svg?width=900",
+   "not": "SVG -> PNG"
+  },
+  {
+   "ad": "w04.png",
+   "commons": "Lampert Maneuver hariadhi.svg",
+   "lisans": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lampert_Maneuver_hariadhi.svg?width=900",
+   "not": "SVG -> PNG"
+  },
+  {
+   "ad": "w05.png",
+   "commons": "Epley.svg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Epley.svg?width=900",
+   "not": "SVG -> PNG"
+  },
+  {
+   "ad": "w06.png",
+   "commons": "Semont maneuver hariadhi.svg",
+   "lisans": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Semont_maneuver_hariadhi.svg?width=900",
+   "not": "SVG -> PNG"
+  },
+  {
+   "ad": "w07.jpg",
+   "commons": "Canalolithiasis.jpg",
+   "lisans": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Canalolithiasis.jpg"
+  }
+ ],
+ "gun-10-meniere-noronit-migren": [
+  {
+   "ad": "w01.jpg",
+   "commons": "Cross-section of cochlea (Wikimedia)",
+   "lisans": "CC BY-SA 4.0",
+   "not": "eski not PDF'inden kurtarildi"
+  },
+  {
+   "ad": "w02.jpg",
+   "commons": "Akustikus-Schwannon links intrameatal MRT T1KM axial - Annotation.jpg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Akustikus-Schwannon_links_intrameatal_MRT_T1KM_axial_-_Annotation.jpg"
+  },
+  {
+   "ad": "w03.png",
+   "commons": "Menieres-hearing-loss.png",
+   "lisans": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Menieres-hearing-loss.png",
+   "not": "sag panele kirpildi"
+  },
+  {
+   "ad": "w04.jpg",
+   "commons": "An audiogram with mixed hearing loss for the left ear.jpg",
+   "lisans": "CC BY 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/An_audiogram_with_mixed_hearing_loss_for_the_left_ear.jpg"
+  }
+ ],
+ "gun-11-odyoloji": [
+  {
+   "ad": "w01.png",
+   "commons": "Rinneversuch.png",
+   "lisans": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rinneversuch.png"
+  },
+  {
+   "ad": "w02.png",
+   "commons": "Weberversuch.png",
+   "lisans": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Weberversuch.png"
+  },
+  {
+   "ad": "w03.png",
+   "commons": "Tympanometer.png",
+   "lisans": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tympanometer.png"
+  },
+  {
+   "ad": "w04.png",
+   "commons": "Curve Ad.png",
+   "lisans": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Curve_Ad.png"
+  },
+  {
+   "ad": "w05.png",
+   "commons": "Double peak tympanometry curve.png",
+   "lisans": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Double_peak_tympanometry_curve.png"
+  },
+  {
+   "ad": "w06.jpg",
+   "commons": "Normal audiogram.jpg",
+   "lisans": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Normal_audiogram.jpg"
+  },
+  {
+   "ad": "w07.jpg",
+   "commons": "Left hearing loss.jpg",
+   "lisans": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Left_hearing_loss.jpg"
+  },
+  {
+   "ad": "w08.png",
+   "commons": "Hair cell morphology.png",
+   "lisans": "CC BY 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hair_cell_morphology.png"
+  }
+ ],
+ "gun-12-ani-snik": [
+  {
+   "ad": "r01.jpg",
+   "kaynak": "Celik O (ed) Cilt 2 Bol.43 s.708 Sekil 43.1 — eski not PDF'inden kurtarildi, sekil alti yazisi kirpildi"
+  },
+  {
+   "ad": "r02.jpg",
+   "kaynak": "Celik O (ed) Cilt 2 Bol.43 s.708 Sekil 43.2 — eski not PDF'inden kurtarildi, sekil alti yazisi kirpildi"
+  },
+  {
+   "ad": "r03.jpg",
+   "kaynak": "Wang Y ve ark. Front Neurol 2024 Sekil 1 (PMC11176423)",
+   "lisans": "CC BY 4.0"
+  },
+  {
+   "ad": "w01.jpg",
+   "commons": "Hyperbaric-oxygen-chamber-open.jpg",
+   "lisans": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hyperbaric-oxygen-chamber-open.jpg"
+  }
+ ],
+ "gun-13-ses-kisikligi": [
+  {
+   "ad": "r01.jpg",
+   "kaynak": "Yavuzer A, Onerci TM (ed) 2021 Cilt 5 Bol.21 s.255 Resim 1 — eski not PDF'inden kurtarildi"
+  },
+  {
+   "ad": "r02.jpg",
+   "kaynak": "Yavuzer A, Onerci TM (ed) 2021 Cilt 5 Bol.21 s.258 Resim 8 — eski not PDF'inden kurtarildi"
+  },
+  {
+   "ad": "r03.jpg",
+   "kaynak": "Yavuzer A, Onerci TM (ed) 2021 Cilt 5 Bol.21 s.262 Resim 14 — eski not PDF'inden kurtarildi"
+  },
+  {
+   "ad": "w01.jpg",
+   "commons": "Laryngeal nodule (1).jpg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Laryngeal_nodule_(1).jpg"
+  },
+  {
+   "ad": "w03.jpg",
+   "commons": "Stimmbandpolyp1.jpg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Stimmbandpolyp1.jpg"
+  },
+  {
+   "ad": "w05.JPG",
+   "commons": "Reinke's edema, HE.JPG",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Reinke%27s_edema,_HE.JPG"
+  }
+ ],
+ "gun-14-larenjit-epiglottit-krup": [
+  {
+   "ad": "r01.jpg",
+   "kaynak": "Papila I (ed) DK1 2024 s.78-82 Sekil 1 (IUC-Cerrahpasa KBB arsivi)",
+   "lisans": "CC BY 4.0",
+   "not": "baslik seridi kirpildi"
+  },
+  {
+   "ad": "r02.jpg",
+   "kaynak": "Papila I (ed) DK1 2024 Sekil 2",
+   "lisans": "CC BY 4.0",
+   "not": "baslik seridi kirpildi"
+  },
+  {
+   "ad": "r03.jpg",
+   "kaynak": "Papila I (ed) DK1 2024 Sekil 3",
+   "lisans": "CC BY 4.0",
+   "not": "baslik seridi kirpildi"
+  },
+  {
+   "ad": "w01.jpg",
+   "commons": "Croup steeple sign.jpg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Croup_steeple_sign.jpg"
+  }
+ ],
+ "gun-16-horlama-osas": [
+  {
+   "ad": "r01.jpg",
+   "kaynak": "Yilmaz M, Onerci TM (ed) 2021 Cilt 3 Bol.27 s.330 Sekil 3 — eski not PDF'inden kurtarildi, sekil alti yazisi kirpildi"
+  },
+  {
+   "ad": "w01.jpg",
+   "commons": "CPAP-mirage-quatro-full-face-mask.jpg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/CPAP-mirage-quatro-full-face-mask.jpg",
+   "not": "maske bolgesine kirpildi"
+  },
+  {
+   "ad": "w02.png",
+   "commons": "Polysomnography.png",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Polysomnography.png"
+  },
+  {
+   "ad": "w03.jpg",
+   "commons": "Polysomnography connections.jpg",
+   "lisans": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Polysomnography_connections.jpg"
+  },
+  {
+   "ad": "w04.png",
+   "commons": "Mallampati.svg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mallampati.svg?width=800",
+   "not": "SVG -> PNG"
+  }
  ]
 }

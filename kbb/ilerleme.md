@@ -110,7 +110,22 @@ Notların bir kısmı görsel bütçesi kuralı (`SKILL.md` §4) konmadan önce
 
 | Gün | Konu | Önce | Sonra | Tarih |
 | --- | --- | --- | --- | --- |
+| 1 | Rinosinüzitler | 0 görsel | 12 görsel (6 şema + 6 gerçek görüntü) | 2026-08-26 |
+| 2 | Nazal polipozis | 3 görsel | 14 görsel (7+7) | 2026-08-26 |
+| 3 | Alerjik rinit | 0 görsel | 13 görsel (6+7) | 2026-08-26 |
+| 4 | Akut otitis media | 3 görsel | 14 görsel (7+7) | 2026-08-26 |
+| 5 | Efüzyonlu otitis media | 3 görsel | 12 görsel (6+6) | 2026-08-26 |
+| 6 | Otitis eksterna ve otomikoz | 3 görsel | 12 görsel (5+7) | 2026-08-26 |
+| 7 | Farenjit, tonsillit, adenotonsiller | 5 görsel | 13 görsel (5+8) | 2026-08-26 |
+| 8 | Epistaksis | 3 görsel (**bozuktu**) | 11 görsel (6+5) | 2026-08-26 |
+| 9 | Vertigo ve BPPV | 1 görsel | 12 görsel (5+7) | 2026-08-26 |
+| 10 | Ménière, nöronit, vestibüler migren | 1 görsel | 9 görsel (5+4) | 2026-08-26 |
+| 11 | Odyoloji ve işitme testleri | 0 görsel | 13 görsel (5+8) | 2026-08-26 |
+| 12 | Ani sensörinöral işitme kaybı | 3 görsel | 9 görsel (5+4) | 2026-08-26 |
+| 13 | Ses kısıklığı ve benign larenks | 3 görsel | 10 görsel (4+6) | 2026-08-26 |
+| 14 | Larenjit, epiglottit, krup | 3 görsel | 9 görsel (5+4) | 2026-08-26 |
 | 15 | Nazal septum deviasyonu ve septoplasti | 4 görsel | 21 görsel (10 şema + **7 kitap/atlas görseli** + 4 Commons bağlantısı) | 2026-08-22 |
+| 16 | Horlama ve OSAS | 1 görsel | 10 görsel (5+5) | 2026-08-26 |
 | 17 | Boyun kitlelerine yaklaşım | 3 görsel | 13 görsel (7 şema + 6 gerçek görüntü: 2 USG, 1 MRG, seviye şeması, tiroglossal USG/BT, skrofula) | 2026-08-25 |
 | 18 | Derin boyun enfeksiyonları | 3 görsel | 12 görsel (6 şema + 6 gerçek görüntü: Ludwig, retrofarengeal ve mediastinit BT panelleri, peritonsiller apse, lateral grafi, koronal BT) | 2026-08-25 |
 | 19 | Tükürük bezi hastalıkları | 6 görsel | 14 görsel (7 şema + 7 gerçek görüntü) | 2026-08-25 |
@@ -134,6 +149,19 @@ Commons'tan `kbb/gorsel_ara.py` ile indirildi; her aday görsel kontak sayfası
 reddedildi. Serbest lisanslı görüntü bulunamayan konularda (22, 24, 25, 28, 29)
 notun içinde **"Gerçek görüntü sınırı"** paragrafı var: ne arandı, ne bulunamadı,
 ne neden reddedildi yazılı.
+
+**Gün 1-18 tamamlandı (26 Ağustos).** Drive'da bu on sekiz notun PDF'i artık
+`PAÜ/KBB_not_claude/01/` klasöründe toplu duruyor (yazarın isteği). Gün 17 ve 18
+ana klasörden buraya taşındı; Gün 15'in yenilenmiş sürümü ilk kez Drive'a kondu
+(orada hâlâ 11 Ağustos tarihli eski sürüm duruyordu). Gün 13'ün eski dosyası
+farklı adla (`gun-13-ses-kisikligi-benign-larenks.pdf`) durduğu için üzerine
+yazılamadı; silinip yeni adla kondu.
+
+**Bu turda çıkan iki içerik düzeltmesi:**
+- **Gün 8'in üç görseli bozuktu** — alfa kanalı artefaktı nedeniyle düz pembe
+  alan olarak basılmıştı; hepsi yenileriyle değiştirildi.
+- **Gün 12'de odyogram altyazısı yanlıştı** — etkilenen kulak yanlış sembol
+  grubuyla (X yerine O) tarif edilmişti; görüntüden yeniden okunup düzeltildi.
 
 Yenileme yöntemi: eski PDF'in metni Drive'dan okunur, HTML olarak
 `kbb/notlar/` altına kurulur, eksik yerlere şema çizilir. Görseller

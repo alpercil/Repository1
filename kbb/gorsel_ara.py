@@ -28,11 +28,14 @@ SERBEST = ("cc0", "public domain", "cc by", "cc-by", "pd-")
 
 def _iste(parametreler):
     # Commons API'si de 429 dondurebiliyor; indirme tarafiyla ayni sekilde bekle-yeniden dene.
-    for deneme in range(4):
+    # 26 Agustos: pes pese cok istek atilan uzun oturumlarda 4 deneme yetmedi ve is
+    # yarida kaldi; deneme sayisi ve bekleme suresi artirildi (toplam ~2,5 dk sabir).
+    y = None
+    for deneme in range(6):
         y = requests.get(API, params=parametreler, headers={"User-Agent": UA}, timeout=40)
         if y.status_code != 429:
             break
-        bekle = 4 * (deneme + 1)
+        bekle = 8 * (deneme + 1)
         print(f"  API 429 - {bekle} sn bekleniyor")
         time.sleep(bekle)
     y.raise_for_status()
