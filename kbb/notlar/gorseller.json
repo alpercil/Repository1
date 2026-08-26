@@ -1254,5 +1254,39 @@
    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Microtia.jpg",
    "not": "kulak bolgesine kirpildi"
   }
+ ],
+ "gun-42-sscd-perilenf-fistulu": [
+  {
+   "ad": "w01.png",
+   "commons": "Superior semicircular canal dehiscence syndrome - CT scan.gif",
+   "lisans": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Superior_semicircular_canal_dehiscence_syndrome_-_CT_scan.gif",
+   "not": "GIF -> PNG"
+  },
+  {
+   "ad": "w02.png",
+   "commons": "Superior canal dehiscence syndrome by hariadhi.svg",
+   "lisans": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Superior_canal_dehiscence_syndrome_by_hariadhi.svg",
+   "not": "SVG -> PNG"
+  },
+  {
+   "ad": "w03.jpg",
+   "commons": "1410 Equilibrium and Semicircular Canals.jpg",
+   "lisans": "CC BY 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/1410_Equilibrium_and_Semicircular_Canals.jpg"
+  },
+  {
+   "ad": "w04.png",
+   "commons": "VEMP ´s waves.png",
+   "lisans": "CC BY 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/VEMP_%C2%B4s_waves.png"
+  },
+  {
+   "ad": "w05.jpg",
+   "commons": "Bilateral conductive hearing loss.jpg",
+   "lisans": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Bilateral_conductive_hearing_loss.jpg"
+  }
  ]
 }
