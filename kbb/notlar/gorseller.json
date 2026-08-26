@@ -1440,5 +1440,32 @@
    "lisans": "CC BY 3.0",
    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Basic_panoramic_radiograph.jpg"
   }
+ ],
+ "gun-48-boyun-diseksiyonu": [
+  {
+   "ad": "w01.png",
+   "commons": "Cervical lymph nodes and levels.png",
+   "lisans": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cervical_lymph_nodes_and_levels.png"
+  },
+  {
+   "ad": "w02.jpg",
+   "commons": "Neck dissection1.jpg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Neck_dissection1.jpg"
+  },
+  {
+   "ad": "w03.jpg",
+   "commons": "Neck dissection2.jpg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Neck_dissection2.jpg"
+  },
+  {
+   "ad": "w05.png",
+   "commons": "Copy of Musculi coli base, my edits for tringles, labeled trianglesanteriorT.svg",
+   "lisans": "CC BY 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Copy_of_Musculi_coli_base,_my_edits_for_tringles,_labeled_trianglesanteriorT.svg",
+   "not": "SVG -> PNG, beyaz zemin"
+  }
  ]
 }
