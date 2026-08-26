@@ -455,5 +455,76 @@
    "lisans": "CC BY 4.0",
    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Anatomy_of_the_human_nasal_cavity.png"
   }
+ ],
+ "gun-04-akut-otitis-media": [
+  {
+   "ad": "r01.jpg",
+   "kaynak": "Onerci T (ed) Cilt 1 Bol.30 s.216 Sekil 1 — eski not PDF'inden kurtarildi"
+  },
+  {
+   "ad": "r02.jpg",
+   "kaynak": "Onerci T (ed) Cilt 1 Bol.30 Sekil 2 — eski not PDF'inden kurtarildi"
+  },
+  {
+   "ad": "r03.jpg",
+   "kaynak": "Onerci T (ed) Cilt 1 Bol.30 Sekil 3 — eski not PDF'inden kurtarildi"
+  },
+  {
+   "ad": "w01.jpg",
+   "commons": "Normal Tympanic Membrane Chorda Tympani Nerve Visible.jpg",
+   "lisans": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Normal_Tympanic_Membrane_Chorda_Tympani_Nerve_Visible.jpg"
+  },
+  {
+   "ad": "w02.jpg",
+   "commons": "Mastoiditis1.jpg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mastoiditis1.jpg"
+  },
+  {
+   "ad": "w03.jpg",
+   "commons": "Acute mastoiditis with external fistula 1.jpg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Acute_mastoiditis_with_external_fistula_1.jpg"
+  },
+  {
+   "ad": "w04.jpg",
+   "commons": "Subtotal Perforation of the right tympanic membrane.tif",
+   "lisans": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Subtotal_Perforation_of_the_right_tympanic_membrane.tif",
+   "not": "TIFF -> JPEG"
+  }
+ ],
+ "gun-05-efuzyonlu-otitis-media": [
+  {
+   "ad": "r01.jpg",
+   "kaynak": "Onerci TM (ed) Cilt 1 Bol.31 s.229 Sekil 2 — eski not PDF'inden kurtarildi"
+  },
+  {
+   "ad": "r02.jpg",
+   "kaynak": "Onerci TM (ed) Cilt 1 Bol.31 s.229 Sekil 3 — eski not PDF'inden kurtarildi"
+  },
+  {
+   "ad": "r03.jpg",
+   "kaynak": "Celik O (ed) Cilt 1 Bol.13 s.209 Sekil 13.4 — eski not PDF'inden kurtarildi"
+  },
+  {
+   "ad": "w01.jpg",
+   "commons": "Adult Serous Otitis Media.jpg",
+   "lisans": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Adult_Serous_Otitis_Media.jpg"
+  },
+  {
+   "ad": "w03.jpg",
+   "commons": "Otitis media entdifferenziert2.jpg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Otitis_media_entdifferenziert2.jpg"
+  },
+  {
+   "ad": "w04.png",
+   "commons": "Tympanometry.png",
+   "lisans": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tympanometry.png"
+  }
  ]
 }
