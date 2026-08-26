@@ -1414,5 +1414,31 @@
    "lisans": "Public domain",
    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gray854.png"
   }
+ ],
+ "gun-47-odontojenik-sinuzit": [
+  {
+   "ad": "w01.jpg",
+   "commons": "Odontogenic sinusitis.jpg",
+   "lisans": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Odontogenic_sinusitis.jpg"
+  },
+  {
+   "ad": "w02.png",
+   "commons": "Gray1003.png",
+   "lisans": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gray1003.png"
+  },
+  {
+   "ad": "w03.png",
+   "commons": "Maxillary sinus - medial view.png",
+   "lisans": "CC BY-SA 2.1 jp",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Maxillary_sinus_-_medial_view.png"
+  },
+  {
+   "ad": "w04.jpg",
+   "commons": "Basic panoramic radiograph.jpg",
+   "lisans": "CC BY 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Basic_panoramic_radiograph.jpg"
+  }
  ]
 }
