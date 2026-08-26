@@ -1347,5 +1347,40 @@
    "lisans": "Public domain",
    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gray193_-_Cranial_fossae.png"
   }
+ ],
+ "gun-45-hht-epistaksis": [
+  {
+   "ad": "w01.jpg",
+   "commons": "Hereditary hemorrhagic telangiectasia.jpg",
+   "lisans": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hereditary_hemorrhagic_telangiectasia.jpg"
+  },
+  {
+   "ad": "w02.jpg",
+   "commons": "Epistaxis packing.jpg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Epistaxis_packing.jpg",
+   "not": "burun bolgesine kirpildi"
+  },
+  {
+   "ad": "w03.png",
+   "commons": "Locus Kiesselbachii Shematic EN.svg",
+   "lisans": "CC BY-SA 3.0 de",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Locus_Kiesselbachii_Shematic_EN.svg",
+   "not": "SVG -> PNG, beyaz zemin"
+  },
+  {
+   "ad": "w04.jpg",
+   "commons": "Arteriovenous malformation in hereditary hemorrhagic telangiectasia Case 150 (5400956086).jpg",
+   "lisans": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arteriovenous_malformation_in_hereditary_hemorrhagic_telangiectasia_Case_150_(5400956086).jpg"
+  },
+  {
+   "ad": "w05.png",
+   "commons": "Gray511.svg",
+   "lisans": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gray511.svg",
+   "not": "SVG -> PNG, beyaz zemin"
+  }
  ]
 }
