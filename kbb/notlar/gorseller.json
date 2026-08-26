@@ -878,5 +878,72 @@
    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mallampati.svg?width=800",
    "not": "SVG -> PNG"
   }
+ ],
+ "gun-31-vokal-kord-paralizileri-larengotrakeal-stenoz": [
+  {
+   "ad": "w01.jpg",
+   "commons": "Unilateral Vocal Cord Paralysis.jpg",
+   "lisans": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Unilateral_Vocal_Cord_Paralysis.jpg"
+  },
+  {
+   "ad": "w02.png",
+   "commons": "Recurrent laryngeal nerve.svg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Recurrent_laryngeal_nerve.svg?width=700",
+   "not": "SVG -> PNG"
+  },
+  {
+   "ad": "w03.png",
+   "commons": "Subglottic stenosis 03.png",
+   "lisans": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Subglottic_stenosis_03.png",
+   "not": "Myer-Cotton evre II"
+  },
+  {
+   "ad": "w04.png",
+   "commons": "Subglottic stenosis 02.png",
+   "lisans": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Subglottic_stenosis_02.png",
+   "not": "Myer-Cotton evre III"
+  },
+  {
+   "ad": "w06.jpg",
+   "commons": "Tracheostomy NIH.jpg",
+   "lisans": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tracheostomy_NIH.jpg"
+  }
+ ],
+ "gun-32-disfaji-laringofaringeal-reflu": [
+  {
+   "ad": "w01.jpg",
+   "commons": "Zenker Divertikel Stadien.jpg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Zenker_Divertikel_Stadien.jpg"
+  },
+  {
+   "ad": "w02.jpg",
+   "commons": "Zenker-Pouch Grad 2 nach Brombart 87M - RF - 001.jpg",
+   "lisans": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Zenker-Pouch_Grad_2_nach_Brombart_87M_-_RF_-_001.jpg"
+  },
+  {
+   "ad": "w03.jpg",
+   "commons": "Achalasia EMS.jpg",
+   "lisans": "CC BY 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Achalasia_EMS.jpg"
+  },
+  {
+   "ad": "w04.png",
+   "commons": "AcalasiaManomAResol.png",
+   "lisans": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/AcalasiaManomAResol.png"
+  },
+  {
+   "ad": "w05.png",
+   "commons": "Hiatal Hernia.png",
+   "lisans": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hiatal_Hernia.png"
+  }
  ]
 }
