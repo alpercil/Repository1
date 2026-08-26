@@ -1220,5 +1220,39 @@
    "lisans": "Public domain",
    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gray139.png"
   }
+ ],
+ "gun-41-konjenital-kulak-anomalileri": [
+  {
+   "ad": "w01.jpg",
+   "commons": "Microtia lvl3.jpg",
+   "lisans": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Microtia_lvl3.jpg",
+   "not": "kulak bolgesine kirpildi"
+  },
+  {
+   "ad": "w02.png",
+   "commons": "Gray904.png",
+   "lisans": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gray904.png"
+  },
+  {
+   "ad": "w03.jpg",
+   "commons": "Preauricular sinus.jpg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Preauricular_sinus.jpg"
+  },
+  {
+   "ad": "w04.jpg",
+   "commons": "Fistule Oreille.jpg",
+   "lisans": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fistule_Oreille.jpg"
+  },
+  {
+   "ad": "w05.jpg",
+   "commons": "Microtia.jpg",
+   "lisans": "CC BY 3.0 de",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Microtia.jpg",
+   "not": "kulak bolgesine kirpildi"
+  }
  ]
 }
