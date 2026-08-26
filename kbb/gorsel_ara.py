@@ -85,8 +85,18 @@ def indir(hedef_klasor, ad, commons_adi):
     if not bilgi["serbest"]:
         print(f"  REDDEDILDI: {commons_adi} - lisans '{bilgi['lisans']}' serbest degil")
         return None
+    # 27 Agustos: orijinal dosyayi cekmek iki ayri soruna yol aciyordu. (1) Commons
+    # orijinaller icin hiz sinirini sert uyguluyor - 429 donuyor ve "bunun yerine
+    # kucuk resim kullanin" diyor. (2) Ham dosyalar (20 MB'lik PNG'ler) PDF'i
+    # sisiriyordu; her indirmenin ardindan elle kucultmek gerekiyordu.
+    # Cozum ikisini birden kapatiyor: A4'te 1280 px zaten yeterli, bu genislikte
+    # kucuk resim isteniyor. 1280, Commons'un onbellekte tuttugu STANDART kucuk
+    # resim genisliklerinden biri (320/640/800/1024/1280/2560); listede olmayan
+    # bir genislik istenirse sunucu yine orijinali uretmeye calisiyor ve ayni
+    # hiz sinirine takiliyor. Zaten daha dar olan dosyalarda orijinal doner.
     url = ("https://commons.wikimedia.org/wiki/Special:FilePath/"
-           + urllib.parse.quote(commons_adi.replace("File:", "").replace(" ", "_")))
+           + urllib.parse.quote(commons_adi.replace("File:", "").replace(" ", "_"))
+           + "?width=1280")
     os.makedirs(hedef_klasor, exist_ok=True)
     yol = os.path.join(hedef_klasor, ad)
     # Commons 429 (hiz siniri), 5xx (gecici sunucu) donebiliyor; buyuk dosyalarda
