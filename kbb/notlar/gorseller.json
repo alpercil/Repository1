@@ -717,5 +717,55 @@
    "lisans": "CC BY 3.0",
    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/An_audiogram_with_mixed_hearing_loss_for_the_left_ear.jpg"
   }
+ ],
+ "gun-11-odyoloji": [
+  {
+   "ad": "w01.png",
+   "commons": "Rinneversuch.png",
+   "lisans": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Rinneversuch.png"
+  },
+  {
+   "ad": "w02.png",
+   "commons": "Weberversuch.png",
+   "lisans": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Weberversuch.png"
+  },
+  {
+   "ad": "w03.png",
+   "commons": "Tympanometer.png",
+   "lisans": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tympanometer.png"
+  },
+  {
+   "ad": "w04.png",
+   "commons": "Curve Ad.png",
+   "lisans": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Curve_Ad.png"
+  },
+  {
+   "ad": "w05.png",
+   "commons": "Double peak tympanometry curve.png",
+   "lisans": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Double_peak_tympanometry_curve.png"
+  },
+  {
+   "ad": "w06.jpg",
+   "commons": "Normal audiogram.jpg",
+   "lisans": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Normal_audiogram.jpg"
+  },
+  {
+   "ad": "w07.jpg",
+   "commons": "Left hearing loss.jpg",
+   "lisans": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Left_hearing_loss.jpg"
+  },
+  {
+   "ad": "w08.png",
+   "commons": "Hair cell morphology.png",
+   "lisans": "CC BY 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hair_cell_morphology.png"
+  }
  ]
 }
