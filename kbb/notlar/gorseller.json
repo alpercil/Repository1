@@ -1382,5 +1382,37 @@
    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gray511.svg",
    "not": "SVG -> PNG, beyaz zemin"
   }
+ ],
+ "gun-46-rinoplasti": [
+  {
+   "ad": "w01.jpg",
+   "commons": "Open Rhinoplasty Columellar Incision.jpg",
+   "lisans": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Open_Rhinoplasty_Columellar_Incision.jpg"
+  },
+  {
+   "ad": "w02.jpg",
+   "commons": "Open rhinoplasty surgical exposure prior to dissection.jpg",
+   "lisans": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Open_rhinoplasty_surgical_exposure_prior_to_dissection.jpg"
+  },
+  {
+   "ad": "w03.jpg",
+   "commons": "Cartilage Modification During Open Rhinoplasty Procedure.jpg",
+   "lisans": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cartilage_Modification_During_Open_Rhinoplasty_Procedure.jpg"
+  },
+  {
+   "ad": "w04.jpg",
+   "commons": "Open Rhinoplasty Surgical Exposure and Cartilage Grafting.jpg",
+   "lisans": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Open_Rhinoplasty_Surgical_Exposure_and_Cartilage_Grafting.jpg"
+  },
+  {
+   "ad": "w05.png",
+   "commons": "Gray854.png",
+   "lisans": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gray854.png"
+  }
  ]
 }
