@@ -767,5 +767,26 @@
    "lisans": "CC BY 3.0",
    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hair_cell_morphology.png"
   }
+ ],
+ "gun-12-ani-snik": [
+  {
+   "ad": "r01.jpg",
+   "kaynak": "Celik O (ed) Cilt 2 Bol.43 s.708 Sekil 43.1 — eski not PDF'inden kurtarildi, sekil alti yazisi kirpildi"
+  },
+  {
+   "ad": "r02.jpg",
+   "kaynak": "Celik O (ed) Cilt 2 Bol.43 s.708 Sekil 43.2 — eski not PDF'inden kurtarildi, sekil alti yazisi kirpildi"
+  },
+  {
+   "ad": "r03.jpg",
+   "kaynak": "Wang Y ve ark. Front Neurol 2024 Sekil 1 (PMC11176423)",
+   "lisans": "CC BY 4.0"
+  },
+  {
+   "ad": "w01.jpg",
+   "commons": "Hyperbaric-oxygen-chamber-open.jpg",
+   "lisans": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hyperbaric-oxygen-chamber-open.jpg"
+  }
  ]
 }
