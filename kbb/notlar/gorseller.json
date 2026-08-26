@@ -1320,5 +1320,32 @@
    "lisans": "CC BY 4.0",
    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Anatomy_of_the_human_nasal_cavity.png"
   }
+ ],
+ "gun-44-bos-rinoresi-kafa-tabani": [
+  {
+   "ad": "w01.png",
+   "commons": "Metrizamide high resolution CT showing leak of CSF into nasal cavity.png",
+   "lisans": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Metrizamide_high_resolution_CT_showing_leak_of_CSF_into_nasal_cavity.png"
+  },
+  {
+   "ad": "w02.png",
+   "commons": "Gray153.png",
+   "lisans": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gray153.png"
+  },
+  {
+   "ad": "w03.png",
+   "commons": "202303 Nasal Endoscopy Male.svg",
+   "lisans": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/202303_Nasal_Endoscopy_Male.svg",
+   "not": "SVG -> PNG, beyaz zemin"
+  },
+  {
+   "ad": "w05.png",
+   "commons": "Gray193 - Cranial fossae.png",
+   "lisans": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gray193_-_Cranial_fossae.png"
+  }
  ]
 }
