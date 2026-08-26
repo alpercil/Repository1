@@ -526,5 +526,87 @@
    "lisans": "CC BY 4.0",
    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tympanometry.png"
   }
+ ],
+ "gun-06-otitis-eksterna-otomikoz": [
+  {
+   "ad": "r01.jpg",
+   "kaynak": "Onerci TM (ed) Cilt 1 Bol.22 s.159 Sekil 1 — eski not PDF'inden kurtarildi"
+  },
+  {
+   "ad": "r02.jpg",
+   "kaynak": "Onerci TM (ed) Cilt 1 Bol.22 s.164 Sekil 3a — eski not PDF'inden kurtarildi"
+  },
+  {
+   "ad": "r03.jpg",
+   "kaynak": "Onerci TM (ed) Cilt 1 Bol.22 s.164 Sekil 3b — eski not PDF'inden kurtarildi"
+  },
+  {
+   "ad": "w01.jpg",
+   "commons": "Otitis externa.jpg",
+   "lisans": "CC BY 3.0 de",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Otitis_externa.jpg"
+  },
+  {
+   "ad": "w02.JPG",
+   "commons": "OtitisExterna10.JPG",
+   "lisans": "CC BY 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/OtitisExterna10.JPG"
+  },
+  {
+   "ad": "w03.png",
+   "commons": "Ramsey Hunt Syndrome.png",
+   "lisans": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ramsey_Hunt_Syndrome.png"
+  },
+  {
+   "ad": "w04.jpg",
+   "commons": "RamsayHunt2.jpg",
+   "lisans": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/RamsayHunt2.jpg"
+  }
+ ],
+ "gun-07-farenjit-tonsillit": [
+  {
+   "ad": "r01.jpg",
+   "kaynak": "Koc C (ed) 2019 s.807 Resim 5 — eski not PDF'inden kurtarildi"
+  },
+  {
+   "ad": "r02.jpg",
+   "kaynak": "Koc C (ed) 2019 s.807 Resim 6 — eski not PDF'inden kurtarildi"
+  },
+  {
+   "ad": "r03.jpg",
+   "kaynak": "Koc C (ed) 2019 s.802 Resim 3 — eski not PDF'inden kurtarildi"
+  },
+  {
+   "ad": "r04.jpg",
+   "commons": "Adenoid hypertrophy MRI (Hellerhoff)",
+   "lisans": "CC BY-SA 4.0",
+   "not": "eski not PDF'inden kurtarildi"
+  },
+  {
+   "ad": "r05.jpg",
+   "commons": "PeritonsilarAbsMark.png (James Heilman MD)",
+   "lisans": "CC BY-SA 4.0",
+   "not": "eski not PDF'inden kurtarildi"
+  },
+  {
+   "ad": "w01.jpg",
+   "commons": "Streptococcal pharyngitis 1.jpg",
+   "lisans": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Streptococcal_pharyngitis_1.jpg"
+  },
+  {
+   "ad": "w02.JPG",
+   "commons": "Mono tonsils.JPG",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mono_tonsils.JPG"
+  },
+  {
+   "ad": "w03.jpg",
+   "commons": "Strep throat with white strawberry tongue.jpg",
+   "lisans": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Strep_throat_with_white_strawberry_tongue.jpg"
+  }
  ]
 }
