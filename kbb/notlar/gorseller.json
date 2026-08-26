@@ -690,5 +690,32 @@
    "lisans": "CC BY 4.0",
    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Canalolithiasis.jpg"
   }
+ ],
+ "gun-10-meniere-noronit-migren": [
+  {
+   "ad": "w01.jpg",
+   "commons": "Cross-section of cochlea (Wikimedia)",
+   "lisans": "CC BY-SA 4.0",
+   "not": "eski not PDF'inden kurtarildi"
+  },
+  {
+   "ad": "w02.jpg",
+   "commons": "Akustikus-Schwannon links intrameatal MRT T1KM axial - Annotation.jpg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Akustikus-Schwannon_links_intrameatal_MRT_T1KM_axial_-_Annotation.jpg"
+  },
+  {
+   "ad": "w03.png",
+   "commons": "Menieres-hearing-loss.png",
+   "lisans": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Menieres-hearing-loss.png",
+   "not": "sag panele kirpildi"
+  },
+  {
+   "ad": "w04.jpg",
+   "commons": "An audiogram with mixed hearing loss for the left ear.jpg",
+   "lisans": "CC BY 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/An_audiogram_with_mixed_hearing_loss_for_the_left_ear.jpg"
+  }
  ]
 }
