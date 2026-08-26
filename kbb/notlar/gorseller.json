@@ -608,5 +608,39 @@
    "lisans": "CC BY-SA 4.0",
    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Strep_throat_with_white_strawberry_tongue.jpg"
   }
+ ],
+ "gun-08-epistaksis": [
+  {
+   "ad": "w01.png",
+   "commons": "Locus Kiesselbachii Shematic EN.svg",
+   "lisans": "CC BY-SA 3.0 de",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Locus_Kiesselbachii_Shematic_EN.svg?width=1000",
+   "not": "SVG -> PNG (Commons render)"
+  },
+  {
+   "ad": "w02.jpg",
+   "commons": "Kiesselbach's Plexus.jpg",
+   "lisans": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Kiesselbach%27s_Plexus.jpg"
+  },
+  {
+   "ad": "w03.jpg",
+   "commons": "Epistaxis packing.jpg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Epistaxis_packing.jpg",
+   "not": "burun bolgesine kirpildi"
+  },
+  {
+   "ad": "w04.jpg",
+   "commons": "Hereditary hemorrhagic telangiectasia.jpg",
+   "lisans": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Hereditary_hemorrhagic_telangiectasia.jpg"
+  },
+  {
+   "ad": "w05.png",
+   "commons": "Gray854.png",
+   "lisans": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gray854.png"
+  }
  ]
 }
