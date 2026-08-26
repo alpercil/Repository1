@@ -1181,5 +1181,44 @@
    "lisans": "CC BY 4.0",
    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Leksell_Gamma_Knife_Perfexion.jpg"
   }
+ ],
+ "gun-40-akut-mastoidit-petrozit": [
+  {
+   "ad": "w01.jpg",
+   "commons": "Mastoiditis1.jpg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mastoiditis1.jpg"
+  },
+  {
+   "ad": "w02.png",
+   "commons": "OtitisMedia Mastoiditis RightSide 153.svg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/OtitisMedia_Mastoiditis_RightSide_153.svg",
+   "not": "SVG -> PNG"
+  },
+  {
+   "ad": "w03.jpg",
+   "commons": "Acute mastoiditis with external fistula 1.jpg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Acute_mastoiditis_with_external_fistula_1.jpg"
+  },
+  {
+   "ad": "w04.JPG",
+   "commons": "Mastoidectomy healed.JPG",
+   "lisans": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mastoidectomy_healed.JPG"
+  },
+  {
+   "ad": "w05.jpg",
+   "commons": "SVT, axial T1w MR image with highlighting.jpg",
+   "lisans": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/SVT,_axial_T1w_MR_image_with_highlighting.jpg"
+  },
+  {
+   "ad": "w06.png",
+   "commons": "Gray139.png",
+   "lisans": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gray139.png"
+  }
  ]
 }
