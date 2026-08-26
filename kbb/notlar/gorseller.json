@@ -332,5 +332,128 @@
    "commons": "Histopathology of medullary thyroid carcinoma, solid variant of papillary thyroid carcinoma and biplastic Hurthle cell.jpg",
    "lisans": "CC BY 4.0"
   }
+ ],
+ "gun-01-rinosinuzitler": [
+  {
+   "ad": "w01.png",
+   "commons": "CT of the ostiomeatal complex, coronal plane, with annotations.png",
+   "lisans": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/CT_of_the_ostiomeatal_complex,_coronal_plane,_with_annotations.png"
+  },
+  {
+   "ad": "w02.jpg",
+   "commons": "Odontogenic sinusitis.jpg",
+   "lisans": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Odontogenic_sinusitis.jpg"
+  },
+  {
+   "ad": "w03.jpg",
+   "commons": "CT of chronic sinusitis.jpg",
+   "lisans": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/CT_of_chronic_sinusitis.jpg"
+  },
+  {
+   "ad": "w04.jpg",
+   "commons": "Celulitis Periorbitaria (Preseptal).JPG",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Celulitis_Periorbitaria_(Preseptal).JPG",
+   "not": "periorbital banda kirpildi"
+  },
+  {
+   "ad": "w05.jpg",
+   "commons": "Potts-puffy-tumor-004.jpg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Potts-puffy-tumor-004.jpg"
+  },
+  {
+   "ad": "w06.png",
+   "commons": "Paranasal Sinuses ant-es.png",
+   "lisans": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Paranasal_Sinuses_ant-es.png"
+  }
+ ],
+ "gun-02-nazal-polipozis": [
+  {
+   "ad": "r01.jpg",
+   "kaynak": "Koc C (ed) Bol.13 s.629 Resim 1 — eski not PDF'inden kurtarildi"
+  },
+  {
+   "ad": "r02.jpg",
+   "kaynak": "Koc C (ed) Bol.13 s.629 Resim 2 — eski not PDF'inden kurtarildi"
+  },
+  {
+   "ad": "r03.jpg",
+   "kaynak": "Koc C (ed) Bol.13 s.629 Resim 3 — eski not PDF'inden kurtarildi"
+  },
+  {
+   "ad": "w01.jpg",
+   "commons": "Polype nasal.jpg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Polype_nasal.jpg"
+  },
+  {
+   "ad": "w02.jpg",
+   "commons": "Polyposis nasi 1.jpg",
+   "lisans": "CC BY 3.0 de",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Polyposis_nasi_1.jpg"
+  },
+  {
+   "ad": "w03.jpg",
+   "commons": "CHOANAL POLYP PerfectlyClear.jpg",
+   "lisans": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/CHOANAL_POLYP_PerfectlyClear.jpg"
+  },
+  {
+   "ad": "w04.jpg",
+   "commons": "Nasal polyp 50x H+E.tif",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Nasal_polyp_50x_H%2BE.tif",
+   "not": "TIFF -> JPEG"
+  }
+ ],
+ "gun-03-alerjik-rinit": [
+  {
+   "ad": "w01.jpg",
+   "commons": "Prick Test example.jpg",
+   "lisans": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Prick_Test_example.jpg"
+  },
+  {
+   "ad": "w02.png",
+   "commons": "Skin Prick Test.png",
+   "lisans": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Skin_Prick_Test.png"
+  },
+  {
+   "ad": "w03.jpg",
+   "commons": "House dust mite (Dermatophagoides pteronyssinus).jpg",
+   "lisans": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/House_dust_mite_(Dermatophagoides_pteronyssinus).jpg"
+  },
+  {
+   "ad": "w04.jpg",
+   "commons": "Misc pollen colorized.jpg",
+   "lisans": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Misc_pollen_colorized.jpg"
+  },
+  {
+   "ad": "w05.png",
+   "commons": "Allergic shiner in pediatric patient.png",
+   "lisans": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Allergic_shiner_in_pediatric_patient.png",
+   "not": "infraorbital banda kirpildi"
+  },
+  {
+   "ad": "w06.jpg",
+   "commons": "Eosinophil blood smear.JPG",
+   "lisans": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Eosinophil_blood_smear.JPG"
+  },
+  {
+   "ad": "w07.png",
+   "commons": "Anatomy of the human nasal cavity.png",
+   "lisans": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Anatomy_of_the_human_nasal_cavity.png"
+  }
  ]
 }
