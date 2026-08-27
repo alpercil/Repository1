@@ -1531,5 +1531,43 @@
    "lisans": "CC BY 4.0",
    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Micrograph_of_invasive_squamous_cell_carcinoma_-_200x.jpg"
   }
+ ],
+ "gun-51-paragangliyoma": [
+  {
+   "ad": "w01.jpg",
+   "commons": "Carotid Body Tumor.jpg",
+   "lisans": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Carotid_Body_Tumor.jpg"
+  },
+  {
+   "ad": "w02.jpg",
+   "commons": "Carotid body tumor.jpg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Carotid_body_tumor.jpg"
+  },
+  {
+   "ad": "w03.jpg",
+   "commons": "Glomus Jugulare Tumor.jpg",
+   "lisans": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Glomus_Jugulare_Tumor.jpg"
+  },
+  {
+   "ad": "w04.jpg",
+   "commons": "Glomus Jugulare axial T1 post.jpg",
+   "lisans": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Glomus_Jugulare_axial_T1_post.jpg"
+  },
+  {
+   "ad": "w05.jpg",
+   "commons": "Zellballen paraganglioma.jpg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Zellballen_paraganglioma.jpg"
+  },
+  {
+   "ad": "w06.jpg",
+   "commons": "3D printed paraganglioma model.jpg",
+   "lisans": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/3D_printed_paraganglioma_model.jpg"
+  }
  ]
 }
