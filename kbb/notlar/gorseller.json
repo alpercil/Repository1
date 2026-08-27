@@ -1758,5 +1758,39 @@
    "lisans": "CC BY 2.0",
    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Maxillary_Artery_(5551034141).jpg"
   }
+ ],
+ "gun-58-otoimmun-ic-kulak-hastaligi": [
+  {
+   "ad": "w01.png",
+   "commons": "Cochlea-crosssection.svg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cochlea-crosssection.svg",
+   "not": "beyaz zemine oturtuldu"
+  },
+  {
+   "ad": "w02.png",
+   "commons": "202210 Stria vascularis.svg",
+   "lisans": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/202210_Stria_vascularis.svg",
+   "not": "beyaz zemine oturtuldu"
+  },
+  {
+   "ad": "w03.jpg",
+   "commons": "C anca.jpg",
+   "lisans": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/C_anca.jpg"
+  },
+  {
+   "ad": "w04.png",
+   "commons": "Main antinuclear antibody patterns on immunofluorescence.png",
+   "lisans": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Main_antinuclear_antibody_patterns_on_immunofluorescence.png"
+  },
+  {
+   "ad": "w05.jpg",
+   "commons": "Cochlear Implant, by MedEl.jpg",
+   "lisans": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Cochlear_Implant,_by_MedEl.jpg"
+  }
  ]
 }
