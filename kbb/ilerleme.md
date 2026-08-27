@@ -175,3 +175,40 @@ vermiyor. Önerci ve Koç'un görsel yoğun parçaları 30-37 MB olduğu için
 doğrudan açılamıyor; buna karşılık üretilmiş gün notu PDF'leri (0,3-2 MB)
 açılabiliyor ve zaten kitaptan seçilmiş şekilleri taşıyor. Pratikte en verimli
 kaynak bu: ilgili konuyu işleyen eski notlardan görsel devşir.
+
+## Gün 19-68 yenilemesi (27 Ağustos 2026)
+
+**Gün 19-68 tamamlandı.** Böylece **Gün 1-68'in tamamı** görsel bütçesi
+kuralına (`SKILL.md` §4) göre yeniden üretilmiş oldu: her notta hem çizilmiş
+SVG şema hem gerçek görüntü var, cerrahi/anatomi konuları 12-14 görselle
+teslim edildi. PDF'ler Drive'da yerlerine kondu (Gün 1-18 `01/` klasöründe,
+19-68 ana klasörde).
+
+**Bu turdaki yöntem farkı:** yerel oturumda ağ kısıtı olmadığı için görseller
+artık eski PDF'lerden devşirilmiyor, `kbb/gorsel_ara.py` ile **Wikimedia
+Commons'tan** aranıp lisansı API üzerinden doğrulanarak indiriliyor (yalnız
+CC0 / kamu malı / CC BY / CC BY-SA). Her indirilen küme kontak sayfası olarak
+görülüp içeriği ve kimliği belli yüz içerip içermediği tek tek doğrulandı;
+yüz içerenler ilgili anatomiye kırpıldı ya da reddedildi ve bu, notun sürüm
+paragrafına yazıldı.
+
+**Telif bulgusu — Gün 61-68.** Bu sekiz notun eski PDF'lerindeki şekillerin
+(~42 adet) tamamı telif korumalı ders kitaplarından taranmıştı: Gün 62-68 için
+Loré & Medina *Baş ve Boyun Cerrahisi Atlası*, Gün 61 için Huizing & de Groot.
+Ayrıca bu sekiz notun **deposunda HTML kaynağı yoktu** — yalnız Drive'daki
+PDF'ler vardı; hepsi eski PDF metninden **sıfırdan yazıldı**. Yeni sürümlerde
+taranmış şekiller kullanılmadı; yerlerine serbest lisanslı Commons görüntüleri
+ve çizilmiş şemalar kondu, atlasın sayfa/şekil referansları metinde korundu.
+
+**İki araç düzeltmesi:**
+- `kbb/not_denetle.py` artık SVG `<text>` genişliğini gerçek Helvetica
+  metrikleriyle ölçüyor; sağ kenardan (x>626) taşan satırları yakalıyor. İlk
+  taramada **18 kırpılmış satır** bulundu (Gün 3-14 ve 28), düzeltilip
+  yeniden yüklendi.
+- `kbb/gorsel_ara.py` tam boy dosya yerine **1280 px küçük resim** indiriyor;
+  bu hem Commons'ın 429'larını hem PDF şişmesini çözdü.
+
+**Drive'da silinen mükerrer eski sürümler:** Gün 56, 57, 58 ve 68'in yeni
+dosya adları eskisinden farklı olduğu için üzerine yazılamamıştı; eski
+kopyalar (`gun-56-larenks-kanseri.pdf`, `gun-57-jna.pdf`, `gun-58-aied.pdf`,
+`gun-68-trakeostomi.pdf`) silindi.

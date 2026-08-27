@@ -142,16 +142,23 @@ olduğu için doğrudan açılamıyor, ama **üretilmiş gün notu PDF'leri (0,3
 açılabiliyor ve zaten kitaptan seçilmiş şekilleri taşıyor.** Pratikte en
 verimli kaynak bu.
 
-**Ölçülen sınır:** konteynerin ağ çıkışı görsel sunucularını (Wikimedia, PMC)
-**403 ile reddediyor**. İnternetten görsel indirilemiyor. Gerçek fotoğraf
-gerekiyorsa kaynak eski notlar ve kitaplardır.
+**Ölçülen sınır (bulut oturumu):** konteynerin ağ çıkışı görsel sunucularını
+(Wikimedia, PMC) **403 ile reddediyor**. **Yerel oturumda böyle bir sınır yok**
+— `kbb/gorsel_ara.py` Commons'ta arıyor, lisansı API ile doğruluyor ve 1280 px
+küçük resmi indiriyor. Gün 1-68 yenilemesinin tamamı bu yolla yapıldı.
+
+**Telif bulgusu (61-68):** Gün 61-68'in eski PDF'lerindeki ~42 şeklin tamamı
+telif korumalı ders kitaplarından (Loré & Medina Atlası; Gün 61 için Huizing &
+de Groot) taranmış orijinal şekillerdi. Yeni sürümlerde **kullanılmadılar**;
+yerlerine yalnızca serbest lisanslı Commons görüntüleri ve çizilmiş şemalar
+konuldu. Her notun sürüm paragrafı bu değişikliği yazıyor.
 
 ## Açık işler
 
 | İş | Durum |
 | --- | --- |
 | **Gün 70** (Hipofarenks kanseri, Zenker) | Yazarın "başla" demesi bekleniyor |
-| **68 notun görsel taraması** | **Gün 1-30'un tamamı bitti.** Kalan: 31-68 |
+| **68 notun görsel taraması** | **Bitti — Gün 1-68'in tamamı yenilendi** (27.08.2026). Kalan yok |
 | **Gün 69 görsel bütçesi** | 11 görsel (3 foto + 8 şema). §4 cerrahi konularda 12-14 istiyor — hâlâ altında |
 | **`soru-asnik-tedavi-protokolu` görsel bütçesi** | Tek görseli var (şema). §4 soru notlarında en az 2 istiyor |
 | **Drive'da ad tutarsızlığı** | Depoda `soru-osas-tanidan-cerrahiye.html`, Drive'da `soru-osasdan-cerrahiye.pdf` |

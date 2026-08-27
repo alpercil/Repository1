@@ -24,6 +24,8 @@ import requests
 API = "https://commons.wikimedia.org/w/api.php"
 UA = "KBB-calisma-notu/1.0 (kisisel egitim amacli)"
 SERBEST = ("cc0", "public domain", "cc by", "cc-by", "pd-")
+# A4 sayfada 1280 px fazlasiyla yeterli; daha buyugunu indirmek PDF'i sisiriyor.
+KUCUK_RESIM_GENISLIGI = 1280
 
 
 def _iste(parametreler):
@@ -53,10 +55,11 @@ def ara(sorgu, adet=8):
     return [x["title"] for x in d.get("query", {}).get("search", [])]
 
 
-def lisans(basliklar):
+def lisans(basliklar, kucuk_genislik=KUCUK_RESIM_GENISLIGI):
     if not basliklar:
         return {}
     d = _iste({"action": "query", "prop": "imageinfo", "iiprop": "extmetadata|size|url",
+               "iiurlwidth": kucuk_genislik,
                "format": "json", "titles": "|".join(basliklar)})
     out = {}
     for p in d.get("query", {}).get("pages", {}).values():
@@ -71,8 +74,33 @@ def lisans(basliklar):
             "aciklama": g("ImageDescription")[:220],
             "sahip": g("Artist")[:120],
             "boyut": f'{ii[0].get("width")}x{ii[0].get("height")}',
+            "kucuk_url": ii[0].get("thumburl") or ii[0].get("url"),
         }
     return out
+
+
+def _kucuk_resim_url(baslik, bilgi):
+    """Gercek bir kucuk resim (/thumb/) adresi dondurur; bulamazsa orijinali.
+
+    Commons, istenen genislik dosyanin kendi genisligine yakinsa kucuk resim
+    URETMIYOR - sessizce orijinalin adresini donduruyor ("thumbnail_unscaled").
+    Esigin nerede oldugu belgelenmemis; olcerek gorulen su: %90 kucultmede
+    orijinal geliyor, %75'te gercek kucuk resim uretiliyor. Bu yuzden tek bir
+    genislik denemek yerine giderek kuculen adaylar deneniyor ve donen adreste
+    "/thumb/" var mi diye BAKILIYOR - varsayim degil, dogrulama.
+    """
+    try:
+        asil = int(bilgi.get("boyut", "").split("x")[0])
+    except (ValueError, AttributeError, IndexError):
+        asil = KUCUK_RESIM_GENISLIGI
+    adaylar = [g for g in (KUCUK_RESIM_GENISLIGI, int(asil * 0.75), int(asil * 0.5))
+               if 200 < g < asil]
+    for g in adaylar:
+        u = lisans([baslik], g).get(baslik, {}).get("kucuk_url", "")
+        if "/thumb/" in u:
+            return u
+    # Cok kucuk dosyalarda kucuk resim uretilemez; orijinal zaten hafiftir.
+    return bilgi["kucuk_url"]
 
 
 def indir(hedef_klasor, ad, commons_adi):
@@ -85,8 +113,18 @@ def indir(hedef_klasor, ad, commons_adi):
     if not bilgi["serbest"]:
         print(f"  REDDEDILDI: {commons_adi} - lisans '{bilgi['lisans']}' serbest degil")
         return None
-    url = ("https://commons.wikimedia.org/wiki/Special:FilePath/"
-           + urllib.parse.quote(commons_adi.replace("File:", "").replace(" ", "_")))
+    # 27 Agustos: orijinal dosyayi cekmek iki ayri soruna yol aciyordu. (1) Commons
+    # orijinaller icin hiz sinirini sert uyguluyor - 429 donuyor ve "bunun yerine
+    # kucuk resim kullanin" diyor. (2) Ham dosyalar (20 MB'lik PNG'ler) PDF'i
+    # sisiriyordu; her indirmenin ardindan elle kucultmek gerekiyordu.
+    #
+    # Iki yanlis deneme oldu, ikisi de ayni sebepten: Commons, istenen genislik
+    # dosyanin kendi genisligine ESIT YA DA BUYUKSE kucuk resim URETMIYOR, sessizce
+    # orijinalin adresini donduruyor ("thumbnail_unscaled") ve hiz sinirine
+    # takiliyoruz. Ne Special:FilePath?width= ne de sabit iiurlwidth=1280 bunu
+    # cozuyor. Cozum _kucuk_resim_url()'de: adres gercekten kucuk resim mi diye
+    # dogrulanip, degilse daha dar bir genislikle yeniden deneniyor.
+    url = _kucuk_resim_url(b, bilgi)
     os.makedirs(hedef_klasor, exist_ok=True)
     yol = os.path.join(hedef_klasor, ad)
     # Commons 429 (hiz siniri), 5xx (gecici sunucu) donebiliyor; buyuk dosyalarda
