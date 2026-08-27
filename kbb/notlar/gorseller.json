@@ -1493,5 +1493,43 @@
    "lisans": "CC BY-SA 2.1 jp",
    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Fibula_-_anterior_view.png"
   }
+ ],
+ "gun-50-deri-kanserleri": [
+  {
+   "ad": "w01.jpg",
+   "commons": "Basal Cell Carcinoma.jpg",
+   "lisans": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Basal_Cell_Carcinoma.jpg"
+  },
+  {
+   "ad": "w02.jpg",
+   "commons": "Squamous cell carcinoma crop.jpg",
+   "lisans": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Squamous_cell_carcinoma_crop.jpg"
+  },
+  {
+   "ad": "w03.jpg",
+   "commons": "Malignant Melanoma, vertex scalp.jpg",
+   "lisans": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Malignant_Melanoma,_vertex_scalp.jpg"
+  },
+  {
+   "ad": "w04.jpg",
+   "commons": "Mohs ear.jpg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mohs_ear.jpg"
+  },
+  {
+   "ad": "w05.jpg",
+   "commons": "Ulcer border of a squamous cell skin cancer.jpg",
+   "lisans": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ulcer_border_of_a_squamous_cell_skin_cancer.jpg"
+  },
+  {
+   "ad": "w06.jpg",
+   "commons": "Micrograph of invasive squamous cell carcinoma - 200x.jpg",
+   "lisans": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Micrograph_of_invasive_squamous_cell_carcinoma_-_200x.jpg"
+  }
  ]
 }
