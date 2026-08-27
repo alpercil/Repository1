@@ -1932,5 +1932,52 @@
    "lisans": "Public domain",
    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Septoplasty_splints.jpg"
   }
+ ],
+ "gun-62-zplasti-flep": [
+  {
+   "ad": "w01.png",
+   "commons": "Z Plasty.svg",
+   "lisans": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Z_Plasty.svg",
+   "not": "beyaz zemine oturtuldu"
+  },
+  {
+   "ad": "w02.png",
+   "commons": "Gray410 pectoralis major.png",
+   "lisans": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gray410_pectoralis_major.png"
+  },
+  {
+   "ad": "w03.png",
+   "commons": "Gray523.png",
+   "lisans": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gray523.png"
+  },
+  {
+   "ad": "w04.jpg",
+   "commons": "Tissue expander.jpg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Tissue_expander.jpg",
+   "not": "islem bolgesine kirpildi"
+  },
+  {
+   "ad": "w05.jpg",
+   "commons": "Using tissue expander to provide more skin.jpg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Using_tissue_expander_to_provide_more_skin.jpg",
+   "not": "islem bolgesine kirpildi"
+  },
+  {
+   "ad": "w06.jpg",
+   "commons": "Breast tissue expander - Roe ap 001.jpg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Breast_tissue_expander_-_Roe_ap_001.jpg"
+  },
+  {
+   "ad": "w08.jpg",
+   "commons": "Gastrocnemius rotational flap.jpg",
+   "lisans": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gastrocnemius_rotational_flap.jpg"
+  }
  ]
 }
