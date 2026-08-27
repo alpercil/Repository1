@@ -1653,5 +1653,39 @@
    "lisans": "Public domain",
    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Lymphoepithelioma_met_to_LN_6.jpg"
   }
+ ],
+ "gun-55-nekrotizan-otitis-eksterna": [
+  {
+   "ad": "w01.jpg",
+   "commons": "Otitis externa.jpg",
+   "lisans": "CC BY 3.0 DE",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Otitis_externa.jpg",
+   "not": "kulak bolgesine kirpildi"
+  },
+  {
+   "ad": "w02.jpg",
+   "commons": "OtitisExterna10.JPG",
+   "lisans": "CC BY 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/OtitisExterna10.JPG",
+   "not": "kulak bolgesine kirpildi"
+  },
+  {
+   "ad": "w03.jpg",
+   "commons": "Pseudomonas aeruginosa 01.jpg",
+   "lisans": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Pseudomonas_aeruginosa_01.jpg"
+  },
+  {
+   "ad": "w04.jpg",
+   "commons": "Aspergillus fumigatus microscope view.jpg",
+   "lisans": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aspergillus_fumigatus_microscope_view.jpg"
+  },
+  {
+   "ad": "w05.jpg",
+   "commons": "Skull inner surface.jpg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Skull_inner_surface.jpg"
+  }
  ]
 }
