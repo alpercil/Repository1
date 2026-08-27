@@ -2068,5 +2068,55 @@
    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Dr._Freemont_Base_performs_cleft_lip_surgery.jpg",
    "not": "cerrahi sahaya kirpildi"
   }
+ ],
+ "gun-65-tiroid-paratiroid": [
+  {
+   "ad": "w01.png",
+   "commons": "Thyroid gland la.svg",
+   "lisans": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Thyroid_gland_la.svg"
+  },
+  {
+   "ad": "w02.png",
+   "commons": "Recurrent laryngeal nerve.svg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Recurrent_laryngeal_nerve.svg"
+  },
+  {
+   "ad": "w03.png",
+   "commons": "Parathyroid glands.png",
+   "lisans": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Parathyroid_glands.png"
+  },
+  {
+   "ad": "w04.jpg",
+   "commons": "Thyroid Surgery.jpg",
+   "lisans": "CC BY-SA 3.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Thyroid_Surgery.jpg"
+  },
+  {
+   "ad": "w05.jpg",
+   "commons": "Gross pathology of parathyroid gland, annotated.jpg",
+   "lisans": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gross_pathology_of_parathyroid_gland,_annotated.jpg"
+  },
+  {
+   "ad": "w06.jpg",
+   "commons": "Parathyroid oxyphil and chief cells - annotated.jpg",
+   "lisans": "CC0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Parathyroid_oxyphil_and_chief_cells_-_annotated.jpg"
+  },
+  {
+   "ad": "w07.jpg",
+   "commons": "Scar, two months after total thyrodectomy.jpg",
+   "lisans": "Public domain",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Scar,_two_months_after_total_thyrodectomy.jpg"
+  },
+  {
+   "ad": "w08.png",
+   "commons": "Arterial supply of the thyroid gland (Korean version).png",
+   "lisans": "CC BY 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Arterial_supply_of_the_thyroid_gland_(Korean_version).png"
+  }
  ]
 }
