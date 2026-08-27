@@ -427,6 +427,70 @@ komplikasyon şüphesinde kullanılır.</p>
 <div class="altyazi">Kolesteatom ile kolesterol granülomunun MR ayrımı. Bu iki zıt patern, sinyal okumayı
 öğrenmek için serideki en öğretici çiftlerden biridir. (Görsel bu not için çizildi.)</div>
 
+<h3>&ldquo;DWI&rdquo; tek bir sekans değil &mdash; hangisi çekilecek?</h3>
+
+<div class="kutu uyari">
+  <div class="baslik">Önce kavram: sekans ne demek</div>
+  <p><b>Sekans</b>, MR cihazına verilen <b>zamanlanmış tariftir</b>: hangi RF pulsu ne zaman gönderilecek,
+  gradyanlar hangi sırayla açılacak, sinyal ne zaman okunacak. Aynı dokudan, aynı cihazla, yalnızca bu
+  tarifi değiştirerek bambaşka kontrastlar alınır.</p>
+  <p><b>Sık karıştırılan ayrım:</b> <b>T1 ve T2 dokunun özelliğidir</b>; <b>&ldquo;T1 ağırlıklı
+  sekans&rdquo; ise o özelliği görünür kılan tariftir.</b> Tarifi belirleyen parametreler: <b>TR</b>
+  (tekrarlama zamanı), <b>TE</b> (eko zamanı), <b>TI</b> (inversiyon zamanı), <b>flip açısı</b> ve
+  difüzyonda <b>b-değeri</b>. Kabaca kısa TR + kısa TE &rarr; T1 ağırlıklı; uzun TR + uzun TE &rarr; T2
+  ağırlıklı.</p>
+  <p><b>Sabit bir &ldquo;sekans sayısı&rdquo; yoktur:</b> fizik aileleri azdır (spin eko, gradyan eko,
+  inversiyon recovery, eko-planar), ama <b>her üretici aynı fiziğe farklı ticari ad verir</b> &mdash;
+  aşağıdaki tablo tam da bu yüzden önemlidir.</p>
+</div>
+
+<div class="sema">
+<svg viewBox="0 0 640 152" xmlns="http://www.w3.org/2000/svg" role="img"
+     aria-label="EPI DWI ile non-EPI DWI farki">
+ <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif" font-size="8.5">
+  <text x="320" y="15" text-anchor="middle" font-weight="bold" fill="#8a2846" font-size="11">
+    Kolesteatomda EPI-DWI ile non-EPI DWI aynı şey değildir</text>
+
+  <rect x="14" y="24" width="300" height="86" rx="6" fill="#fdf8f7" stroke="#a33327" stroke-width="2"/>
+  <text x="164" y="38" text-anchor="middle" fill="#a33327" font-weight="bold" font-size="10">EPI-DWI</text>
+  <text x="26" y="52" fill="#1c2430" font-size="8"><tspan font-weight="bold">Temel:</tspan> eko-planar &mdash; tek atımda tüm kesit, çok hızlı</text>
+  <text x="26" y="65" fill="#1c2430" font-size="8"><tspan font-weight="bold">Artefakt:</tspan> kafa tabanında <tspan font-weight="bold">hava-kemik sınırlarında</tspan></text>
+  <text x="26" y="76" fill="#1c2430" font-size="8">manyetik <tspan font-weight="bold">duyarlılık artefaktı</tspan> üretir</text>
+  <text x="26" y="89" fill="#1c2430" font-size="8"><tspan font-weight="bold">Kesit:</tspan> kalın</text>
+  <text x="26" y="102" fill="#a33327" font-size="8" font-weight="bold">Sonuç: küçük odakta yanlış negatif, artefakttan yanlış pozitif</text>
+
+  <rect x="326" y="24" width="300" height="86" rx="6" fill="#e3f0ef" stroke="#1f6f6e" stroke-width="2.4"/>
+  <text x="476" y="38" text-anchor="middle" fill="#1f6f6e" font-weight="bold" font-size="10">NON-EPI DWI &mdash; İSTENECEK OLAN</text>
+  <text x="338" y="52" fill="#1c2430" font-size="8"><tspan font-weight="bold">Temel:</tspan> spin-eko tabanlı (tek-shot TSE)</text>
+  <text x="338" y="65" fill="#1c2430" font-size="8"><tspan font-weight="bold">Artefakt:</tspan> duyarlılık artefaktı <tspan font-weight="bold">üretmez</tspan></text>
+  <text x="338" y="78" fill="#1c2430" font-size="8"><tspan font-weight="bold">Kesit:</tspan> ince kesit alınabilir</text>
+  <text x="338" y="91" fill="#1f6f6e" font-size="8" font-weight="bold">Havuzlanmış: duyarlılık %91-92, özgüllük %92</text>
+  <text x="338" y="102" fill="#1c2430" font-size="8">Granülasyon ve skar parlamaz &mdash; kolesteatom parlar</text>
+
+  <rect x="14" y="116" width="612" height="34" rx="5" fill="#f4e3e9" stroke="#8a2846" stroke-width="2"/>
+  <text x="28" y="130" fill="#8a2846" font-weight="bold">ADLANDIRMA TUZAĞI</text>
+  <text x="150" y="130" fill="#1c2430" font-size="8">
+    <tspan font-weight="bold">HASTE</tspan> (Siemens) = <tspan font-weight="bold">SSFSE</tspan> (GE) = <tspan font-weight="bold">SSTSE</tspan> (Philips) &rarr; hepsi non-EPI</text>
+  <text x="28" y="143" fill="#a33327" font-size="8">
+    Ama <tspan font-weight="bold">RESOLVE hâlâ EPI tabanlıdır</tspan> (okuma-segmentli); adı &ldquo;artefaktı azaltılmış&rdquo; olsa da non-EPI değildir.</text>
+ </g>
+</svg>
+</div>
+<div class="altyazi">Kolesteatomda EPI ile non-EPI DWI arasındaki fark ve üretici adlandırma tuzağı.
+(Görsel bu not için çizildi.)</div>
+
+<div class="kutu tehlike">
+  <div class="baslik">İstem nasıl yazılmalı &mdash; ve negatif sonuç ne demek</div>
+  <p><b>İstem:</b> &ldquo;Temporal kemik MR, <b>non-EPI DWI (b=1000)</b> + T1 + T2&rdquo;. Sadece
+  &ldquo;difüzyon MR&rdquo; yazmak, merkezde rutin EPI protokolünün çekilmesine yol açabilir.</p>
+  <p><b>Boyut sınırı yaklaşık 3 mm.</b> Hem preoperatif meta-analiz (10 çalışma, 342 hasta; duyarlılık
+  <b>%94</b>, özgüllük <b>%94</b>) hem pediatrik meta-analiz, <b>3 mm'nin altındaki lezyonların güvenilir
+  saptanamadığını</b> açıkça bildiriyor.</p>
+  <p><b>Bu yüzden negatif DWI &ldquo;kolesteatom yok&rdquo; demek değildir</b> &mdash; <b>&ldquo;şu an
+  görüntülenebilir boyutta kolesteatom yok&rdquo;</b> demektir. Postoperatif takipte görüntülemenin
+  <b>ne zaman</b> çekileceği kararını da bu sınır belirler.</p>
+</div>
+
 <h2>9. Tedavi</h2>
 
 <h3>Medikal (kolesteatomsuz KOM)</h3>
@@ -591,6 +655,14 @@ karşılaştırıldığında greft başarısızlığı <b>%14,2 vs %16,4</b> &md
   <li>Amoodi H ve ark. <em>Non-echo Planar Diffusion-Weighted Imaging in the Detection of Recurrent or
   Residual Cholesteatoma: A Systematic Review and Meta-Analysis.</em> Cureus. 2022;14(12):e32127.
   <a href="https://doi.org/10.7759/cureus.32127">doi:10.7759/cureus.32127</a></li>
+  <li>Lingam RK, Bassett P. <em>A Meta-Analysis on the Diagnostic Performance of Non-Echoplanar
+  Diffusion-Weighted Imaging in Detecting Middle Ear Cholesteatoma: 10 Years On.</em> Otol Neurotol.
+  2017;38(4):521-528. <a href="https://doi.org/10.1097/MAO.0000000000001353">doi:10.1097/MAO.0000000000001353</a>
+  &mdash; 26 çalışma, 1.152 vaka; duyarlılık %91, özgüllük %92.</li>
+  <li>Li PMMC ve ark. <em>Evaluating the utility of non-echo-planar diffusion-weighted imaging in the
+  preoperative evaluation of cholesteatoma: a meta-analysis.</em> Laryngoscope. 2012;123(5):1247-50.
+  <a href="https://doi.org/10.1002/lary.23759">doi:10.1002/lary.23759</a> &mdash; preoperatif duyarlılık
+  ve özgüllük %94; <b>3 mm altı lezyonlarda güvenilir değil.</b></li>
 </ol>
 <p><b>Görsel künyeleri:</b> Attik kolesteatom &mdash; Commons &ldquo;Attic Cholesteatoma.jpg&rdquo;,
 <b>CC BY 4.0</b>. Kolesteatom + perforasyon &mdash; Commons
@@ -599,7 +671,10 @@ karşılaştırıldığında greft başarısızlığı <b>%14,2 vs %16,4</b> &md
 &ldquo;Cholesteatom polyp 1.jpg&rdquo;, <b>CC BY 2.5</b>. Lisanslar Commons API'si üzerinden doğrulandı.</p>
 <p><b>Notun sürümü:</b> İlk üretim 13.08.2026 (3 görsel: 1 fotoğraf + 2 şema). Bu sürüm 25.08.2026'da
 görsel bütçesi kuralına (<code>SKILL.md</code> &sect;4) göre yeniden üretildi: <b>12 görsel</b> &mdash;
-8 çizim + 4 gerçek otoskopi görüntüsü. Metin içeriği korundu; eski notun iki şeması yeniden çizildi.</p>
+8 çizim + 4 gerçek otoskopi görüntüsü. Metin içeriği korundu; eski notun iki şeması yeniden çizildi.
+<b>27.08.2026 eki:</b> Bölüm 8'e &ldquo;sekans ne demek&rdquo; kavramı ile <b>EPI/non-EPI DWI ayrımı</b>,
+üretici adlandırma tuzağı (HASTE/SSFSE/SSTSE non-EPI, RESOLVE değil), istem yazımı ve <b>~3 mm boyut
+sınırı</b> eklendi; kaynakçaya Lingam 2017 ve Li 2012 meta-analizleri kondu.</p>
 </div>
 
 <div class="altbilgi">
