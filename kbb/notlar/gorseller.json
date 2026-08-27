@@ -2264,5 +2264,28 @@
    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/201704%20Trachea%20from%20behind.svg",
    "not": "seffaf zemin beyaza kompozit edildi"
   }
+ ],
+ "soru-kolesteatom-goruntuleme": [
+  {
+   "ad": "r01.png",
+   "commons": "Hellerhoff, koronal temporal kemik BT (Wikimedia Commons)",
+   "lisans": "CC BY-SA 3.0",
+   "url": "",
+   "not": "notun onceki PDF surumunden cikarildi"
+  },
+  {
+   "ad": "r02.png",
+   "commons": "Hellerhoff, aksiyel temporal kemik BT (Wikimedia Commons)",
+   "lisans": "CC BY-SA 3.0",
+   "url": "",
+   "not": "notun onceki PDF surumunden cikarildi"
+  },
+  {
+   "ad": "r03.png",
+   "commons": "Elefante A ve ark., BioMed Res Int 2015;2015:597896 (PMC4333184)",
+   "lisans": "CC BY 3.0",
+   "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4333184/",
+   "not": "notun onceki PDF surumunden cikarildi"
+  }
  ]
 }
