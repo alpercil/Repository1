@@ -1836,5 +1836,44 @@
    "lisans": "CC0",
    "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Mastoidectomy_healed.JPG"
   }
+ ],
+ "gun-60-gpa-kbb-tutulumu": [
+  {
+   "ad": "w01.jpg",
+   "commons": "Granulomatosis with polyangiitis.jpg",
+   "lisans": "CC BY-SA 2.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Granulomatosis_with_polyangiitis.jpg"
+  },
+  {
+   "ad": "w02.jpg",
+   "commons": "Saddle nose 38.jpg",
+   "lisans": "CC BY-SA 4.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Saddle_nose_38.jpg",
+   "not": "burun bolgesine kirpildi"
+  },
+  {
+   "ad": "w03.png",
+   "commons": "Subglottic stenosis 04.png",
+   "lisans": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Subglottic_stenosis_04.png"
+  },
+  {
+   "ad": "w04.png",
+   "commons": "Subglottic stenosis 03.png",
+   "lisans": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Subglottic_stenosis_03.png"
+  },
+  {
+   "ad": "w05.png",
+   "commons": "Subglottic stenosis 02.png",
+   "lisans": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Subglottic_stenosis_02.png"
+  },
+  {
+   "ad": "w06.jpg",
+   "commons": "Subglottic stenosis 01.jpg",
+   "lisans": "CC BY 2.0",
+   "url": "https://commons.wikimedia.org/wiki/Special:FilePath/Subglottic_stenosis_01.jpg"
+  }
  ]
 }
