@@ -160,7 +160,7 @@ konuldu. Her notun sürüm paragrafı bu değişikliği yazıyor.
 | **Gün 70** (Hipofarenks kanseri, Zenker) | Yazarın "başla" demesi bekleniyor |
 | **68 notun görsel taraması** | **Bitti — Gün 1-68'in tamamı yenilendi** (27.08.2026). Kalan yok |
 | **Gün 69 görsel bütçesi** | 11 görsel (3 foto + 8 şema). §4 cerrahi konularda 12-14 istiyor — hâlâ altında |
-| **`soru-asnik-tedavi-protokolu` görsel bütçesi** | Tek görseli var (şema). §4 soru notlarında en az 2 istiyor |
+| **`soru-asnik-tedavi-protokolu` görsel bütçesi** | **Kapandı** (27.08.2026) — steroid farmakokinetiği eki ile ikinci şema geldi, 2 görsel |
 | **Drive'da ad tutarsızlığı** | Depoda `soru-osas-tanidan-cerrahiye.html`, Drive'da `soru-osasdan-cerrahiye.pdf` |
 | Önerci Cilt 1 s.281-400 (kolesteatom) OCR | `kbb/kbb_ocr_colab.ipynb` hazır, çalıştırılmadı |
 | ASNİK notunun Google Doc kopyası | Drive'da `Soru/` altında duruyor, silinmedi. Yazar karar verecek |
