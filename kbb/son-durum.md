@@ -114,6 +114,17 @@ tablo `kbb/ilerleme.md`'de.
   Cummings 7. baskı Böl. 66/67/210, Scott-Brown Böl. 173, PubMed 6 çalışma.
   **Yazar Drive'a kendisi yükleyecek.**
 
+**Düzeltme — workflow doğrulaması bir hata yakaladı**
+İlk sürümde iki subglottik stenoz fotoğrafının **Myer-Cotton dereceleri ters**
+etiketlenmişti. Görsel kurtarma ajanı 30 görseli tek tek görüp eşleştirdi:
+`Subglottic stenosis 03.png` = **derece II**, `Subglottic stenosis 02.png` =
+**derece III**. Görseller takas edildi, altyazılara dereceler yazıldı.
+Ders: eski not PDF'inden çıkarılan görselin ne olduğunu **xref sırasından
+tahmin etme** — altyazı metniyle eşleştir ya da görseli gör.
+
+Ayrıca: Myer-Cotton kitapta **"Derece"**, McCaffrey **"Evre"** — ilk sürümde
+ikisine de "Evre" denmişti, düzeltildi. Derece IV = **%100** (lümen yok).
+
 **Bulgu — Commons'ta Montgomery T-tüpü görseli YOK**
 Üç ayrı `WebSearch` (allowed_domains: commons.wikimedia.org) hiçbir `File:`
 sonucu döndürmedi. Cihazın fotoğrafı telifli katalog görsellerinde. Bu yüzden
