@@ -4,7 +4,7 @@ Bu dosya oturumlar arası devir kaydıdır. **Yeni bir oturum işe buradan
 başlar:** önce burayı oku, sonra `CLAUDE.md` ve
 `.claude/skills/kbb-gunluk-not/SKILL.md`.
 
-Son güncelleme: **2026-08-25**
+Son güncelleme: **2026-08-31**
 
 ---
 
@@ -104,6 +104,32 @@ tablo `kbb/ilerleme.md`'de.
 - **Büyük PNG'ler PDF'i şişiriyor.** Ham Commons PNG'leri (11-20 MB) doğrudan
   gömüldüğünde PDF 13-15 MB'a çıktı; 1600 px'e indirilince 2-5 MB'a düştü.
   **Görseli indirdikten sonra 1600 px üstünü küçült.**
+
+## 31 Ağustos oturumu
+
+**Yeni soru notu**
+- `soru-kordotomi-bilateral-vokal-kord-paralizisi` — kordotomi/kordektomi
+  ayrımı, posterior kordotominin endikasyonu ve tekniği, beş cerrahi
+  yöntemin karşılaştırması, komplikasyonlar, çocukta fark, güncel
+  literatür. **15 sayfa, 19 görsel** (11 çizilmiş şema + 8 gerçek görüntü).
+  Kaynak: Önerci Cilt 5 Böl. 42/52/21/48 + PubMed 2022-2025.
+  **Yazar Drive'a kendisi yükleyecek.**
+
+**Sohbette yanıtlanan sorular** (not üretilmedi)
+- Şilöz fistülde oral stop + TPN'nin yeri
+- Boyun diseksiyonu endikasyonları; larinks SCC ve tükürük bezinde rutin mi
+- Larinks posterior duvarındaki oluşumun ayırıcı tanısı (hasta BT'si üzerinden)
+
+**Yöntem notu — kitap görseli yerine eski not görseli**
+Önerci Cilt 5'in ilgili parçaları (Böl. 42 → `0533-0560`, Böl. 52 →
+`0617-0644`) **30 MB civarında**, `download_file_content` 10 MB'da
+sınırlanıyor; kitap şekilleri bu bölümlerden çıkarılamadı. Yerine
+**eski gün notlarının PDF'lerinden görsel geri kazanıldı** — Gün 31
+(vokal kord paralizileri) ve Gün 66 (larinks cerrahisi) küçük dosyalar
+olduğu için inip `pymupdf` ile açılabildi. Saydam PNG'lerde alfa ayrı bir
+`smask` xref'inde duruyor; `extract_image` sadece RGB veriyor, arka plan
+siyah çıkıyor. Doğrusu: `smask` xref'ini de çıkarıp maske olarak beyaz
+zemine yapıştırmak.
 
 ## Bu oturumda (22-24 Ağustos) neler oldu
 
