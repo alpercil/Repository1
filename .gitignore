@@ -1,4 +1,11 @@
 # Machine-local Claude Code settings; project settings live in .claude/settings.json
 .claude/settings.local.json
-kbb/notlar/gorsel
+
+# Manifestten inen web görselleri (gorseller.json) — Colab/render sırasında
+# yeniden indirilebildikleri için depoda tutulmuyor. Kitaptan ya da eski not
+# PDF'lerinden çıkarılan görseller (kNN, rNN) depoda DURMALI: konteynerden
+# tekrar elde edilemezler.
+kbb/notlar/gorsel/**/w[0-9][0-9].*
+
+# Render çıktısı — kaynak HTML'den yeniden üretilir, PDF'ler Drive'da durur
 kbb/cikti
