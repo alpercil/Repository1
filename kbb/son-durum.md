@@ -107,6 +107,33 @@ tablo `kbb/ilerleme.md`'de.
 
 ## 31 Ağustos oturumu
 
+**Yeni soru notu — Montgomery T-tüpü**
+- `soru-montgomery-t-tup` — cihazın yapısı, endikasyon, yerleştirme, bakım,
+  komplikasyonlar, trakeotomi kanülünden farkı. **15 sayfa, 17 görsel**
+  (9 çizilmiş şema + 8 gerçek görüntü). Kaynak: Önerci Cilt 5 Böl. 50-51,
+  Cummings 7. baskı Böl. 66/67/210, Scott-Brown Böl. 173, PubMed 6 çalışma.
+  **Yazar Drive'a kendisi yükleyecek.**
+
+**Bulgu — Commons'ta Montgomery T-tüpü görseli YOK**
+Üç ayrı `WebSearch` (allowed_domains: commons.wikimedia.org) hiçbir `File:`
+sonucu döndürmedi. Cihazın fotoğrafı telifli katalog görsellerinde. Bu yüzden
+cihazın kendisi not için çizildi. Bir dahaki sefere aramayı tekrarlama.
+
+**Bir sonraki YEREL oturumda bu nota eklenebilecek Commons dosyaları**
+(WebSearch'te birebir görüldü, lisansları dosya sayfasından doğrulanmalı):
+`Tracheostomy tube.jpg`, `Tracheostomy tube cuffed.jpg`,
+`Diagram showing a fenestrated and a non fenestrated tracheostomy tube CRUK 066.svg`,
+`Diagram showing an airway stent CRUK 095.svg`, `Subglottic stenosis (X-ray).jpg`,
+`2307 Cartilages of the Larynx.jpg`, `2308a The Trachea.jpg`,
+`2303 Anatomy of Nose-Pharynx-Mouth-Larynx.jpg`.
+
+**Literatür notu — pratiği değiştiren bulgu**
+Bibas 2025 (*Ann Thorac Surg*, prospektif, n=153): **transglottik T-tüp
+yerleşimi komplikasyonu %12'den %23'e çıkarıyor** (p=.04), plansız yoğun bakım
+OR 8,56. Kordlar-darlık mesafesi ≤5 mm OR 7,71, 6-10 mm OR 30,55. Genel
+dekanülasyon %28. Üst bacak **infraglottik** kalmalı.
+
+
 **Yeni soru notu**
 - `soru-kordotomi-bilateral-vokal-kord-paralizisi` — kordotomi/kordektomi
   ayrımı, posterior kordotominin endikasyonu ve tekniği, beş cerrahi
