@@ -1,8 +1,10 @@
 # KBB kaynak kitapları — parça dizini
 
-Kaynak kitaplar Google Drive'ın `KBB_kaynak` klasöründe
+Kaynak kitapların çoğu Google Drive'ın `KBB_kaynak` klasöründe
 (https://drive.google.com/drive/folders/1M2ofrodfTkZS0bxywyOo_g0Hq1xv3WFi)
-parçalar halinde duruyor.
+parçalar halinde duruyor. **Bir istisna var:** baş-boyun anatomisi kitabı
+metin dosyası olarak **doğrudan bu depoda** — `kbb/kaynak/` altında. Drive
+bağlantısı gerekmez, en hızlı ulaşılan kaynak odur (aşağıya bak).
 
 ## Neden parçalı
 
@@ -30,6 +32,36 @@ Doğrulanmış örnek: Bölüm 30 (Akut Süpüratif Otitis Media), basılı s.21
 PDF s.219-226 → `1KBB Otoloji-0201-0240.pdf` içinde.
 
 ## Kitaplar
+
+### kbb-bas-boyun-anatomisi — Kaplan Arıncı, *Anatomi* (Cilt 1-2), baş-boyun bölümleri
+
+**Bu kitap Drive'da değil, depoda.** Konumu:
+
+| Dosya | Ne işe yarar |
+| --- | --- |
+| `kbb/kaynak/kbb-bas-boyun-anatomisi.txt` | Düz metin — `grep` ve `sed` ile doğrudan aranır |
+| `kbb/kaynak/kbb-bas-boyun-anatomisi.docx` | Özgün dosya (yazarın yüklediği) |
+| `kbb/kaynak/kbb-bas-boyun-anatomisi-indeks.md` | 133 başlık, satır numaralarıyla + **arama tuzakları** |
+
+~96.000 kelime, 12 ana bölüm. Kafa kemikleri · TME ve eklemler · baş-boyun
+kasları ve fasiaları · ağız-dil-tükürük bezleri-farenks · burun, sinüsler,
+larenks, trakea · arterler · venler · lenfatikler · kraniyal sinirler (detaylı
++ MSS özeti) · servikal sempatik sistem · duyu organları (göz, kulak, tat,
+koku).
+
+**Neden önce buraya bakılır:** tam metin, aranabilir, parçalanmamış, metin
+katmanı boşluğu yok, Drive bağlantısı gerektirmez. Önerci ciltlerinin bazı
+parçalarında metin katmanı hiç yokken burada her şey okunabilir.
+
+**Sınırı:** **görsel yok.** Anatomik şekil gerekiyorsa Loré atlası ya da
+Commons. Ayrıca bu bir *anatomi* kitabı — klinik, cerrahi teknik ve tedavi
+için diğer kitaplara git.
+
+⚠ **Arama tuzağı:** *Terminologia Anatomica* yazımı kullanılıyor —
+`n. laryngealis` (`n. laryngeus` değil), `gl. parotidea` (`parotis` değil).
+Yapılar kısaltmayla geçiyor (`n.`, `a.`, `v.`, `gl.`, `lig.`, `m.`, `r.`).
+Ayrıntı: `kbb/kaynak/kbb-bas-boyun-anatomisi-indeks.md`.
+
 
 ### 1KBB Otoloji.pdf — Önerci Cilt 1, Otoloji
 462 sayfa · 12 parça · 40 sayfalık aralıklar

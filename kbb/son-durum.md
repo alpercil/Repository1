@@ -4,7 +4,7 @@ Bu dosya oturumlar arası devir kaydıdır. **Yeni bir oturum işe buradan
 başlar:** önce burayı oku, sonra `CLAUDE.md` ve
 `.claude/skills/kbb-gunluk-not/SKILL.md`.
 
-Son güncelleme: **2026-08-31**
+Son güncelleme: **2026-09-15**
 
 ---
 
@@ -104,6 +104,29 @@ tablo `kbb/ilerleme.md`'de.
 - **Büyük PNG'ler PDF'i şişiriyor.** Ham Commons PNG'leri (11-20 MB) doğrudan
   gömüldüğünde PDF 13-15 MB'a çıktı; 1600 px'e indirilince 2-5 MB'a düştü.
   **Görseli indirdikten sonra 1600 px üstünü küçült.**
+
+## 15 Eylül oturumu — yeni kaynak kitap
+
+Yazar **Kaplan Arıncı, *Anatomi* (Cilt 1-2)** kitabının baş-boyun/KBB
+bölümlerinin tam metin transkripsiyonunu (.docx) yükledi. Depoya alındı:
+
+- `kbb/kaynak/kbb-bas-boyun-anatomisi.txt` — düz metin, `grep`'lenebilir
+- `kbb/kaynak/kbb-bas-boyun-anatomisi.docx` — özgün dosya
+- `kbb/kaynak/kbb-bas-boyun-anatomisi-indeks.md` — 133 başlık + satır no
+
+~96.000 kelime, 12 bölüm, **görsel yok**. `kaynak-index.md` ve `SKILL.md` §1
+güncellendi: **anatomi için ilk durak artık bu kitap**, Drive'daki PDF'ler
+klinik/cerrahi için.
+
+**Arama tuzağı (önemli):** kitap *Terminologia Anatomica* yazımı kullanıyor.
+`n. laryngeus` aramak sonuç vermez, doğrusu **`n. laryngealis`**; `parotis`
+değil **`gl. parotidea`**. Yapılar kısaltmayla geçiyor (`n.`, `a.`, `v.`,
+`gl.`, `lig.`, `m.`, `r.`).
+
+**Drive'a yüklenmedi.** Konteynerden Drive'a binary yazma yolu yok (sebep:
+`kbb/kararlar.md` — base64'ü karakteri karakterine yeniden üretme sadakati).
+Yazar isterse dosyayı `KBB_kaynak`'a kendisi bırakır; ama depoda durduğu için
+**buna gerek yok** — 282 KB, git için sorun değil ve her oturumda hazır.
 
 ## 31 Ağustos oturumu
 

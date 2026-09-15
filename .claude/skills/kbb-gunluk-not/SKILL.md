@@ -19,7 +19,28 @@ açıkça yaz; uydurma.
 
 ## 1. Kaynağı aç
 
-Kaynak kitaplar Drive'da `KBB_kaynak` klasöründe, sayfa aralığına göre
+### Önce depodaki anatomi kitabı
+
+Konu **anatomi içeriyorsa** (ki KBB'de çoğu içerir) ilk durak Drive değil,
+depodur:
+
+```
+grep -n "terim" kbb/kaynak/kbb-bas-boyun-anatomisi.txt
+sed -n 'BAS,SONp' kbb/kaynak/kbb-bas-boyun-anatomisi.txt
+```
+
+Kaplan Arıncı *Anatomi*'nin baş-boyun/KBB bölümlerinin tam metni; ~96.000
+kelime, 12 bölüm, aranabilir, parçasız. Başlık-satır eşlemesi ve **arama
+tuzakları** (Terminologia Anatomica yazımı: `n. laryngealis`, `gl. parotidea`;
+yapılar `n.`/`a.`/`v.`/`gl.` kısaltmasıyla) →
+`kbb/kaynak/kbb-bas-boyun-anatomisi-indeks.md`.
+
+Sınırı: **görsel yok** ve klinik/cerrahi anlatmaz. Anatomi omurgasını buradan
+kur, klinik ve tedaviyi Drive'daki kitaplardan tamamla.
+
+### Sonra Drive'daki kitaplar
+
+Kalan kaynak kitaplar Drive'da `KBB_kaynak` klasöründe, sayfa aralığına göre
 adlandırılmış parçalar halinde. Hangi konu hangi kitapta ve parçada →
 `kbb/kaynak-index.md`.
 
@@ -33,8 +54,9 @@ Sıra:
 4. Parça sınırları bölüm sınırlarıyla hizalı değil — aradığın bölüm iki
    parçaya bölünmüşse ikisini de oku.
 
-Türkçe kaynaklar (Önerci ciltleri, Koç C) omurgayı kurar; Cummings ve
-Scott-Brown İngilizce derinlik ve tartışmalı noktalar için.
+Türkçe kaynaklar (Önerci ciltleri, Koç C) klinik omurgayı kurar; **depodaki
+anatomi kitabı** anatomi omurgasını kurar; Cummings ve Scott-Brown İngilizce
+derinlik ve tartışmalı noktalar için.
 
 ## 2. Güncel literatürle tamamla
 
