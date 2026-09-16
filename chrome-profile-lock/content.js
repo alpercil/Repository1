@@ -248,19 +248,33 @@
   }
 
   function syncFromState(state) {
-    if (state.hasPassword && state.locked && !state.tempUnlocked) {
+    // whitelisted: bu alan adı "kilitlenmeyecek siteler" listesinde (ayarlardan
+    // yönetilir) — profil kilitli olsa bile bu sekmede overlay gösterilmez.
+    if (state.hasPassword && state.locked && !state.tempUnlocked && !state.whitelisted) {
       ensureOverlay();
     } else {
       removeOverlay();
     }
   }
 
-  chrome.runtime.sendMessage({ type: "GET_LOCK_STATE" }).then(syncFromState).catch(() => {});
+  function requestLockState() {
+    chrome.runtime
+      .sendMessage({ type: "GET_LOCK_STATE", hostname: location.hostname })
+      .then(syncFromState)
+      .catch(() => {});
+  }
+
+  requestLockState();
 
   chrome.storage.onChanged.addListener((changes, areaName) => {
     if (areaName !== "local") return;
-    if ("locked" in changes || "passwordHash" in changes || "tempUnlock" in changes) {
-      chrome.runtime.sendMessage({ type: "GET_LOCK_STATE" }).then(syncFromState).catch(() => {});
+    if (
+      "locked" in changes ||
+      "passwordHash" in changes ||
+      "tempUnlock" in changes ||
+      "whitelistedHosts" in changes
+    ) {
+      requestLockState();
     }
   });
 

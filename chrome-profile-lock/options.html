@@ -13,10 +13,13 @@
   h1 { font-size: 18px; }
   section { margin-bottom: 28px; padding-bottom: 20px; border-bottom: 1px solid #e5e5e5; }
   label { display: block; font-size: 13px; margin: 10px 0 4px; color: #555; }
-  input, select {
+  input, select, textarea {
     width: 100%; box-sizing: border-box; padding: 10px 12px;
     border-radius: 6px; border: 1px solid #ccc; font-size: 14px;
+    font-family: inherit;
   }
+  textarea { resize: vertical; min-height: 90px; }
+  .hint { font-size: 12px; color: #777; margin: 6px 0 0; }
   button {
     margin-top: 12px; padding: 10px 16px; border: none; border-radius: 6px;
     background: #5b8cff; color: #fff; font-size: 14px; font-weight: 600; cursor: pointer;
@@ -59,6 +62,17 @@
     <input type="number" id="idle-minutes" min="1" max="60" />
     <button id="idle-btn">Kaydet</button>
     <div class="msg" id="idle-msg"></div>
+  </section>
+
+  <section id="whitelist-section" class="hidden">
+    <p>Kilitlenmeyecek siteler. Buradaki siteler profil kilitliyken bile açık
+      kalır; aynı anda açık olan diğer sekmeler normal şekilde kilitlenir.</p>
+    <label for="whitelist">Her satıra bir alan adı</label>
+    <textarea id="whitelist" placeholder="youtube.com&#10;github.com"></textarea>
+    <p class="hint">Alt alan adları da kapsanır: <code>youtube.com</code> yazmak
+      <code>www.youtube.com</code> ve <code>m.youtube.com</code> için de geçerlidir.</p>
+    <button id="whitelist-btn">Kaydet</button>
+    <div class="msg" id="whitelist-msg"></div>
   </section>
 
   <section id="lock-now-section" class="hidden" style="border-bottom: none;">
