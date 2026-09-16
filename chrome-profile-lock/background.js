@@ -34,7 +34,8 @@ async function getState() {
     "idleMinutes",
     "failedAttempts",
     "cooldownUntil",
-    "tempUnlock"
+    "tempUnlock",
+    "whitelistedHosts"
   ]);
   return {
     passwordHash: data.passwordHash || null,
@@ -43,8 +44,22 @@ async function getState() {
     idleMinutes: data.idleMinutes || DEFAULT_IDLE_MINUTES,
     failedAttempts: data.failedAttempts || 0,
     cooldownUntil: data.cooldownUntil || 0,
-    tempUnlock: data.tempUnlock || EMPTY_TEMP_UNLOCK
+    tempUnlock: data.tempUnlock || EMPTY_TEMP_UNLOCK,
+    whitelistedHosts: data.whitelistedHosts || []
   };
+}
+
+// Kilitlenmeyecek siteler: bu listedeki alan adlarında overlay hiç gösterilmez,
+// profil kilitliyken bile. Kilidin kendisi (locked bayrağı) değişmez — yani
+// aynı anda açık olan diğer sekmeler normal şekilde kilitlenmeye devam eder.
+// "ornek.com" yazmak alt alan adlarını da kapsar (www.ornek.com, m.ornek.com).
+function isHostWhitelisted(hostname, patterns) {
+  if (!hostname || !patterns || !patterns.length) return false;
+  const host = hostname.toLowerCase();
+  return patterns.some((raw) => {
+    const pattern = raw.startsWith("*.") ? raw.slice(2) : raw;
+    return host === pattern || host.endsWith("." + pattern);
+  });
 }
 
 // Geçici (kısmi) kilit açma: normal "Kilidi Aç" tüm sekmeleri açarken, bu
@@ -156,8 +171,17 @@ async function handleMessage(message, sender) {
         locked: state.locked,
         hasPassword: !!state.passwordHash,
         tempUnlocked,
-        tempRemainingMs: tempUnlocked ? Math.max(0, state.tempUnlock.expiresAt - Date.now()) : 0
+        tempRemainingMs: tempUnlocked ? Math.max(0, state.tempUnlock.expiresAt - Date.now()) : 0,
+        whitelisted: isHostWhitelisted(message.hostname, state.whitelistedHosts)
       };
+    }
+
+    case "SET_WHITELIST": {
+      const hosts = Array.isArray(message.hosts)
+        ? [...new Set(message.hosts.map((h) => String(h).trim().toLowerCase()).filter(Boolean))]
+        : [];
+      await chrome.storage.local.set({ whitelistedHosts: hosts });
+      return { ok: true, hosts };
     }
 
     case "SET_PASSWORD": {

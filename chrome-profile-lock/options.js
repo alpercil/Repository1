@@ -3,6 +3,7 @@
   const changeSection = document.getElementById("change-section");
   const idleSection = document.getElementById("idle-section");
   const lockNowSection = document.getElementById("lock-now-section");
+  const whitelistSection = document.getElementById("whitelist-section");
 
   async function refresh() {
     const { hasPassword } = await chrome.runtime.sendMessage({ type: "GET_LOCK_STATE" });
@@ -10,9 +11,14 @@
     changeSection.classList.toggle("hidden", !hasPassword);
     idleSection.classList.toggle("hidden", !hasPassword);
     lockNowSection.classList.toggle("hidden", !hasPassword);
+    whitelistSection.classList.toggle("hidden", !hasPassword);
 
-    const { idleMinutes } = await chrome.storage.local.get("idleMinutes");
+    const { idleMinutes, whitelistedHosts } = await chrome.storage.local.get([
+      "idleMinutes",
+      "whitelistedHosts"
+    ]);
     document.getElementById("idle-minutes").value = idleMinutes || 5;
+    document.getElementById("whitelist").value = (whitelistedHosts || []).join("\n");
   }
 
   function showMsg(el, text, ok) {
@@ -62,6 +68,23 @@
     const msg = document.getElementById("idle-msg");
     await chrome.runtime.sendMessage({ type: "SET_IDLE_MINUTES", minutes });
     showMsg(msg, "Kaydedildi.", true);
+  });
+
+  document.getElementById("whitelist-btn").addEventListener("click", async () => {
+    const msg = document.getElementById("whitelist-msg");
+    const hosts = document
+      .getElementById("whitelist")
+      .value.split("\n")
+      .map((line) => line.trim())
+      .filter(Boolean);
+    const res = await chrome.runtime.sendMessage({ type: "SET_WHITELIST", hosts });
+    if (!res.ok) return showMsg(msg, res.error || "Kaydedilemedi.", false);
+    document.getElementById("whitelist").value = res.hosts.join("\n");
+    showMsg(
+      msg,
+      res.hosts.length ? `${res.hosts.length} site kaydedildi.` : "Liste boşaltıldı.",
+      true
+    );
   });
 
   document.getElementById("lock-now-btn").addEventListener("click", async () => {
