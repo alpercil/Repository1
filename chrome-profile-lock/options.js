@@ -19,6 +19,15 @@
     ]);
     document.getElementById("idle-minutes").value = idleMinutes || 5;
     document.getElementById("whitelist").value = (whitelistedHosts || []).join("\n");
+
+    const builtIn = await chrome.runtime.sendMessage({ type: "GET_BUILT_IN_WHITELIST" });
+    const list = document.getElementById("builtin-whitelist");
+    list.textContent = "";
+    for (const host of builtIn.hosts) {
+      const li = document.createElement("li");
+      li.textContent = host;
+      list.appendChild(li);
+    }
   }
 
   function showMsg(el, text, ok) {

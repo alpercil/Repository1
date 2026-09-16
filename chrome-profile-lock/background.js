@@ -8,6 +8,19 @@ const MAX_TEMP_MINUTES = 180;
 const TEMP_UNLOCK_ALARM = "tempUnlockExpiry";
 const EMPTY_TEMP_UNLOCK = { expiresAt: 0, slotsRemaining: 0, unlockedTabIds: [] };
 
+// Uzantıya gömülü, her zaman kilitlenmeyen siteler. Ayarlardaki kullanıcı
+// listesinin yanında çalışır: oradan silinemez, storage sıfırlansa da
+// (ör. uzantı sıfırdan kurulduğunda) geçerli kalır.
+// Sadece alan adı tutulur — bu sitelerin adreslerindeki oturum anahtarları
+// (ticket, otac, oturum kimliği) kasıtlı olarak saklanmaz.
+const BUILT_IN_WHITELIST = [
+  "remotedesktop.google.com",
+  "docs.google.com",
+  "youtube.com", // www, m ve music alt alan adlarını da kapsar
+  "192.168.2.43",
+  "teleradyoloji.saglik.gov.tr"
+];
+
 // Idle tetiklendiğinde, hangi sekmenin video/ses oynattığını bellekte tutmak
 // yerine anlık olarak sorarız: MV3 service worker'ı birkaç saniye işlemsizlikten
 // sonra kapanıp yeniden başlayabiliyor, bu da bellekte tutulan bir Set'i
@@ -188,9 +201,15 @@ async function handleMessage(message, sender) {
         hasPassword: !!state.passwordHash,
         tempUnlocked,
         tempRemainingMs: tempUnlocked ? Math.max(0, state.tempUnlock.expiresAt - Date.now()) : 0,
-        whitelisted: isHostWhitelisted(message.hostname, state.whitelistedHosts)
+        whitelisted: isHostWhitelisted(message.hostname, [
+          ...BUILT_IN_WHITELIST,
+          ...state.whitelistedHosts
+        ])
       };
     }
+
+    case "GET_BUILT_IN_WHITELIST":
+      return { ok: true, hosts: BUILT_IN_WHITELIST };
 
     case "SET_WHITELIST": {
       const hosts = Array.isArray(message.hosts)

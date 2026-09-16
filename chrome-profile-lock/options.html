@@ -20,6 +20,11 @@
   }
   textarea { resize: vertical; min-height: 90px; }
   .hint { font-size: 12px; color: #777; margin: 6px 0 0; }
+  ul.builtin {
+    margin: 0 0 16px; padding: 10px 12px 10px 28px;
+    background: #f5f6f8; border-radius: 6px; border: 1px solid #e5e5e5;
+  }
+  ul.builtin li { font-size: 13px; color: #444; font-family: ui-monospace, monospace; }
   button {
     margin-top: 12px; padding: 10px 16px; border: none; border-radius: 6px;
     background: #5b8cff; color: #fff; font-size: 14px; font-weight: 600; cursor: pointer;
@@ -67,7 +72,10 @@
   <section id="whitelist-section" class="hidden">
     <p>Kilitlenmeyecek siteler. Buradaki siteler profil kilitliyken bile açık
       kalır; aynı anda açık olan diğer sekmeler normal şekilde kilitlenir.</p>
-    <label for="whitelist">Her satıra bir alan adı</label>
+    <p class="hint" style="margin-bottom: 10px;">Uzantıya gömülü olarak gelen ve
+      her zaman açık kalan siteler (bu liste silinemez):</p>
+    <ul id="builtin-whitelist" class="builtin"></ul>
+    <label for="whitelist">Kendi eklediklerin — her satıra bir alan adı</label>
     <textarea id="whitelist" placeholder="youtube.com&#10;github.com"></textarea>
     <p class="hint">Alt alan adları da kapsanır: <code>youtube.com</code> yazmak
       <code>www.youtube.com</code> ve <code>m.youtube.com</code> için de geçerlidir.
