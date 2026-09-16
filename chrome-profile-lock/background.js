@@ -53,6 +53,22 @@ async function getState() {
 // profil kilitliyken bile. Kilidin kendisi (locked bayrağı) değişmez — yani
 // aynı anda açık olan diğer sekmeler normal şekilde kilitlenmeye devam eder.
 // "ornek.com" yazmak alt alan adlarını da kapsar (www.ornek.com, m.ornek.com).
+// Kullanıcı listeye tam URL yapıştırabiliyor ("https://site.com/yol/..."),
+// oysa eşleşme sadece alan adına bakar. Kaydederken alan adını ayıklıyoruz;
+// yoksa satır hiçbir şeyle eşleşmez ve site sessizce kilitli kalırdı.
+function normalizeWhitelistEntry(raw) {
+  let value = String(raw).trim().toLowerCase();
+  if (!value) return "";
+  const wildcard = value.startsWith("*.");
+  if (wildcard) value = value.slice(2);
+  try {
+    value = new URL(value.includes("://") ? value : `http://${value}`).hostname;
+  } catch (err) {
+    value = value.split("/")[0].split(":")[0];
+  }
+  return value && wildcard ? `*.${value}` : value;
+}
+
 function isHostWhitelisted(hostname, patterns) {
   if (!hostname || !patterns || !patterns.length) return false;
   const host = hostname.toLowerCase();
@@ -178,7 +194,7 @@ async function handleMessage(message, sender) {
 
     case "SET_WHITELIST": {
       const hosts = Array.isArray(message.hosts)
-        ? [...new Set(message.hosts.map((h) => String(h).trim().toLowerCase()).filter(Boolean))]
+        ? [...new Set(message.hosts.map(normalizeWhitelistEntry).filter(Boolean))]
         : [];
       await chrome.storage.local.set({ whitelistedHosts: hosts });
       return { ok: true, hosts };
